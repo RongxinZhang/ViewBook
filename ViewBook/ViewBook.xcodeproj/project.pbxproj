@@ -18,12 +18,13 @@
 		2D47AD3517921513003D5D8B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3417921513003D5D8B /* Default-568h@2x.png */; };
 		2D47AD3817921513003D5D8B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3617921513003D5D8B /* MainStoryboard_iPhone.storyboard */; };
 		2D47AD3B17921513003D5D8B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3917921513003D5D8B /* MainStoryboard_iPad.storyboard */; };
-		2D47AD3E17921513003D5D8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD3D17921513003D5D8B /* ViewController.m */; };
+		2D47AD3E17921513003D5D8B /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD3D17921513003D5D8B /* SplashViewController.m */; };
 		2D47AD4617921513003D5D8B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD4517921513003D5D8B /* SenTestingKit.framework */; };
 		2D47AD4717921513003D5D8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD1E17921513003D5D8B /* UIKit.framework */; };
 		2D47AD4817921513003D5D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD2017921513003D5D8B /* Foundation.framework */; };
 		2D47AD5017921513003D5D8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD4E17921513003D5D8B /* InfoPlist.strings */; };
 		2D47AD5317921513003D5D8B /* ViewBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD5217921513003D5D8B /* ViewBookTests.m */; };
+		2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,14 +53,15 @@
 		2D47AD3417921513003D5D8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2D47AD3717921513003D5D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		2D47AD3A17921513003D5D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		2D47AD3C17921513003D5D8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2D47AD3D17921513003D5D8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2D47AD3C17921513003D5D8B /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		2D47AD3D17921513003D5D8B /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		2D47AD4417921513003D5D8B /* ViewBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D47AD4517921513003D5D8B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2D47AD4D17921513003D5D8B /* ViewBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewBookTests-Info.plist"; sourceTree = "<group>"; };
 		2D47AD4F17921513003D5D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D47AD5117921513003D5D8B /* ViewBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewBookTests.h; sourceTree = "<group>"; };
 		2D47AD5217921513003D5D8B /* ViewBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewBookTests.m; sourceTree = "<group>"; };
+		2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_White_Logo_Large.png; path = Assets/EmilyCarr_White_Logo_Large.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +121,13 @@
 		2D47AD2417921513003D5D8B /* ViewBook */ = {
 			isa = PBXGroup;
 			children = (
+				2D47AD5C179216DA003D5D8B /* Assets */,
 				2D47AD2D17921513003D5D8B /* AppDelegate.h */,
 				2D47AD2E17921513003D5D8B /* AppDelegate.m */,
 				2D47AD3617921513003D5D8B /* MainStoryboard_iPhone.storyboard */,
 				2D47AD3917921513003D5D8B /* MainStoryboard_iPad.storyboard */,
-				2D47AD3C17921513003D5D8B /* ViewController.h */,
-				2D47AD3D17921513003D5D8B /* ViewController.m */,
+				2D47AD3C17921513003D5D8B /* SplashViewController.h */,
+				2D47AD3D17921513003D5D8B /* SplashViewController.m */,
 				2D47AD2517921513003D5D8B /* Supporting Files */,
 			);
 			path = ViewBook;
@@ -161,6 +164,14 @@
 				2D47AD4E17921513003D5D8B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D47AD5C179216DA003D5D8B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 				2D47AD3517921513003D5D8B /* Default-568h@2x.png in Resources */,
 				2D47AD3817921513003D5D8B /* MainStoryboard_iPhone.storyboard in Resources */,
 				2D47AD3B17921513003D5D8B /* MainStoryboard_iPad.storyboard in Resources */,
+				2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +288,7 @@
 			files = (
 				2D47AD2B17921513003D5D8B /* main.m in Sources */,
 				2D47AD2F17921513003D5D8B /* AppDelegate.m in Sources */,
-				2D47AD3E17921513003D5D8B /* ViewController.m in Sources */,
+				2D47AD3E17921513003D5D8B /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

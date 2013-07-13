@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/NSTimer.h>
 
-@interface ViewController : UIViewController
+@interface SplashViewController : UIViewController {
+  
+    // Timer To Control Animation To Next Screen
+    NSTimer *timer;
+    
+}
+
+@property (nonatomic, retain) NSTimer *timer;
+
+
 
 @end

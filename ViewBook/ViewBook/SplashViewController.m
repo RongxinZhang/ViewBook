@@ -8,16 +8,33 @@
 
 #import "SplashViewController.h"
 
-@interface ViewController ()
+@interface SplashViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SplashViewController
+
+// Synthesize Properties
+@synthesize timer;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Timer
+    if(self.timer == nil) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(switchView) userInfo:nil repeats:NO];
+    }
+    
+    
+    
+}
+
+// Switch View
+
+- (void) switchView {
+    NSLog(@"TIMES UP !!");
 }
 
 - (void)didReceiveMemoryWarning

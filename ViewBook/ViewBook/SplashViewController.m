@@ -7,6 +7,7 @@
 //
 
 #import "SplashViewController.h"
+#import "MainMenuViewController.h"
 
 @interface SplashViewController ()
 
@@ -35,7 +36,22 @@
 
 - (void) switchView {
     NSLog(@"TIMES UP !!");
+    
+//    MainMenuViewController *menuView = [[MainMenuViewController alloc] init];
+//    menuView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    [self presentViewController:menuView animated:YES completion:NULL];
+    
+    //
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+    MainMenuViewController *menuView = (MainMenuViewController *)[storyboard instantiateViewControllerWithIdentifier:@"menuView"];
+    [self.navigationController pushViewController:menuView animated:YES];
+    
+    // Kill Timer
+    [timer invalidate];
+    self.timer = nil;   
+    
 }
+
 
 - (void)didReceiveMemoryWarning
 {

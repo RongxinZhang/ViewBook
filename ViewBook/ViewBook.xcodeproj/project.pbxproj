@@ -25,6 +25,7 @@
 		2D47AD5017921513003D5D8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD4E17921513003D5D8B /* InfoPlist.strings */; };
 		2D47AD5317921513003D5D8B /* ViewBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD5217921513003D5D8B /* ViewBookTests.m */; };
 		2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */; };
+		2D47AD6117921B5D003D5D8B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		2D47AD5117921513003D5D8B /* ViewBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewBookTests.h; sourceTree = "<group>"; };
 		2D47AD5217921513003D5D8B /* ViewBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewBookTests.m; sourceTree = "<group>"; };
 		2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_White_Logo_Large.png; path = Assets/EmilyCarr_White_Logo_Large.png; sourceTree = "<group>"; };
+		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				2D47AD3917921513003D5D8B /* MainStoryboard_iPad.storyboard */,
 				2D47AD3C17921513003D5D8B /* SplashViewController.h */,
 				2D47AD3D17921513003D5D8B /* SplashViewController.m */,
+				2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */,
+				2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */,
 				2D47AD2517921513003D5D8B /* Supporting Files */,
 			);
 			path = ViewBook;
@@ -289,6 +294,7 @@
 				2D47AD2B17921513003D5D8B /* main.m in Sources */,
 				2D47AD2F17921513003D5D8B /* AppDelegate.m in Sources */,
 				2D47AD3E17921513003D5D8B /* SplashViewController.m in Sources */,
+				2D47AD6117921B5D003D5D8B /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

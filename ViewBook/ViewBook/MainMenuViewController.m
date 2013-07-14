@@ -20,27 +20,28 @@
     if (self) {
         // Custom initialization
     }
+    NSLog(@"NIB");
     return self;
 }
 
-- (void) loadView {
-    UIView* v = [UIView new];
-    v.backgroundColor = [UIColor greenColor];
-    self.view = v;
-    UILabel* label = [UILabel new];
-    [v addSubview:label];
-    label.text = @"Hello, World!";
-    label.autoresizingMask = (
-                              UIViewAutoresizingFlexibleTopMargin |
-                              UIViewAutoresizingFlexibleLeftMargin |
-                              UIViewAutoresizingFlexibleBottomMargin |
-                              UIViewAutoresizingFlexibleRightMargin
-                              );
-    [label sizeToFit];
-    label.center = CGPointMake(CGRectGetMidX(v.bounds),
-                               CGRectGetMidY(v.bounds));
-    label.frame = CGRectIntegral(label.frame);
-}
+//- (void) loadView {
+//    UIView* v = [UIView new];
+//    v.backgroundColor = [UIColor greenColor];
+//    self.view = v;
+//    UILabel* label = [UILabel new];
+//    [v addSubview:label];
+//    label.text = @"Hello, World!";
+//    label.autoresizingMask = (
+//                              UIViewAutoresizingFlexibleTopMargin |
+//                              UIViewAutoresizingFlexibleLeftMargin |
+//                              UIViewAutoresizingFlexibleBottomMargin |
+//                              UIViewAutoresizingFlexibleRightMargin
+//                              );
+//    [label sizeToFit];
+//    label.center = CGPointMake(CGRectGetMidX(v.bounds),
+//                               CGRectGetMidY(v.bounds));
+//    label.frame = CGRectIntegral(label.frame);
+//}
 
 - (void)viewDidLoad
 {

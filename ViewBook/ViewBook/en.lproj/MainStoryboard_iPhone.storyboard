@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mjx-Qk-31P">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -9,7 +9,7 @@
             <objects>
                 <viewController storyboardIdentifier="splashView" id="2" userLabel="Splash View Controller" customClass="SplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="EmilyCarr_White_Logo_Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="eF3-E6-WKb">
@@ -24,15 +24,16 @@
                             <constraint firstItem="eF3-E6-WKb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="epL-oW-Oc5"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PuL-xL-VeN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16" y="145"/>
+            <point key="canvasLocation" x="542" y="145"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="ilQ-9D-85C">
             <objects>
-                <viewController storyboardIdentifier="menuView" id="xdc-EE-gVU" userLabel="Main Menu View Controller" customClass="MainMenuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xdc-EE-gVU" userLabel="Main Menu View Controller" customClass="MainMenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jNd-iw-AYU">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,7 +53,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tn-0B-EQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="479" y="152"/>
+            <point key="canvasLocation" x="1005" y="152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LAq-JJ-264">
+            <objects>
+                <navigationController id="mjx-Qk-31P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oZU-a9-hO2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="AsJ-mu-gpq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3i-Bc-bTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="145"/>
         </scene>
     </scenes>
     <resources>

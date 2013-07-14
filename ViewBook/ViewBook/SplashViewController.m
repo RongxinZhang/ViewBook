@@ -35,14 +35,14 @@
 - (void) switchView {
     NSLog(@"TIMES UP !!");
     
-    MainMenuViewController *menuView = [[MainMenuViewController alloc] init];
-    [self presentViewController:menuView animated:YES completion:NULL];
+//    MainMenuViewController *menuView = [[MainMenuViewController alloc] init];
+//    [self presentViewController:menuView animated:YES completion:NULL];
     
-    //
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-//    MainMenuViewController *menuView = (MainMenuViewController *)
-//    [storyboard instantiateViewControllerWithIdentifier:@"menuView"];
-//    [self.navigationController pushViewController:menuView animated:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+    MainMenuViewController *menuView = (MainMenuViewController *)
+    [storyboard instantiateViewControllerWithIdentifier:@"menuView"];
+    [self.navigationController pushViewController:menuView animated:YES];
     
     // Kill Timer
     [timer invalidate];

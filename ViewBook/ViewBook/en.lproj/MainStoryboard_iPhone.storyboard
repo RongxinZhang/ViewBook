@@ -32,7 +32,7 @@
         <!--Main Menu View Controller-->
         <scene sceneID="ilQ-9D-85C">
             <objects>
-                <viewController storyboardIdentifier="menuView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xdc-EE-gVU" userLabel="Main Menu View Controller" customClass="MainMenuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuView" id="xdc-EE-gVU" userLabel="Main Menu View Controller" customClass="MainMenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jNd-iw-AYU">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

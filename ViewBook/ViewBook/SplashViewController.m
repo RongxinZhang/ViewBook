@@ -18,10 +18,8 @@
 // Synthesize Properties
 @synthesize timer;
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
     // Timer
     if(self.timer == nil) {
@@ -37,14 +35,14 @@
 - (void) switchView {
     NSLog(@"TIMES UP !!");
     
-//    MainMenuViewController *menuView = [[MainMenuViewController alloc] init];
-//    menuView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-//    [self presentViewController:menuView animated:YES completion:NULL];
+    MainMenuViewController *menuView = [[MainMenuViewController alloc] init];
+    [self presentViewController:menuView animated:YES completion:NULL];
     
     //
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-    MainMenuViewController *menuView = (MainMenuViewController *)[storyboard instantiateViewControllerWithIdentifier:@"menuView"];
-    [self.navigationController pushViewController:menuView animated:YES];
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+//    MainMenuViewController *menuView = (MainMenuViewController *)
+//    [storyboard instantiateViewControllerWithIdentifier:@"menuView"];
+//    [self.navigationController pushViewController:menuView animated:YES];
     
     // Kill Timer
     [timer invalidate];
@@ -53,8 +51,7 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

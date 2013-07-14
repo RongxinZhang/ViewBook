@@ -23,31 +23,21 @@
     
     // Timer
     if(self.timer == nil) {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(switchView) userInfo:nil repeats:NO];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(switchView) userInfo:nil repeats:NO];
     }
-    
-    
     
 }
 
 // Switch View
-
 - (void) switchView {
     NSLog(@"TIMES UP !!");
-    
-//    MainMenuViewController *menuView = [[MainMenuViewController alloc] init];
-//    [self presentViewController:menuView animated:YES completion:NULL];
-    
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-    MainMenuViewController *menuView = (MainMenuViewController *)
-    [storyboard instantiateViewControllerWithIdentifier:@"menuView"];
-    [self.navigationController pushViewController:menuView animated:YES];
+
+    // Segue
+    [self performSegueWithIdentifier:@"timerDone" sender:self];
     
     // Kill Timer
     [timer invalidate];
-    self.timer = nil;   
-    
+    self.timer = nil;       
 }
 
 

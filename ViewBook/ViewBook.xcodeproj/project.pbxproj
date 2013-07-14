@@ -485,6 +485,7 @@
 				2D47AD5817921513003D5D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D47AD5917921513003D5D8B /* Build configuration list for PBXNativeTarget "ViewBookTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +494,7 @@
 				2D47AD5B17921513003D5D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

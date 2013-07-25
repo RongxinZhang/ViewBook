@@ -12,8 +12,8 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="EmilyCarr_White_Logo_Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="eF3-E6-WKb">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="EmilyCarr_Black_Logo_Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="eF3-E6-WKb">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -61,7 +61,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="EmilyCarr_White_Logo_Large.png" width="640" height="197"/>
+        <image name="EmilyCarr_Black_Logo_Large.png" width="640" height="197"/>
     </resources>
     <classes>
         <class className="MainMenuViewController" superclassName="UIViewController">

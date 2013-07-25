@@ -26,6 +26,7 @@
 		2D47AD5317921513003D5D8B /* ViewBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD5217921513003D5D8B /* ViewBookTests.m */; };
 		2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */; };
 		2D47AD6117921B5D003D5D8B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */; };
+		2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_White_Logo_Large.png; path = Assets/EmilyCarr_White_Logo_Large.png; sourceTree = "<group>"; };
 		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_Black_Logo_Large.png; path = Assets/EmilyCarr_Black_Logo_Large.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		2D47AD5C179216DA003D5D8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */,
 				2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */,
 			);
 			name = Assets;
@@ -257,6 +260,7 @@
 				2D47AD3817921513003D5D8B /* MainStoryboard_iPhone.storyboard in Resources */,
 				2D47AD3B17921513003D5D8B /* MainStoryboard_iPad.storyboard in Resources */,
 				2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */,
+				2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,14 @@
     NSLog(@"TIMES UP !!");
 
     // Segue
-    [self performSegueWithIdentifier:@"timerDone" sender:self];
+    //[self performSegueWithIdentifier:@"timerDone" sender:self];
+    
+    // Load New Storyboard
+    UIStoryboard *newStoryboard = [UIStoryboard storyboardWithName:@"MainMenu" bundle:nil];
+    UIViewController *initialView = [newStoryboard instantiateInitialViewController];
+    
+    initialView.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:initialView animated:YES completion:NULL];
     
     // Kill Timer
     [timer invalidate];

@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ApplyNowViewController : UIViewController
+@interface ApplyNowViewController : UIViewController {
+    
+    
+}
+
+// Back To Main Menu
+
+- (IBAction)loadMainMenuStoryboard:(id)sender;
+
 
 @end

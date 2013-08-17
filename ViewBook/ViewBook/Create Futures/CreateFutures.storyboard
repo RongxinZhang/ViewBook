@@ -20,12 +20,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZF-8t-5w5">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadMainMenuStoryboard:" destination="gdR-tM-Zsy" eventType="touchUpInside" id="ZVh-Tw-aJb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sgf-2o-Hmf" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" constant="263" id="3Ee-V3-gfH"/>
                             <constraint firstAttribute="trailing" secondItem="sgf-2o-Hmf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7G2-zw-lwG"/>
+                            <constraint firstItem="HZF-8t-5w5" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" type="default" id="OL7-HX-qlD"/>
                             <constraint firstItem="sgf-2o-Hmf" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lQh-O3-CNB"/>
+                            <constraint firstItem="HZF-8t-5w5" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" type="default" id="mX1-0M-SgY"/>
                         </constraints>
                     </view>
                 </viewController>

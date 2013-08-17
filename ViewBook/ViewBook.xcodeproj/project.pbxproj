@@ -27,6 +27,10 @@
 		2D29E78617C02718004BB03C /* ApplyNow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E78417C02718004BB03C /* ApplyNow.storyboard */; };
 		2D29E78917C02724004BB03C /* ApplyNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E78817C02724004BB03C /* ApplyNowViewController.m */; };
 		2D29E78A17C02724004BB03C /* ApplyNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E78817C02724004BB03C /* ApplyNowViewController.m */; };
+		2D29E78D17C02A1E004BB03C /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E78C17C02A1E004BB03C /* SplashScreen.storyboard */; };
+		2D29E78E17C02A1E004BB03C /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E78C17C02A1E004BB03C /* SplashScreen.storyboard */; };
+		2D29E79017C02AED004BB03C /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E78F17C02AED004BB03C /* MainMenu.storyboard */; };
+		2D29E79117C02AED004BB03C /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E78F17C02AED004BB03C /* MainMenu.storyboard */; };
 		2D47AD1F17921513003D5D8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD1E17921513003D5D8B /* UIKit.framework */; };
 		2D47AD2117921513003D5D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD2017921513003D5D8B /* Foundation.framework */; };
 		2D47AD2317921513003D5D8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD2217921513003D5D8B /* CoreGraphics.framework */; };
@@ -36,7 +40,6 @@
 		2D47AD3117921513003D5D8B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3017921513003D5D8B /* Default.png */; };
 		2D47AD3317921513003D5D8B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3217921513003D5D8B /* Default@2x.png */; };
 		2D47AD3517921513003D5D8B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3417921513003D5D8B /* Default-568h@2x.png */; };
-		2D47AD3817921513003D5D8B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3617921513003D5D8B /* MainStoryboard_iPhone.storyboard */; };
 		2D47AD3E17921513003D5D8B /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD3D17921513003D5D8B /* SplashViewController.m */; };
 		2D47AD4617921513003D5D8B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD4517921513003D5D8B /* SenTestingKit.framework */; };
 		2D47AD4717921513003D5D8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD1E17921513003D5D8B /* UIKit.framework */; };
@@ -74,6 +77,8 @@
 		2D29E78417C02718004BB03C /* ApplyNow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ApplyNow.storyboard; path = "Apply Now/ApplyNow.storyboard"; sourceTree = "<group>"; };
 		2D29E78717C02724004BB03C /* ApplyNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplyNowViewController.h; path = "Apply Now/ApplyNowViewController.h"; sourceTree = "<group>"; };
 		2D29E78817C02724004BB03C /* ApplyNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplyNowViewController.m; path = "Apply Now/ApplyNowViewController.m"; sourceTree = "<group>"; };
+		2D29E78C17C02A1E004BB03C /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = "Splash Screen/SplashScreen.storyboard"; sourceTree = "<group>"; };
+		2D29E78F17C02AED004BB03C /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainMenu.storyboard; path = "Main Menu/MainMenu.storyboard"; sourceTree = "<group>"; };
 		2D47AD1B17921513003D5D8B /* ViewBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D47AD1E17921513003D5D8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D47AD2017921513003D5D8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,7 +92,6 @@
 		2D47AD3017921513003D5D8B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2D47AD3217921513003D5D8B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2D47AD3417921513003D5D8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2D47AD3717921513003D5D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		2D47AD3C17921513003D5D8B /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = "Splash Screen/SplashViewController.h"; sourceTree = "<group>"; };
 		2D47AD3D17921513003D5D8B /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = "Splash Screen/SplashViewController.m"; sourceTree = "<group>"; };
 		2D47AD4417921513003D5D8B /* ViewBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +101,8 @@
 		2D47AD5117921513003D5D8B /* ViewBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewBookTests.h; sourceTree = "<group>"; };
 		2D47AD5217921513003D5D8B /* ViewBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewBookTests.m; sourceTree = "<group>"; };
 		2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_White_Logo_Large.png; path = Assets/EmilyCarr_White_Logo_Large.png; sourceTree = "<group>"; };
-		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "Splash Screen/MainMenuViewController.h"; sourceTree = "<group>"; };
-		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "Splash Screen/MainMenuViewController.m"; sourceTree = "<group>"; };
+		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "Main Menu/MainMenuViewController.h"; sourceTree = "<group>"; };
+		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "Main Menu/MainMenuViewController.m"; sourceTree = "<group>"; };
 		2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_Black_Logo_Large.png; path = Assets/EmilyCarr_Black_Logo_Large.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,13 +133,11 @@
 		2D29E76217C01B2B004BB03C /* Splash Screen */ = {
 			isa = PBXGroup;
 			children = (
-				2D47AD3617921513003D5D8B /* MainStoryboard_iPhone.storyboard */,
+				2D29E78C17C02A1E004BB03C /* SplashScreen.storyboard */,
 				2D47AD2D17921513003D5D8B /* AppDelegate.h */,
 				2D47AD2E17921513003D5D8B /* AppDelegate.m */,
 				2D47AD3C17921513003D5D8B /* SplashViewController.h */,
 				2D47AD3D17921513003D5D8B /* SplashViewController.m */,
-				2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */,
-				2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */,
 			);
 			name = "Splash Screen";
 			sourceTree = "<group>";
@@ -190,6 +192,16 @@
 			name = "Apply Now";
 			sourceTree = "<group>";
 		};
+		2D29E78B17C029B1004BB03C /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2D29E78F17C02AED004BB03C /* MainMenu.storyboard */,
+				2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */,
+				2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
 		2D47AD1217921512003D5D8B = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +235,7 @@
 		2D47AD2417921513003D5D8B /* ViewBook */ = {
 			isa = PBXGroup;
 			children = (
+				2D29E78B17C029B1004BB03C /* Main Menu */,
 				2D29E76217C01B2B004BB03C /* Splash Screen */,
 				2D29E76317C01B52004BB03C /* Start Points */,
 				2D29E76417C01B5A004BB03C /* Make Paths */,
@@ -352,7 +365,6 @@
 				2D47AD3117921513003D5D8B /* Default.png in Resources */,
 				2D47AD3317921513003D5D8B /* Default@2x.png in Resources */,
 				2D47AD3517921513003D5D8B /* Default-568h@2x.png in Resources */,
-				2D47AD3817921513003D5D8B /* MainStoryboard_iPhone.storyboard in Resources */,
 				2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */,
 				2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */,
 				2D29E76917C01E35004BB03C /* StartPoints.storyboard in Resources */,
@@ -360,6 +372,8 @@
 				2D29E77717C026D2004BB03C /* BuildNetworks.storyboard in Resources */,
 				2D29E77E17C026F6004BB03C /* CreateFutures.storyboard in Resources */,
 				2D29E78517C02718004BB03C /* ApplyNow.storyboard in Resources */,
+				2D29E78D17C02A1E004BB03C /* SplashScreen.storyboard in Resources */,
+				2D29E79017C02AED004BB03C /* MainMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +387,8 @@
 				2D29E77817C026D2004BB03C /* BuildNetworks.storyboard in Resources */,
 				2D29E77F17C026F6004BB03C /* CreateFutures.storyboard in Resources */,
 				2D29E78617C02718004BB03C /* ApplyNow.storyboard in Resources */,
+				2D29E78E17C02A1E004BB03C /* SplashScreen.storyboard in Resources */,
+				2D29E79117C02AED004BB03C /* MainMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,14 +457,6 @@
 				2D47AD2817921513003D5D8B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2D47AD3617921513003D5D8B /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D47AD3717921513003D5D8B /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		2D47AD4E17921513003D5D8B /* InfoPlist.strings */ = {

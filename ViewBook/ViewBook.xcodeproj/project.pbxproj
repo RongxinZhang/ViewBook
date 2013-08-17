@@ -17,7 +17,6 @@
 		2D47AD3317921513003D5D8B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3217921513003D5D8B /* Default@2x.png */; };
 		2D47AD3517921513003D5D8B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3417921513003D5D8B /* Default-568h@2x.png */; };
 		2D47AD3817921513003D5D8B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3617921513003D5D8B /* MainStoryboard_iPhone.storyboard */; };
-		2D47AD3B17921513003D5D8B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD3917921513003D5D8B /* MainStoryboard_iPad.storyboard */; };
 		2D47AD3E17921513003D5D8B /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD3D17921513003D5D8B /* SplashViewController.m */; };
 		2D47AD4617921513003D5D8B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD4517921513003D5D8B /* SenTestingKit.framework */; };
 		2D47AD4717921513003D5D8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD1E17921513003D5D8B /* UIKit.framework */; };
@@ -48,15 +47,14 @@
 		2D47AD2817921513003D5D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D47AD2A17921513003D5D8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D47AD2C17921513003D5D8B /* ViewBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewBook-Prefix.pch"; sourceTree = "<group>"; };
-		2D47AD2D17921513003D5D8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2D47AD2E17921513003D5D8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D47AD2D17921513003D5D8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Splash Screen/AppDelegate.h"; sourceTree = "<group>"; };
+		2D47AD2E17921513003D5D8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Splash Screen/AppDelegate.m"; sourceTree = "<group>"; };
 		2D47AD3017921513003D5D8B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2D47AD3217921513003D5D8B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2D47AD3417921513003D5D8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2D47AD3717921513003D5D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		2D47AD3A17921513003D5D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		2D47AD3C17921513003D5D8B /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
-		2D47AD3D17921513003D5D8B /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		2D47AD3C17921513003D5D8B /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = "Splash Screen/SplashViewController.h"; sourceTree = "<group>"; };
+		2D47AD3D17921513003D5D8B /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = "Splash Screen/SplashViewController.m"; sourceTree = "<group>"; };
 		2D47AD4417921513003D5D8B /* ViewBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D47AD4517921513003D5D8B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2D47AD4D17921513003D5D8B /* ViewBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewBookTests-Info.plist"; sourceTree = "<group>"; };
@@ -64,8 +62,8 @@
 		2D47AD5117921513003D5D8B /* ViewBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewBookTests.h; sourceTree = "<group>"; };
 		2D47AD5217921513003D5D8B /* ViewBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewBookTests.m; sourceTree = "<group>"; };
 		2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_White_Logo_Large.png; path = Assets/EmilyCarr_White_Logo_Large.png; sourceTree = "<group>"; };
-		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "Splash Screen/MainMenuViewController.h"; sourceTree = "<group>"; };
+		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "Splash Screen/MainMenuViewController.m"; sourceTree = "<group>"; };
 		2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_Black_Logo_Large.png; path = Assets/EmilyCarr_Black_Logo_Large.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +91,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D29E76217C01B2B004BB03C /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2D47AD3617921513003D5D8B /* MainStoryboard_iPhone.storyboard */,
+				2D47AD2D17921513003D5D8B /* AppDelegate.h */,
+				2D47AD2E17921513003D5D8B /* AppDelegate.m */,
+				2D47AD3C17921513003D5D8B /* SplashViewController.h */,
+				2D47AD3D17921513003D5D8B /* SplashViewController.m */,
+				2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */,
+				2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */,
+			);
+			name = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		2D29E76317C01B52004BB03C /* Start Points */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Start Points";
+			sourceTree = "<group>";
+		};
+		2D29E76417C01B5A004BB03C /* Make Paths */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Make Paths";
+			sourceTree = "<group>";
+		};
+		2D29E76517C01B61004BB03C /* Build Networks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Build Networks";
+			sourceTree = "<group>";
+		};
+		2D29E76617C01B6B004BB03C /* Create Futures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Create Futures";
+			sourceTree = "<group>";
+		};
+		2D29E76717C01B72004BB03C /* Apply Now */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Apply Now";
+			sourceTree = "<group>";
+		};
 		2D47AD1217921512003D5D8B = {
 			isa = PBXGroup;
 			children = (
@@ -126,15 +173,13 @@
 		2D47AD2417921513003D5D8B /* ViewBook */ = {
 			isa = PBXGroup;
 			children = (
+				2D29E76217C01B2B004BB03C /* Splash Screen */,
+				2D29E76317C01B52004BB03C /* Start Points */,
+				2D29E76417C01B5A004BB03C /* Make Paths */,
+				2D29E76517C01B61004BB03C /* Build Networks */,
+				2D29E76617C01B6B004BB03C /* Create Futures */,
+				2D29E76717C01B72004BB03C /* Apply Now */,
 				2D47AD5C179216DA003D5D8B /* Assets */,
-				2D47AD2D17921513003D5D8B /* AppDelegate.h */,
-				2D47AD2E17921513003D5D8B /* AppDelegate.m */,
-				2D47AD3617921513003D5D8B /* MainStoryboard_iPhone.storyboard */,
-				2D47AD3917921513003D5D8B /* MainStoryboard_iPad.storyboard */,
-				2D47AD3C17921513003D5D8B /* SplashViewController.h */,
-				2D47AD3D17921513003D5D8B /* SplashViewController.m */,
-				2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */,
-				2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */,
 				2D47AD2517921513003D5D8B /* Supporting Files */,
 			);
 			path = ViewBook;
@@ -258,7 +303,6 @@
 				2D47AD3317921513003D5D8B /* Default@2x.png in Resources */,
 				2D47AD3517921513003D5D8B /* Default-568h@2x.png in Resources */,
 				2D47AD3817921513003D5D8B /* MainStoryboard_iPhone.storyboard in Resources */,
-				2D47AD3B17921513003D5D8B /* MainStoryboard_iPad.storyboard in Resources */,
 				2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */,
 				2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */,
 			);
@@ -337,14 +381,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		2D47AD3917921513003D5D8B /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D47AD3A17921513003D5D8B /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		2D47AD4E17921513003D5D8B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -421,6 +457,7 @@
 				GCC_PREFIX_HEADER = "ViewBook/ViewBook-Prefix.pch";
 				INFOPLIST_FILE = "ViewBook/ViewBook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -432,6 +469,7 @@
 				GCC_PREFIX_HEADER = "ViewBook/ViewBook-Prefix.pch";
 				INFOPLIST_FILE = "ViewBook/ViewBook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

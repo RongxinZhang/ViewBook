@@ -25,6 +25,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PuL-xL-VeN"/>
+                    <connections>
+                        <segue destination="2jB-ec-bmu" kind="modal" identifier="timerDone" id="kv6-op-gDI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>

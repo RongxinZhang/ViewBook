@@ -13,4 +13,16 @@
     NSTimer *timer;
 }
 
+// Buttons
+
+- (IBAction)loadStartPointsStoryboard:(id)sender;
+
+- (IBAction)loadMakePathsStoryboard:(id)sender;
+
+- (IBAction)loadBuildNetworksStoryboard:(id)sender;
+
+- (IBAction)loadCreateFuturesStoryboard:(id)sender;
+
+- (IBAction)loadApplyNowStoryboard:(id)sender;
+
 @end

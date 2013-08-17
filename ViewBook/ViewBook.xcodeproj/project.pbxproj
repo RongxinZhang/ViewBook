@@ -255,9 +255,6 @@
 				2D47AD2717921513003D5D8B /* InfoPlist.strings */,
 				2D47AD2A17921513003D5D8B /* main.m */,
 				2D47AD2C17921513003D5D8B /* ViewBook-Prefix.pch */,
-				2D47AD3017921513003D5D8B /* Default.png */,
-				2D47AD3217921513003D5D8B /* Default@2x.png */,
-				2D47AD3417921513003D5D8B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -284,10 +281,21 @@
 		2D47AD5C179216DA003D5D8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2D61E71017C03011003239C8 /* Launch Images */,
 				2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */,
 				2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		2D61E71017C03011003239C8 /* Launch Images */ = {
+			isa = PBXGroup;
+			children = (
+				2D47AD3017921513003D5D8B /* Default.png */,
+				2D47AD3217921513003D5D8B /* Default@2x.png */,
+				2D47AD3417921513003D5D8B /* Default-568h@2x.png */,
+			);
+			name = "Launch Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -89,9 +89,9 @@
 		2D47AD2C17921513003D5D8B /* ViewBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewBook-Prefix.pch"; sourceTree = "<group>"; };
 		2D47AD2D17921513003D5D8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Splash Screen/AppDelegate.h"; sourceTree = "<group>"; };
 		2D47AD2E17921513003D5D8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Splash Screen/AppDelegate.m"; sourceTree = "<group>"; };
-		2D47AD3017921513003D5D8B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		2D47AD3217921513003D5D8B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		2D47AD3417921513003D5D8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2D47AD3017921513003D5D8B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Assets/Launch Images/Default.png"; sourceTree = "<group>"; };
+		2D47AD3217921513003D5D8B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Assets/Launch Images/Default@2x.png"; sourceTree = "<group>"; };
+		2D47AD3417921513003D5D8B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Assets/Launch Images/Default-568h@2x.png"; sourceTree = "<group>"; };
 		2D47AD3C17921513003D5D8B /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = "Splash Screen/SplashViewController.h"; sourceTree = "<group>"; };
 		2D47AD3D17921513003D5D8B /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SplashViewController.m; path = "Splash Screen/SplashViewController.m"; sourceTree = "<group>"; };
 		2D47AD4417921513003D5D8B /* ViewBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };

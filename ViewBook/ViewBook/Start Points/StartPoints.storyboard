@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bAd-Yu-hHs" kind="push" id="2D1-tZ-xhb"/>
+                                    <segue destination="Pwp-gV-SQ2" kind="push" id="4db-sQ-IVq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkK-w4-dIt">
@@ -69,38 +69,79 @@
             </objects>
             <point key="canvasLocation" x="-130" y="72"/>
         </scene>
-        <!--Photo Galleries-->
-        <scene sceneID="r9l-oz-Q1g">
+        <!--Studios And Labs-->
+        <scene sceneID="vaU-W1-vgL">
             <objects>
-                <viewController id="bAd-Yu-hHs" userLabel="Photo Galleries" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="t4z-SX-pAD">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                <viewController id="Ue7-Xb-H76" userLabel="Studios And Labs" customClass="StudiosSlideshowViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nu1-pi-DoC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="z0y-yP-A1Y">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="qgI-Yu-KeH"/>
-                                    <constraint firstAttribute="width" constant="280" id="yHW-gt-PaV"/>
-                                </constraints>
-                                <string key="text">Photo Galleries
-3 x 5 Images each
-Autoscroll or Swipeable</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="r42-X0-Ah8"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="z0y-yP-A1Y" firstAttribute="top" secondItem="t4z-SX-pAD" secondAttribute="top" constant="203" id="B7Z-su-ey0"/>
-                            <constraint firstItem="z0y-yP-A1Y" firstAttribute="leading" secondItem="t4z-SX-pAD" secondAttribute="leading" constant="29" id="qn1-IJ-vso"/>
+                            <constraint firstItem="r42-X0-Ah8" firstAttribute="top" secondItem="Nu1-pi-DoC" secondAttribute="top" type="default" id="8iV-cd-flY"/>
+                            <constraint firstItem="r42-X0-Ah8" firstAttribute="bottom" secondItem="Nu1-pi-DoC" secondAttribute="bottom" type="default" id="M8l-Gy-WvS"/>
+                            <constraint firstItem="r42-X0-Ah8" firstAttribute="trailing" secondItem="Nu1-pi-DoC" secondAttribute="trailing" type="default" id="MrV-bo-bqD"/>
+                            <constraint firstItem="r42-X0-Ah8" firstAttribute="leading" secondItem="Nu1-pi-DoC" secondAttribute="leading" type="default" id="mr9-b4-cWH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9PK-i9-iKV"/>
+                    <tabBarItem key="tabBarItem" title="Studios" id="kwk-6t-48U"/>
+                    <connections>
+                        <outlet property="slideshow" destination="r42-X0-Ah8" id="JMy-ER-ioh"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GJ0-bU-nJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M20-Cl-QtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="618" y="-281"/>
+            <point key="canvasLocation" x="1152" y="72"/>
+        </scene>
+        <!--Campus-->
+        <scene sceneID="5tM-go-juB">
+            <objects>
+                <viewController id="G9d-7P-xPl" userLabel="Campus" customClass="CampusSlideshowViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWw-Fz-bvL">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="qLR-T1-biL"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qLR-T1-biL" firstAttribute="bottom" secondItem="CWw-Fz-bvL" secondAttribute="bottom" type="default" id="Btt-4b-c9f"/>
+                            <constraint firstItem="qLR-T1-biL" firstAttribute="leading" secondItem="CWw-Fz-bvL" secondAttribute="leading" type="default" id="CNQ-CX-vX9"/>
+                            <constraint firstItem="qLR-T1-biL" firstAttribute="top" secondItem="CWw-Fz-bvL" secondAttribute="top" type="default" id="FwQ-js-90L"/>
+                            <constraint firstItem="qLR-T1-biL" firstAttribute="trailing" secondItem="CWw-Fz-bvL" secondAttribute="trailing" type="default" id="tQH-bw-nxn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Campus" id="e06-6E-ABN" userLabel="Campus"/>
+                    <connections>
+                        <outlet property="slideshow" destination="qLR-T1-biL" id="knS-e0-Hai"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HvM-2J-jSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="-581"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="62d-eV-QPC">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="Pwp-gV-SQ2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ivv-V4-npJ"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Cjt-bd-1oP">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G9d-7P-xPl" kind="relationship" relationship="viewControllers" id="CDm-qx-64y"/>
+                        <segue destination="Ue7-Xb-H76" kind="relationship" relationship="viewControllers" id="Uqd-S8-MIz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvX-iY-7aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="-254"/>
         </scene>
         <!--Video Galleries-->
         <scene sceneID="KSi-7v-b4w">
@@ -155,6 +196,12 @@ Embedabble Vimeo</string>
         </scene>
     </scenes>
     <classes>
+        <class className="CampusSlideshowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CampusSlideshowViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
@@ -162,6 +209,12 @@ Embedabble Vimeo</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StartPointsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="loadMainMenuStoryboard:"/>
+            </relationships>
+        </class>
+        <class className="StudiosSlideshowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StudiosSlideshowViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>

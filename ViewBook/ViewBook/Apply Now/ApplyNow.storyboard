@@ -88,7 +88,7 @@
         <!--Application Directions-->
         <scene sceneID="BzS-h8-WmW">
             <objects>
-                <viewController id="d8W-8s-Opf" userLabel="Application Directions" sceneMemberID="viewController">
+                <viewController id="d8W-8s-Opf" userLabel="Application Directions" customClass="ApplicationDirectionsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ud3-v6-H6t">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -120,7 +120,7 @@ Basic text</string>
         <!--Contact ECUAD-->
         <scene sceneID="cff-SY-jN1">
             <objects>
-                <viewController id="XNY-tC-eCm" userLabel="Contact ECUAD" sceneMemberID="viewController">
+                <viewController id="XNY-tC-eCm" userLabel="Contact ECUAD" customClass="ContactECUADViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iiE-58-tP1">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -152,7 +152,7 @@ Email Form</string>
         <!--Portfolio Requirements-->
         <scene sceneID="SUr-t5-aBr">
             <objects>
-                <viewController id="Tb6-2S-Oau" userLabel="Portfolio Requirements" sceneMemberID="viewController">
+                <viewController id="Tb6-2S-Oau" userLabel="Portfolio Requirements" customClass="PortfolioRequirementsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87j-2J-WYs">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -167,15 +167,29 @@ Basic Points</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="text here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-bB-Klo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="aC5-v9-Md2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7W5-Zl-m96" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3gt-qM-xyt"/>
+                            <constraint firstItem="yHf-bB-Klo" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7qY-fl-cU1"/>
                             <constraint firstAttribute="trailing" secondItem="7W5-Zl-m96" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zql-qP-PQ0"/>
-                            <constraint firstItem="7W5-Zl-m96" firstAttribute="centerY" secondItem="87j-2J-WYs" secondAttribute="centerY" type="default" id="gHx-5u-MTe"/>
+                            <constraint firstItem="yHf-bB-Klo" firstAttribute="top" secondItem="7W5-Zl-m96" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ecd-gS-E3Y"/>
+                            <constraint firstItem="7W5-Zl-m96" firstAttribute="top" secondItem="87j-2J-WYs" secondAttribute="top" constant="20" symbolic="YES" type="default" id="i3M-v5-ykm"/>
+                            <constraint firstAttribute="trailing" secondItem="yHf-bB-Klo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ju6-q2-sqX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xgy-Ix-GEo"/>
+                    <connections>
+                        <outlet property="mainParagraph" destination="yHf-bB-Klo" id="sf5-u3-nYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7e-6z-uvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,14 +215,26 @@ Basic Points</string>
         </scene>
     </scenes>
     <classes>
+        <class className="ApplicationDirectionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ApplicationDirectionsViewController.h"/>
+        </class>
         <class className="ApplyNowViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ApplyNowViewController.h"/>
             <relationships>
                 <relationship kind="action" name="loadMainMenuStoryboard:"/>
             </relationships>
         </class>
+        <class className="ContactECUADViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactECUADViewController.h"/>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PortfolioRequirementsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PortfolioRequirementsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainParagraph" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

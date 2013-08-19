@@ -49,6 +49,17 @@
 		2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */; };
 		2D47AD6117921B5D003D5D8B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */; };
 		2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */; };
+		2DCCA08E17C1BBCD00B81172 /* PortfolioRequirementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */; };
+		2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */; };
+		2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */; };
+		2DCCA09717C1BCC000B81172 /* SocialMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */; };
+		2DCCA09817C1BCC000B81172 /* SocialMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */; };
+		2DCCA09B17C1BD0500B81172 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */; };
+		2DCCA09C17C1BD0500B81172 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */; };
+		2DCCA09F17C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */; };
+		2DCCA0A017C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */; };
+		2DCCA0A317C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */; };
+		2DCCA0A417C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +115,20 @@
 		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "Main Menu/MainMenuViewController.h"; sourceTree = "<group>"; };
 		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "Main Menu/MainMenuViewController.m"; sourceTree = "<group>"; };
 		2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_Black_Logo_Large.png; path = Assets/EmilyCarr_Black_Logo_Large.png; sourceTree = "<group>"; };
+		2DCCA08C17C1BBCD00B81172 /* PortfolioRequirementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortfolioRequirementsViewController.h; path = "Apply Now/PortfolioRequirementsViewController.h"; sourceTree = "<group>"; };
+		2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortfolioRequirementsViewController.m; path = "Apply Now/PortfolioRequirementsViewController.m"; sourceTree = "<group>"; };
+		2DCCA08F17C1BBED00B81172 /* ApplicationDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDirectionsViewController.h; path = "Apply Now/ApplicationDirectionsViewController.h"; sourceTree = "<group>"; };
+		2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationDirectionsViewController.m; path = "Apply Now/ApplicationDirectionsViewController.m"; sourceTree = "<group>"; };
+		2DCCA09217C1BC0100B81172 /* ContactECUADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactECUADViewController.h; path = "Apply Now/ContactECUADViewController.h"; sourceTree = "<group>"; };
+		2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactECUADViewController.m; path = "Apply Now/ContactECUADViewController.m"; sourceTree = "<group>"; };
+		2DCCA09517C1BCC000B81172 /* SocialMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialMediaViewController.h; path = "Build Networks/SocialMediaViewController.h"; sourceTree = "<group>"; };
+		2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialMediaViewController.m; path = "Build Networks/SocialMediaViewController.m"; sourceTree = "<group>"; };
+		2DCCA09917C1BD0500B81172 /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommunityViewController.h; path = "Build Networks/CommunityViewController.h"; sourceTree = "<group>"; };
+		2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommunityViewController.m; path = "Build Networks/CommunityViewController.m"; sourceTree = "<group>"; };
+		2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResearchIndustryViewController.h; path = "Build Networks/ResearchIndustryViewController.h"; sourceTree = "<group>"; };
+		2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResearchIndustryViewController.m; path = "Build Networks/ResearchIndustryViewController.m"; sourceTree = "<group>"; };
+		2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecruitmentCalendarViewController.h; path = "Build Networks/RecruitmentCalendarViewController.h"; sourceTree = "<group>"; };
+		2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecruitmentCalendarViewController.m; path = "Build Networks/RecruitmentCalendarViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +193,14 @@
 				2D29E77617C026D2004BB03C /* BuildNetworks.storyboard */,
 				2D29E77917C026E4004BB03C /* BuildNetworksViewController.h */,
 				2D29E77A17C026E4004BB03C /* BuildNetworksViewController.m */,
+				2DCCA09517C1BCC000B81172 /* SocialMediaViewController.h */,
+				2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */,
+				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
+				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
+				2DCCA09917C1BD0500B81172 /* CommunityViewController.h */,
+				2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */,
+				2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */,
+				2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */,
 			);
 			name = "Build Networks";
 			sourceTree = "<group>";
@@ -188,6 +221,12 @@
 				2D29E78417C02718004BB03C /* ApplyNow.storyboard */,
 				2D29E78717C02724004BB03C /* ApplyNowViewController.h */,
 				2D29E78817C02724004BB03C /* ApplyNowViewController.m */,
+				2DCCA08C17C1BBCD00B81172 /* PortfolioRequirementsViewController.h */,
+				2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */,
+				2DCCA08F17C1BBED00B81172 /* ApplicationDirectionsViewController.h */,
+				2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */,
+				2DCCA09217C1BC0100B81172 /* ContactECUADViewController.h */,
+				2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */,
 			);
 			name = "Apply Now";
 			sourceTree = "<group>";
@@ -432,6 +471,13 @@
 				2D29E77B17C026E4004BB03C /* BuildNetworksViewController.m in Sources */,
 				2D29E78217C02705004BB03C /* CreateFuturesViewController.m in Sources */,
 				2D29E78917C02724004BB03C /* ApplyNowViewController.m in Sources */,
+				2DCCA08E17C1BBCD00B81172 /* PortfolioRequirementsViewController.m in Sources */,
+				2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */,
+				2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */,
+				2DCCA09717C1BCC000B81172 /* SocialMediaViewController.m in Sources */,
+				2DCCA09B17C1BD0500B81172 /* CommunityViewController.m in Sources */,
+				2DCCA09F17C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */,
+				2DCCA0A317C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +491,10 @@
 				2D29E77C17C026E4004BB03C /* BuildNetworksViewController.m in Sources */,
 				2D29E78317C02705004BB03C /* CreateFuturesViewController.m in Sources */,
 				2D29E78A17C02724004BB03C /* ApplyNowViewController.m in Sources */,
+				2DCCA09817C1BCC000B81172 /* SocialMediaViewController.m in Sources */,
+				2DCCA09C17C1BD0500B81172 /* CommunityViewController.m in Sources */,
+				2DCCA0A017C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */,
+				2DCCA0A417C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

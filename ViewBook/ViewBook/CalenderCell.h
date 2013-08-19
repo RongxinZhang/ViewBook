@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CalenderCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *saveDateButton;
 
 @end

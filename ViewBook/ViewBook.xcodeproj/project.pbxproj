@@ -100,6 +100,8 @@
 		2DCCA0AB17C1C44F00B81172 /* ApplyNowScreenNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */; };
 		2DCCA0AF17C1C5BB00B81172 /* ApplicationDirections.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCA0AE17C1C5BB00B81172 /* ApplicationDirections.txt */; };
 		2DCCA0B017C1C5BB00B81172 /* ApplicationDirections.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCA0AE17C1C5BB00B81172 /* ApplicationDirections.txt */; };
+		7964AB9717C26BB8005C173D /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7964AB9617C26BB8005C173D /* CalenderCell.m */; };
+		7964AB9917C2CCD7005C173D /* orangeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7964AB9817C2CCD7005C173D /* orangeButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +193,9 @@
 		2DCCA0A617C1C05700B81172 /* PortfolioRequirements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PortfolioRequirements.txt; path = "Assets/Text Copy/PortfolioRequirements.txt"; sourceTree = "<group>"; };
 		2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApplyNowScreenNames.plist; path = Assets/Plists/ApplyNowScreenNames.plist; sourceTree = "<group>"; };
 		2DCCA0AE17C1C5BB00B81172 /* ApplicationDirections.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ApplicationDirections.txt; path = "Assets/Text Copy/ApplicationDirections.txt"; sourceTree = "<group>"; };
+		7964AB9517C26BB8005C173D /* CalenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderCell.h; sourceTree = "<group>"; };
+		7964AB9617C26BB8005C173D /* CalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderCell.m; sourceTree = "<group>"; };
+		7964AB9817C2CCD7005C173D /* orangeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orangeButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,12 +262,11 @@
 			isa = PBXGroup;
 			children = (
 				2D29E77617C026D2004BB03C /* BuildNetworks.storyboard */,
+				7964AB9417C26B8F005C173D /* Recruitment Calender */,
 				2D29E77917C026E4004BB03C /* BuildNetworksViewController.h */,
 				2D29E77A17C026E4004BB03C /* BuildNetworksViewController.m */,
 				2DCCA09517C1BCC000B81172 /* SocialMediaViewController.h */,
 				2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */,
-				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
-				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
 				2DCCA09917C1BD0500B81172 /* CommunityViewController.h */,
 				2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */,
 				2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */,
@@ -357,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				2D47AD2617921513003D5D8B /* ViewBook-Info.plist */,
+				7964AB9817C2CCD7005C173D /* orangeButton@2x.png */,
 				2D47AD2717921513003D5D8B /* InfoPlist.strings */,
 				2D47AD2A17921513003D5D8B /* main.m */,
 				2D47AD2C17921513003D5D8B /* ViewBook-Prefix.pch */,
@@ -479,6 +484,17 @@
 			name = Plists;
 			sourceTree = "<group>";
 		};
+		7964AB9417C26B8F005C173D /* Recruitment Calender */ = {
+			isa = PBXGroup;
+			children = (
+				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
+				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
+				7964AB9517C26BB8005C173D /* CalenderCell.h */,
+				7964AB9617C26BB8005C173D /* CalenderCell.m */,
+			);
+			name = "Recruitment Calender";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -581,6 +597,7 @@
 				2D9087AD17C1F96D009DDDEB /* studio_slideshow_02.jpg in Resources */,
 				2D9087AF17C1F96D009DDDEB /* studio_slideshow_03.jpg in Resources */,
 				2D9087B117C1F96D009DDDEB /* studio_slideshow_04.jpg in Resources */,
+				7964AB9917C2CCD7005C173D /* orangeButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +675,7 @@
 				2DCCA0A317C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */,
 				2D9087B517C1FC59009DDDEB /* StudiosSlideshowViewController.m in Sources */,
 				2D9087B917C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */,
+				7964AB9717C26BB8005C173D /* CalenderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

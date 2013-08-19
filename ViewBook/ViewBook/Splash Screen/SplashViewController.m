@@ -22,8 +22,9 @@
     [super viewDidLoad];
     
     // Timer
+    // RX edtied timer to make loading faster
     if(self.timer == nil) {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(switchView) userInfo:nil repeats:NO];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(switchView) userInfo:nil repeats:NO];
     }
     
 }

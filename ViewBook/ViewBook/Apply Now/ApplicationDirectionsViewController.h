@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ApplicationDirectionsViewController : UIViewController
+@interface ApplicationDirectionsViewController : UIViewController {
+    
+    // Screen Index
+    NSInteger screenIndex;
+    
+}
+
+// Page Title
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+
+// Main Paragraph
+@property (weak, nonatomic) IBOutlet UILabel *mainParagraph;
+
+
 
 @end

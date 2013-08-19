@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContactECUADViewController : UIViewController
+@interface ContactECUADViewController : UIViewController {
+    
+    // Screen Index
+    NSInteger screenIndex;
+    
+}
+
+// Page Title
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+
 
 @end

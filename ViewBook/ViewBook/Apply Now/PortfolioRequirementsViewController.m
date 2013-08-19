@@ -31,7 +31,12 @@
 	// Do any additional setup after loading the view.
     
     // Load Text File
+    NSString *pathToFile = [[NSBundle mainBundle] pathForResource:@"PortfolioRequirements" ofType:@"txt"];
+    NSString *fileContent = [NSString stringWithContentsOfFile:pathToFile encoding:NSUTF8StringEncoding error:NULL];
     
+    // Set Text File To Label
+    mainParagraph.numberOfLines = 10;
+    mainParagraph.text = fileContent;
     
 }
 

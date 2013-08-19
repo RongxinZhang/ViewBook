@@ -60,6 +60,8 @@
 		2DCCA0A017C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */; };
 		2DCCA0A317C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */; };
 		2DCCA0A417C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */; };
+		2DCCA0A717C1C05700B81172 /* PortfolioRequirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A617C1C05700B81172 /* PortfolioRequirements.txt */; };
+		2DCCA0A817C1C05700B81172 /* PortfolioRequirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A617C1C05700B81172 /* PortfolioRequirements.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,7 @@
 		2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResearchIndustryViewController.m; path = "Build Networks/ResearchIndustryViewController.m"; sourceTree = "<group>"; };
 		2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecruitmentCalendarViewController.h; path = "Build Networks/RecruitmentCalendarViewController.h"; sourceTree = "<group>"; };
 		2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecruitmentCalendarViewController.m; path = "Build Networks/RecruitmentCalendarViewController.m"; sourceTree = "<group>"; };
+		2DCCA0A617C1C05700B81172 /* PortfolioRequirements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PortfolioRequirements.txt; path = "Assets/Text Copy/PortfolioRequirements.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +323,7 @@
 		2D47AD5C179216DA003D5D8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2DCCA0A517C1C04400B81172 /* Text Copy */,
 				2D61E71017C03011003239C8 /* Launch Images */,
 				2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */,
 				2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */,
@@ -335,6 +339,14 @@
 				2D47AD3417921513003D5D8B /* Default-568h@2x.png */,
 			);
 			name = "Launch Images";
+			sourceTree = "<group>";
+		};
+		2DCCA0A517C1C04400B81172 /* Text Copy */ = {
+			isa = PBXGroup;
+			children = (
+				2DCCA0A617C1C05700B81172 /* PortfolioRequirements.txt */,
+			);
+			name = "Text Copy";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +433,7 @@
 				2D29E78517C02718004BB03C /* ApplyNow.storyboard in Resources */,
 				2D29E78D17C02A1E004BB03C /* SplashScreen.storyboard in Resources */,
 				2D29E79017C02AED004BB03C /* MainMenu.storyboard in Resources */,
+				2DCCA0A717C1C05700B81172 /* PortfolioRequirements.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +449,7 @@
 				2D29E78617C02718004BB03C /* ApplyNow.storyboard in Resources */,
 				2D29E78E17C02A1E004BB03C /* SplashScreen.storyboard in Resources */,
 				2D29E79117C02AED004BB03C /* MainMenu.storyboard in Resources */,
+				2DCCA0A817C1C05700B81172 /* PortfolioRequirements.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

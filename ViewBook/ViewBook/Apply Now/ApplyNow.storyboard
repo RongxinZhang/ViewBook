@@ -157,21 +157,17 @@ Email Form</string>
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-Zl-m96">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-Zl-m96">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="6tC-Xu-cD7"/>
                                 </constraints>
                                 <string key="text">Portfolio Requirements
-Basic Points</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="text here" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-bB-Klo">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="aC5-v9-Md2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="text here" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-bB-Klo">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -181,6 +177,7 @@ Basic Points</string>
                             <constraint firstItem="7W5-Zl-m96" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3gt-qM-xyt"/>
                             <constraint firstItem="yHf-bB-Klo" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7qY-fl-cU1"/>
                             <constraint firstAttribute="trailing" secondItem="7W5-Zl-m96" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zql-qP-PQ0"/>
+                            <constraint firstAttribute="bottom" secondItem="yHf-bB-Klo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="d1h-ti-1x7"/>
                             <constraint firstItem="yHf-bB-Klo" firstAttribute="top" secondItem="7W5-Zl-m96" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ecd-gS-E3Y"/>
                             <constraint firstItem="7W5-Zl-m96" firstAttribute="top" secondItem="87j-2J-WYs" secondAttribute="top" constant="20" symbolic="YES" type="default" id="i3M-v5-ykm"/>
                             <constraint firstAttribute="trailing" secondItem="yHf-bB-Klo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ju6-q2-sqX"/>

@@ -12,17 +12,6 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="sgf-2o-Hmf">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="KtG-vp-w3t"/>
-                                </constraints>
-                                <string key="text">Alumni Slideshow
-5 Images
-Autoscroll or Swipeable</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZF-8t-5w5">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="back">
@@ -36,16 +25,24 @@ Autoscroll or Swipeable</string>
                                     <action selector="loadMainMenuStoryboard:" destination="gdR-tM-Zsy" eventType="touchUpInside" id="ZVh-Tw-aJb"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utJ-5d-Q3L">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="PQv-cG-lQX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="sgf-2o-Hmf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7G2-zw-lwG"/>
+                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" constant="44" id="0yx-9j-suV"/>
+                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="trailing" secondItem="wvR-DB-qaq" secondAttribute="trailing" type="default" id="Ae9-vf-iiB"/>
                             <constraint firstItem="HZF-8t-5w5" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" type="default" id="OL7-HX-qlD"/>
-                            <constraint firstItem="sgf-2o-Hmf" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" constant="225" id="dla-ke-FR2"/>
-                            <constraint firstItem="sgf-2o-Hmf" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lQh-O3-CNB"/>
-                            <constraint firstItem="HZF-8t-5w5" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" type="default" id="mX1-0M-SgY"/>
+                            <constraint firstItem="HZF-8t-5w5" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" constant="-1" id="YAu-If-sVV"/>
+                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" type="default" id="j3o-Nq-Cfp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="slideshow" destination="utJ-5d-Q3L" id="uQ7-b1-llA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPz-l8-HPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,6 +54,7 @@ Autoscroll or Swipeable</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateFuturesViewController.h"/>
             <relationships>
                 <relationship kind="action" name="loadMainMenuStoryboard:"/>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

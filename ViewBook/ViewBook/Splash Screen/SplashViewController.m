@@ -30,7 +30,6 @@
 
 // Switch View
 - (void) switchView {
-    NSLog(@"TIMES UP !!");
 
     // Segue
     //[self performSegueWithIdentifier:@"timerDone" sender:self];

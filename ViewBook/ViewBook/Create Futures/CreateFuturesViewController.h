@@ -17,5 +17,8 @@
 
 - (IBAction)loadMainMenuStoryboard:(id)sender;
 
+// Image View
+@property (weak, nonatomic) IBOutlet UIImageView *slideshow;
+
 
 @end

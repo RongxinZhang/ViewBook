@@ -88,30 +88,43 @@
         <!--Application Directions-->
         <scene sceneID="BzS-h8-WmW">
             <objects>
-                <viewController id="d8W-8s-Opf" userLabel="Application Directions" sceneMemberID="viewController">
+                <viewController id="d8W-8s-Opf" userLabel="Application Directions" customClass="ApplicationDirectionsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ud3-v6-H6t">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="tei-e7-4LQ">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="DPl-b3-Apk"/>
-                                </constraints>
-                                <string key="text">Application Directions
-Basic text</string>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="tei-e7-4LQ">
+                                <string key="text">Page Title
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="CUB-L2-IrC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="388" id="g19-ZA-Oe5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CUB-L2-IrC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="4sm-r4-gS1"/>
+                            <constraint firstItem="CUB-L2-IrC" firstAttribute="top" secondItem="tei-e7-4LQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9vi-Cs-xge"/>
+                            <constraint firstItem="tei-e7-4LQ" firstAttribute="top" secondItem="Ud3-v6-H6t" secondAttribute="top" constant="20" symbolic="YES" type="default" id="RaT-rT-iUw"/>
+                            <constraint firstItem="CUB-L2-IrC" firstAttribute="leading" secondItem="Ud3-v6-H6t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="U7H-cK-X3O"/>
                             <constraint firstAttribute="trailing" secondItem="tei-e7-4LQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gjH-Al-ePp"/>
+                            <constraint firstAttribute="trailing" secondItem="CUB-L2-IrC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lAJ-Wz-nnx"/>
                             <constraint firstItem="tei-e7-4LQ" firstAttribute="leading" secondItem="Ud3-v6-H6t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xUo-CY-NoJ"/>
-                            <constraint firstItem="tei-e7-4LQ" firstAttribute="centerY" secondItem="Ud3-v6-H6t" secondAttribute="centerY" type="default" id="z8h-Y5-nYd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F7o-m7-Qsv"/>
+                    <connections>
+                        <outlet property="mainParagraph" destination="CUB-L2-IrC" id="I3b-Qb-Fn0"/>
+                        <outlet property="pageTitle" destination="tei-e7-4LQ" id="2GQ-zC-Pbr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqd-XJ-f1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,17 +133,15 @@ Basic text</string>
         <!--Contact ECUAD-->
         <scene sceneID="cff-SY-jN1">
             <objects>
-                <viewController id="XNY-tC-eCm" userLabel="Contact ECUAD" sceneMemberID="viewController">
+                <viewController id="XNY-tC-eCm" userLabel="Contact ECUAD" customClass="ContactECUADViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iiE-58-tP1">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="QgU-vl-OvG">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Page Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="QgU-vl-OvG">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="WOH-P8-x8n"/>
                                 </constraints>
-                                <string key="text">Contact ECUAD
-Email Form</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -139,11 +150,14 @@ Email Form</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QgU-vl-OvG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3Aa-IK-6xt"/>
-                            <constraint firstItem="QgU-vl-OvG" firstAttribute="top" secondItem="iiE-58-tP1" secondAttribute="top" constant="199" id="GlN-0f-OL2"/>
                             <constraint firstItem="QgU-vl-OvG" firstAttribute="leading" secondItem="iiE-58-tP1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="MbU-sa-1mF"/>
+                            <constraint firstItem="QgU-vl-OvG" firstAttribute="top" secondItem="iiE-58-tP1" secondAttribute="top" constant="20" symbolic="YES" type="default" id="QRg-o3-L7n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xi6-C8-HiH"/>
+                    <connections>
+                        <outlet property="pageTitle" destination="QgU-vl-OvG" id="X15-YD-1Ds"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHp-RO-HCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,18 +166,20 @@ Email Form</string>
         <!--Portfolio Requirements-->
         <scene sceneID="SUr-t5-aBr">
             <objects>
-                <viewController id="Tb6-2S-Oau" userLabel="Portfolio Requirements" sceneMemberID="viewController">
+                <viewController id="Tb6-2S-Oau" userLabel="Portfolio Requirements" customClass="PortfolioRequirementsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87j-2J-WYs">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-Zl-m96">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Page Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-Zl-m96">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="6tC-Xu-cD7"/>
                                 </constraints>
-                                <string key="text">Portfolio Requirements
-Basic Points</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-bB-Klo">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -171,11 +187,19 @@ Basic Points</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7W5-Zl-m96" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3gt-qM-xyt"/>
+                            <constraint firstItem="yHf-bB-Klo" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7qY-fl-cU1"/>
                             <constraint firstAttribute="trailing" secondItem="7W5-Zl-m96" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zql-qP-PQ0"/>
-                            <constraint firstItem="7W5-Zl-m96" firstAttribute="centerY" secondItem="87j-2J-WYs" secondAttribute="centerY" type="default" id="gHx-5u-MTe"/>
+                            <constraint firstAttribute="bottom" secondItem="yHf-bB-Klo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="d1h-ti-1x7"/>
+                            <constraint firstItem="yHf-bB-Klo" firstAttribute="top" secondItem="7W5-Zl-m96" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ecd-gS-E3Y"/>
+                            <constraint firstItem="7W5-Zl-m96" firstAttribute="top" secondItem="87j-2J-WYs" secondAttribute="top" constant="20" symbolic="YES" type="default" id="i3M-v5-ykm"/>
+                            <constraint firstAttribute="trailing" secondItem="yHf-bB-Klo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ju6-q2-sqX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xgy-Ix-GEo"/>
+                    <connections>
+                        <outlet property="mainParagraph" destination="yHf-bB-Klo" id="sf5-u3-nYE"/>
+                        <outlet property="pageTitle" destination="7W5-Zl-m96" id="jN5-IY-bTL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7e-6z-uvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,14 +225,34 @@ Basic Points</string>
         </scene>
     </scenes>
     <classes>
+        <class className="ApplicationDirectionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ApplicationDirectionsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainParagraph" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="ApplyNowViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ApplyNowViewController.h"/>
             <relationships>
                 <relationship kind="action" name="loadMainMenuStoryboard:"/>
             </relationships>
         </class>
+        <class className="ContactECUADViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactECUADViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PortfolioRequirementsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PortfolioRequirementsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainParagraph" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

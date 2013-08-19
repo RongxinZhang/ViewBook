@@ -32,11 +32,11 @@
     
     // Load Images
     NSArray *infographics = [NSArray arrayWithObjects:
-                                [UIImage imageNamed:@"alumni_survey_pg1"],
-                                [UIImage imageNamed:@"alumni_survey_pg2"],
-                                [UIImage imageNamed:@"alumni_survey_pg3"],
-                                [UIImage imageNamed:@"alumni_survey_pg4"],
-                                [UIImage imageNamed:@"alumni_survey_pg5"],
+                                [UIImage imageNamed:@"alumni_survey_01"],
+                                [UIImage imageNamed:@"alumni_survey_02"],
+                                [UIImage imageNamed:@"alumni_survey_03"],
+                                [UIImage imageNamed:@"alumni_survey_04"],
+                                [UIImage imageNamed:@"alumni_survey_05"],
                                 nil];
     
     // Set ImageView

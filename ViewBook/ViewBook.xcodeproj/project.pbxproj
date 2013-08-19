@@ -49,16 +49,28 @@
 		2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */; };
 		2D47AD6117921B5D003D5D8B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */; };
 		2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */; };
-		2D90877917C1EA5C009DDDEB /* alumni_survey_pg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877417C1EA5C009DDDEB /* alumni_survey_pg1.png */; };
-		2D90877A17C1EA5C009DDDEB /* alumni_survey_pg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877417C1EA5C009DDDEB /* alumni_survey_pg1.png */; };
-		2D90877B17C1EA5C009DDDEB /* alumni_survey_pg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877517C1EA5C009DDDEB /* alumni_survey_pg2.png */; };
-		2D90877C17C1EA5C009DDDEB /* alumni_survey_pg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877517C1EA5C009DDDEB /* alumni_survey_pg2.png */; };
-		2D90877D17C1EA5C009DDDEB /* alumni_survey_pg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877617C1EA5C009DDDEB /* alumni_survey_pg3.png */; };
-		2D90877E17C1EA5C009DDDEB /* alumni_survey_pg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877617C1EA5C009DDDEB /* alumni_survey_pg3.png */; };
-		2D90877F17C1EA5C009DDDEB /* alumni_survey_pg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877717C1EA5C009DDDEB /* alumni_survey_pg4.png */; };
-		2D90878017C1EA5C009DDDEB /* alumni_survey_pg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877717C1EA5C009DDDEB /* alumni_survey_pg4.png */; };
-		2D90878117C1EA5C009DDDEB /* alumni_survey_pg5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877817C1EA5C009DDDEB /* alumni_survey_pg5.png */; };
-		2D90878217C1EA5C009DDDEB /* alumni_survey_pg5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90877817C1EA5C009DDDEB /* alumni_survey_pg5.png */; };
+		2D90878817C1F645009DDDEB /* alumni_survey_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878317C1F645009DDDEB /* alumni_survey_01.png */; };
+		2D90878917C1F645009DDDEB /* alumni_survey_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878317C1F645009DDDEB /* alumni_survey_01.png */; };
+		2D90878A17C1F645009DDDEB /* alumni_survey_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878417C1F645009DDDEB /* alumni_survey_02.png */; };
+		2D90878B17C1F645009DDDEB /* alumni_survey_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878417C1F645009DDDEB /* alumni_survey_02.png */; };
+		2D90878C17C1F645009DDDEB /* alumni_survey_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878517C1F645009DDDEB /* alumni_survey_03.png */; };
+		2D90878D17C1F645009DDDEB /* alumni_survey_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878517C1F645009DDDEB /* alumni_survey_03.png */; };
+		2D90878E17C1F645009DDDEB /* alumni_survey_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878617C1F645009DDDEB /* alumni_survey_04.png */; };
+		2D90878F17C1F645009DDDEB /* alumni_survey_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878617C1F645009DDDEB /* alumni_survey_04.png */; };
+		2D90879017C1F645009DDDEB /* alumni_survey_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878717C1F645009DDDEB /* alumni_survey_05.png */; };
+		2D90879117C1F645009DDDEB /* alumni_survey_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878717C1F645009DDDEB /* alumni_survey_05.png */; };
+		2D90879A17C1F667009DDDEB /* campus_slideshow_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879417C1F667009DDDEB /* campus_slideshow_01.png */; };
+		2D90879B17C1F667009DDDEB /* campus_slideshow_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879417C1F667009DDDEB /* campus_slideshow_01.png */; };
+		2D90879C17C1F667009DDDEB /* campus_slideshow_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879517C1F667009DDDEB /* campus_slideshow_02.png */; };
+		2D90879D17C1F667009DDDEB /* campus_slideshow_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879517C1F667009DDDEB /* campus_slideshow_02.png */; };
+		2D90879E17C1F667009DDDEB /* campus_slideshow_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879617C1F667009DDDEB /* campus_slideshow_03.png */; };
+		2D90879F17C1F667009DDDEB /* campus_slideshow_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879617C1F667009DDDEB /* campus_slideshow_03.png */; };
+		2D9087A017C1F667009DDDEB /* campus_slideshow_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879717C1F667009DDDEB /* campus_slideshow_04.png */; };
+		2D9087A117C1F667009DDDEB /* campus_slideshow_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879717C1F667009DDDEB /* campus_slideshow_04.png */; };
+		2D9087A217C1F667009DDDEB /* campus_slideshow_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879817C1F667009DDDEB /* campus_slideshow_05.png */; };
+		2D9087A317C1F667009DDDEB /* campus_slideshow_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879817C1F667009DDDEB /* campus_slideshow_05.png */; };
+		2D9087A417C1F667009DDDEB /* campus_slideshow_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879917C1F667009DDDEB /* campus_slideshow_06.png */; };
+		2D9087A517C1F667009DDDEB /* campus_slideshow_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90879917C1F667009DDDEB /* campus_slideshow_06.png */; };
 		2DCCA08E17C1BBCD00B81172 /* PortfolioRequirementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */; };
 		2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */; };
 		2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */; };
@@ -131,11 +143,17 @@
 		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "Main Menu/MainMenuViewController.h"; sourceTree = "<group>"; };
 		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "Main Menu/MainMenuViewController.m"; sourceTree = "<group>"; };
 		2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_Black_Logo_Large.png; path = "Assets/Splash Screen/EmilyCarr_Black_Logo_Large.png"; sourceTree = "<group>"; };
-		2D90877417C1EA5C009DDDEB /* alumni_survey_pg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_pg1.png; sourceTree = "<group>"; };
-		2D90877517C1EA5C009DDDEB /* alumni_survey_pg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_pg2.png; sourceTree = "<group>"; };
-		2D90877617C1EA5C009DDDEB /* alumni_survey_pg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_pg3.png; sourceTree = "<group>"; };
-		2D90877717C1EA5C009DDDEB /* alumni_survey_pg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_pg4.png; sourceTree = "<group>"; };
-		2D90877817C1EA5C009DDDEB /* alumni_survey_pg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_pg5.png; sourceTree = "<group>"; };
+		2D90878317C1F645009DDDEB /* alumni_survey_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_01.png; sourceTree = "<group>"; };
+		2D90878417C1F645009DDDEB /* alumni_survey_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_02.png; sourceTree = "<group>"; };
+		2D90878517C1F645009DDDEB /* alumni_survey_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_03.png; sourceTree = "<group>"; };
+		2D90878617C1F645009DDDEB /* alumni_survey_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_04.png; sourceTree = "<group>"; };
+		2D90878717C1F645009DDDEB /* alumni_survey_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_05.png; sourceTree = "<group>"; };
+		2D90879417C1F667009DDDEB /* campus_slideshow_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus_slideshow_01.png; sourceTree = "<group>"; };
+		2D90879517C1F667009DDDEB /* campus_slideshow_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus_slideshow_02.png; sourceTree = "<group>"; };
+		2D90879617C1F667009DDDEB /* campus_slideshow_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus_slideshow_03.png; sourceTree = "<group>"; };
+		2D90879717C1F667009DDDEB /* campus_slideshow_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus_slideshow_04.png; sourceTree = "<group>"; };
+		2D90879817C1F667009DDDEB /* campus_slideshow_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus_slideshow_05.png; sourceTree = "<group>"; };
+		2D90879917C1F667009DDDEB /* campus_slideshow_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus_slideshow_06.png; sourceTree = "<group>"; };
 		2DCCA08C17C1BBCD00B81172 /* PortfolioRequirementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortfolioRequirementsViewController.h; path = "Apply Now/PortfolioRequirementsViewController.h"; sourceTree = "<group>"; };
 		2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortfolioRequirementsViewController.m; path = "Apply Now/PortfolioRequirementsViewController.m"; sourceTree = "<group>"; };
 		2DCCA08F17C1BBED00B81172 /* ApplicationDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDirectionsViewController.h; path = "Apply Now/ApplicationDirectionsViewController.h"; sourceTree = "<group>"; };
@@ -344,6 +362,7 @@
 		2D47AD5C179216DA003D5D8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2D90879217C1F667009DDDEB /* Start Points */,
 				2D90877317C1EA5C009DDDEB /* Create Futures */,
 				2DCCA0AC17C1C45A00B81172 /* Splash Screen */,
 				2DCCA0A517C1C04400B81172 /* Text Copy */,
@@ -366,14 +385,36 @@
 		2D90877317C1EA5C009DDDEB /* Create Futures */ = {
 			isa = PBXGroup;
 			children = (
-				2D90877417C1EA5C009DDDEB /* alumni_survey_pg1.png */,
-				2D90877517C1EA5C009DDDEB /* alumni_survey_pg2.png */,
-				2D90877617C1EA5C009DDDEB /* alumni_survey_pg3.png */,
-				2D90877717C1EA5C009DDDEB /* alumni_survey_pg4.png */,
-				2D90877817C1EA5C009DDDEB /* alumni_survey_pg5.png */,
+				2D90878317C1F645009DDDEB /* alumni_survey_01.png */,
+				2D90878417C1F645009DDDEB /* alumni_survey_02.png */,
+				2D90878517C1F645009DDDEB /* alumni_survey_03.png */,
+				2D90878617C1F645009DDDEB /* alumni_survey_04.png */,
+				2D90878717C1F645009DDDEB /* alumni_survey_05.png */,
 			);
 			name = "Create Futures";
 			path = "Assets/Create Futures";
+			sourceTree = "<group>";
+		};
+		2D90879217C1F667009DDDEB /* Start Points */ = {
+			isa = PBXGroup;
+			children = (
+				2D90879317C1F667009DDDEB /* Campus Slideshow */,
+			);
+			name = "Start Points";
+			path = "Assets/Start Points";
+			sourceTree = "<group>";
+		};
+		2D90879317C1F667009DDDEB /* Campus Slideshow */ = {
+			isa = PBXGroup;
+			children = (
+				2D90879417C1F667009DDDEB /* campus_slideshow_01.png */,
+				2D90879517C1F667009DDDEB /* campus_slideshow_02.png */,
+				2D90879617C1F667009DDDEB /* campus_slideshow_03.png */,
+				2D90879717C1F667009DDDEB /* campus_slideshow_04.png */,
+				2D90879817C1F667009DDDEB /* campus_slideshow_05.png */,
+				2D90879917C1F667009DDDEB /* campus_slideshow_06.png */,
+			);
+			path = "Campus Slideshow";
 			sourceTree = "<group>";
 		};
 		2DCCA0A517C1C04400B81172 /* Text Copy */ = {
@@ -489,11 +530,17 @@
 				2DCCA0A717C1C05700B81172 /* PortfolioRequirements.txt in Resources */,
 				2DCCA0AA17C1C44F00B81172 /* ApplyNowScreenNames.plist in Resources */,
 				2DCCA0AF17C1C5BB00B81172 /* ApplicationDirections.txt in Resources */,
-				2D90877917C1EA5C009DDDEB /* alumni_survey_pg1.png in Resources */,
-				2D90877B17C1EA5C009DDDEB /* alumni_survey_pg2.png in Resources */,
-				2D90877D17C1EA5C009DDDEB /* alumni_survey_pg3.png in Resources */,
-				2D90877F17C1EA5C009DDDEB /* alumni_survey_pg4.png in Resources */,
-				2D90878117C1EA5C009DDDEB /* alumni_survey_pg5.png in Resources */,
+				2D90878817C1F645009DDDEB /* alumni_survey_01.png in Resources */,
+				2D90878A17C1F645009DDDEB /* alumni_survey_02.png in Resources */,
+				2D90878C17C1F645009DDDEB /* alumni_survey_03.png in Resources */,
+				2D90878E17C1F645009DDDEB /* alumni_survey_04.png in Resources */,
+				2D90879017C1F645009DDDEB /* alumni_survey_05.png in Resources */,
+				2D90879A17C1F667009DDDEB /* campus_slideshow_01.png in Resources */,
+				2D90879C17C1F667009DDDEB /* campus_slideshow_02.png in Resources */,
+				2D90879E17C1F667009DDDEB /* campus_slideshow_03.png in Resources */,
+				2D9087A017C1F667009DDDEB /* campus_slideshow_04.png in Resources */,
+				2D9087A217C1F667009DDDEB /* campus_slideshow_05.png in Resources */,
+				2D9087A417C1F667009DDDEB /* campus_slideshow_06.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,11 +559,17 @@
 				2DCCA0A817C1C05700B81172 /* PortfolioRequirements.txt in Resources */,
 				2DCCA0AB17C1C44F00B81172 /* ApplyNowScreenNames.plist in Resources */,
 				2DCCA0B017C1C5BB00B81172 /* ApplicationDirections.txt in Resources */,
-				2D90877A17C1EA5C009DDDEB /* alumni_survey_pg1.png in Resources */,
-				2D90877C17C1EA5C009DDDEB /* alumni_survey_pg2.png in Resources */,
-				2D90877E17C1EA5C009DDDEB /* alumni_survey_pg3.png in Resources */,
-				2D90878017C1EA5C009DDDEB /* alumni_survey_pg4.png in Resources */,
-				2D90878217C1EA5C009DDDEB /* alumni_survey_pg5.png in Resources */,
+				2D90878917C1F645009DDDEB /* alumni_survey_01.png in Resources */,
+				2D90878B17C1F645009DDDEB /* alumni_survey_02.png in Resources */,
+				2D90878D17C1F645009DDDEB /* alumni_survey_03.png in Resources */,
+				2D90878F17C1F645009DDDEB /* alumni_survey_04.png in Resources */,
+				2D90879117C1F645009DDDEB /* alumni_survey_05.png in Resources */,
+				2D90879B17C1F667009DDDEB /* campus_slideshow_01.png in Resources */,
+				2D90879D17C1F667009DDDEB /* campus_slideshow_02.png in Resources */,
+				2D90879F17C1F667009DDDEB /* campus_slideshow_03.png in Resources */,
+				2D9087A117C1F667009DDDEB /* campus_slideshow_04.png in Resources */,
+				2D9087A317C1F667009DDDEB /* campus_slideshow_05.png in Resources */,
+				2D9087A517C1F667009DDDEB /* campus_slideshow_06.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

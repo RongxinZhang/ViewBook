@@ -136,6 +136,8 @@
 		2DF36C2B17C34402006B0994 /* studios_slideshow_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF36C0217C34402006B0994 /* studios_slideshow_04.png */; };
 		2DF36C2C17C34402006B0994 /* studios_slideshow_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF36C0317C34402006B0994 /* studios_slideshow_05.png */; };
 		2DF36C2D17C34402006B0994 /* studios_slideshow_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF36C0317C34402006B0994 /* studios_slideshow_05.png */; };
+		2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
+		2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +248,8 @@
 		2DF36C0117C34402006B0994 /* studios_slideshow_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studios_slideshow_03.png; sourceTree = "<group>"; };
 		2DF36C0217C34402006B0994 /* studios_slideshow_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studios_slideshow_04.png; sourceTree = "<group>"; };
 		2DF36C0317C34402006B0994 /* studios_slideshow_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studios_slideshow_05.png; sourceTree = "<group>"; };
+		2DF36C2E17C346B7006B0994 /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewViewController.h; path = "Start Points/WebViewViewController.h"; sourceTree = "<group>"; };
+		2DF36C2F17C346B7006B0994 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewViewController.m; path = "Start Points/WebViewViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				2D29E76817C01E35004BB03C /* StartPoints.storyboard */,
+				2DF36C2E17C346B7006B0994 /* WebViewViewController.h */,
+				2DF36C2F17C346B7006B0994 /* WebViewViewController.m */,
 				2D29E76B17C0206B004BB03C /* StartPointsViewController.h */,
 				2D29E76C17C0206B004BB03C /* StartPointsViewController.m */,
 				2D9087B317C1FC59009DDDEB /* StudiosSlideshowViewController.h */,
@@ -775,6 +781,7 @@
 				2D9087B517C1FC59009DDDEB /* StudiosSlideshowViewController.m in Sources */,
 				2D9087B917C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */,
 				2DF36BEB17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */,
+				2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,6 +802,7 @@
 				2D9087B617C1FC59009DDDEB /* StudiosSlideshowViewController.m in Sources */,
 				2D9087BA17C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */,
 				2DF36BEC17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */,
+				2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

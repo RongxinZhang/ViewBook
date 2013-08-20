@@ -31,15 +31,16 @@
 
     // Load Images
     NSArray *studios = [NSArray arrayWithObjects:
-                             [UIImage imageNamed:@"studio_slideshow_01"],
-                             [UIImage imageNamed:@"studio_slideshow_02"],
-                             [UIImage imageNamed:@"studio_slideshow_03"],
-                             [UIImage imageNamed:@"studio_slideshow_04"],
+                             [UIImage imageNamed:@"studios_slideshow_01"],
+                             [UIImage imageNamed:@"studios_slideshow_02"],
+                             [UIImage imageNamed:@"studios_slideshow_03"],
+                             [UIImage imageNamed:@"studios_slideshow_04"],
+                             [UIImage imageNamed:@"studios_slideshow_05"],
                              nil];
     
     // Set ImageView
     [slideshow setAnimationImages:studios];
-    slideshow.animationDuration = 20.0;
+    slideshow.animationDuration = 25.0;
     slideshow.animationRepeatCount = 0;
     [slideshow startAnimating];
 

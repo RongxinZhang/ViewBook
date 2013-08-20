@@ -34,7 +34,7 @@
     
     [self.eventTimes addObject:@"16-10-2013 4:15 PM"];
     [self.eventTimes addObject:@"16-11-2013 4:17 PM"];
-    [self.eventTimes addObject:@"16-12-2013 4:19 PM"];
+    [self.eventTimes addObject:@"19-08-2013 4:19 PM"];
     
     for (NSString *date in self.eventTimes) {
         NSLog(@"Array values: %@",date);
@@ -115,9 +115,6 @@
     NSDate *date = [dateFormatter dateFromString:cellTextLabel];
     NSLog(@"date: %@",date);
     
-    NSDate *currentDate = [NSDate date];
-    
-    date = date
 
     NSString *message = @"There is an Emily carr Event happening now";
 
@@ -134,13 +131,13 @@
 //    notification.repeatInterval = NSDayCalendarUnit;
     
     [[UIApplication sharedApplication]scheduleLocalNotification:notification];
-    [self showMessage:@"An Reminder has been set"];
-
+    [self showMessage:@"A Reminder has been set"];
+    
 }
 
 //RX Creates alert to notify user that notification has been set
 - (void)showMessage:(NSString *)bodyTexts{
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Supporter Added"
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Reminder"
                                                      message :bodyTexts
                                                      delegate:nil
                                             cancelButtonTitle:@"OK"

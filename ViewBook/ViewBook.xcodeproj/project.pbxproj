@@ -319,13 +319,12 @@
 		2D29E76517C01B61004BB03C /* Build Networks */ = {
 			isa = PBXGroup;
 			children = (
+				79D0B9B117C3BC3400BC4ADD /* Calender */,
 				2D29E77617C026D2004BB03C /* BuildNetworks.storyboard */,
 				2D29E77917C026E4004BB03C /* BuildNetworksViewController.h */,
 				2D29E77A17C026E4004BB03C /* BuildNetworksViewController.m */,
 				2DCCA09517C1BCC000B81172 /* SocialMediaViewController.h */,
 				2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */,
-				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
-				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
 				2DCCA09917C1BD0500B81172 /* CommunityViewController.h */,
 				2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */,
 				2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */,
@@ -565,6 +564,15 @@
 				2DF36C0317C34402006B0994 /* studios_slideshow_05.png */,
 			);
 			path = "Studio Slideshow";
+			sourceTree = "<group>";
+		};
+		79D0B9B117C3BC3400BC4ADD /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
+				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
+			);
+			name = Calender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

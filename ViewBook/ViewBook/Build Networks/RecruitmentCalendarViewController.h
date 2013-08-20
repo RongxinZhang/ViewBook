@@ -10,4 +10,6 @@
 
 @interface RecruitmentCalendarViewController : UITableViewController
 
+@property (strong, nonatomic) NSMutableArray *eventTimes;
+
 @end

@@ -29,6 +29,10 @@
 	// Do any additional setup after loading the view.
 }
 
+-(IBAction)facebook:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"fb://"]];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

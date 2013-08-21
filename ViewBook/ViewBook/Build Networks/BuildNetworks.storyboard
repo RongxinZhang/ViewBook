@@ -211,12 +211,77 @@ Instagram</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dF1-JP-Xbp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="I3f-Nq-Qjs"/>
+                                    <constraint firstAttribute="height" constant="98" id="RZd-dC-4cc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebook:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="tic-Z8-Yhh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBV-fM-xyj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="GNX-fG-Vlz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiD-mX-nSB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="5i2-jg-6lp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ5-sL-rYL">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aXk-ob-Lgm" firstAttribute="centerY" secondItem="6CH-6A-lKI" secondAttribute="centerY" type="default" id="L7H-xb-LFx"/>
+                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="top" secondItem="6CH-6A-lKI" secondAttribute="top" constant="191" id="6XL-Zu-ieS"/>
+                            <constraint firstItem="BiD-mX-nSB" firstAttribute="trailing" secondItem="dF1-JP-Xbp" secondAttribute="trailing" type="default" id="6oU-no-WW0"/>
+                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="leading" secondItem="6CH-6A-lKI" secondAttribute="leading" constant="26" id="D2h-Rh-XQu"/>
+                            <constraint firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" constant="33" id="GTg-Fl-666"/>
+                            <constraint firstItem="bBV-fM-xyj" firstAttribute="bottom" secondItem="dF1-JP-Xbp" secondAttribute="bottom" type="default" id="GaP-xG-mvO"/>
+                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="leading" secondItem="bBV-fM-xyj" secondAttribute="leading" type="default" id="HLg-M4-6Yo"/>
+                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" type="default" id="Jyh-Sb-ZU4"/>
                             <constraint firstAttribute="trailing" secondItem="aXk-ob-Lgm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UIG-QR-byx"/>
+                            <constraint firstItem="aXk-ob-Lgm" firstAttribute="top" secondItem="6CH-6A-lKI" secondAttribute="top" constant="20" symbolic="YES" type="default" id="aii-sV-Ady"/>
+                            <constraint firstItem="bBV-fM-xyj" firstAttribute="top" secondItem="dF1-JP-Xbp" secondAttribute="top" type="default" id="grA-V3-pem"/>
+                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="top" secondItem="BiD-mX-nSB" secondAttribute="top" type="default" id="iou-wO-c9R"/>
+                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" type="default" id="msg-SM-a74"/>
                             <constraint firstItem="aXk-ob-Lgm" firstAttribute="leading" secondItem="6CH-6A-lKI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rOg-9h-7Dz"/>
+                            <constraint firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" constant="93" id="vdT-uT-buN"/>
+                            <constraint firstItem="BiD-mX-nSB" firstAttribute="leading" secondItem="dF1-JP-Xbp" secondAttribute="leading" type="default" id="yHB-iH-XD9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ed2-vZ-QpH"/>
@@ -253,9 +318,6 @@ Instagram</string>
         </class>
         <class className="CalenderCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CalenderCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="saveDateButton" candidateClass="UIButton"/>
-            </relationships>
         </class>
         <class className="CommunityViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CommunityViewController.h"/>
@@ -271,6 +333,9 @@ Instagram</string>
         </class>
         <class className="SocialMediaViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialMediaViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="facebook:"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

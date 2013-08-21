@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SocialMediaViewController : UIViewController
+@interface SocialMediaViewController : UIViewController {
+    
+    
+}
+
+// Social Media Buttons
+- (IBAction)openFacebook:(id)sender;
+
+- (IBAction)openTwitter:(id)sender;
+
+- (IBAction)openInstragram:(id)sender;
+
+- (IBAction)openGooglePlus:(id)sender;
 
 @end

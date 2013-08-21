@@ -199,25 +199,13 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="aXk-ob-Lgm">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="2vJ-cx-MPz"/>
-                                </constraints>
-                                <string key="text">Link to 
-Facebook
-Twitter
-Instagram</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dF1-JP-Xbp">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="EiV-vj-cOQ"/>
                                     <constraint firstAttribute="width" constant="113" id="I3f-Nq-Qjs"/>
-                                    <constraint firstAttribute="height" constant="98" id="RZd-dC-4cc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Facebook">
+                                <state key="normal" backgroundImage="facebook.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -225,7 +213,7 @@ Instagram</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="facebook:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="tic-Z8-Yhh"/>
+                                    <action selector="openFacebook:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="FvE-my-G6Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBV-fM-xyj">
@@ -233,55 +221,61 @@ Instagram</string>
                                     <constraint firstAttribute="width" constant="113" id="GNX-fG-Vlz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" backgroundImage="twitter.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openTwitter:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="HLK-n6-8TB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiD-mX-nSB">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="5i2-jg-6lp"/>
+                                    <constraint firstAttribute="height" constant="99" id="HSl-QO-Brv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" backgroundImage="instagram.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openInstragram:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="FK6-F6-aCe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ5-sL-rYL">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" backgroundImage="gplus.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openGooglePlus:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="rOO-GH-GVs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="top" secondItem="6CH-6A-lKI" secondAttribute="top" constant="191" id="6XL-Zu-ieS"/>
                             <constraint firstItem="BiD-mX-nSB" firstAttribute="trailing" secondItem="dF1-JP-Xbp" secondAttribute="trailing" type="default" id="6oU-no-WW0"/>
+                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="bottom" secondItem="bBV-fM-xyj" secondAttribute="bottom" type="default" id="7KE-85-jJQ"/>
                             <constraint firstItem="dF1-JP-Xbp" firstAttribute="leading" secondItem="6CH-6A-lKI" secondAttribute="leading" constant="26" id="D2h-Rh-XQu"/>
                             <constraint firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" constant="33" id="GTg-Fl-666"/>
-                            <constraint firstItem="bBV-fM-xyj" firstAttribute="bottom" secondItem="dF1-JP-Xbp" secondAttribute="bottom" type="default" id="GaP-xG-mvO"/>
                             <constraint firstItem="pJ5-sL-rYL" firstAttribute="leading" secondItem="bBV-fM-xyj" secondAttribute="leading" type="default" id="HLg-M4-6Yo"/>
                             <constraint firstItem="pJ5-sL-rYL" firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" type="default" id="Jyh-Sb-ZU4"/>
-                            <constraint firstAttribute="trailing" secondItem="aXk-ob-Lgm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UIG-QR-byx"/>
-                            <constraint firstItem="aXk-ob-Lgm" firstAttribute="top" secondItem="6CH-6A-lKI" secondAttribute="top" constant="20" symbolic="YES" type="default" id="aii-sV-Ady"/>
+                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" type="default" id="VXy-an-Zaa"/>
                             <constraint firstItem="bBV-fM-xyj" firstAttribute="top" secondItem="dF1-JP-Xbp" secondAttribute="top" type="default" id="grA-V3-pem"/>
+                            <constraint firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" constant="142" id="hNX-dZ-5Ta"/>
                             <constraint firstItem="pJ5-sL-rYL" firstAttribute="top" secondItem="BiD-mX-nSB" secondAttribute="top" type="default" id="iou-wO-c9R"/>
-                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" type="default" id="msg-SM-a74"/>
-                            <constraint firstItem="aXk-ob-Lgm" firstAttribute="leading" secondItem="6CH-6A-lKI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rOg-9h-7Dz"/>
-                            <constraint firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" constant="93" id="vdT-uT-buN"/>
                             <constraint firstItem="BiD-mX-nSB" firstAttribute="leading" secondItem="dF1-JP-Xbp" secondAttribute="leading" type="default" id="yHB-iH-XD9"/>
+                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="top" secondItem="6CH-6A-lKI" secondAttribute="top" constant="141" id="yhT-pU-GSg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ed2-vZ-QpH"/>
@@ -309,6 +303,12 @@ Instagram</string>
             <point key="canvasLocation" x="-923" y="70"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook.png" width="100" height="100"/>
+        <image name="gplus.png" width="100" height="99"/>
+        <image name="instagram.png" width="100" height="100"/>
+        <image name="twitter.png" width="100" height="100"/>
+    </resources>
     <classes>
         <class className="BuildNetworksViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BuildNetworksViewController.h"/>
@@ -318,6 +318,9 @@ Instagram</string>
         </class>
         <class className="CalenderCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CalenderCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="saveDateButton" candidateClass="UIButton"/>
+            </relationships>
         </class>
         <class className="CommunityViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CommunityViewController.h"/>
@@ -334,7 +337,10 @@ Instagram</string>
         <class className="SocialMediaViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialMediaViewController.h"/>
             <relationships>
-                <relationship kind="action" name="facebook:"/>
+                <relationship kind="action" name="openFacebook:"/>
+                <relationship kind="action" name="openGooglePlus:"/>
+                <relationship kind="action" name="openInstragram:"/>
+                <relationship kind="action" name="openTwitter:"/>
             </relationships>
         </class>
     </classes>

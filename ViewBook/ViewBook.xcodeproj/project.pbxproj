@@ -51,6 +51,14 @@
 		2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */; };
 		2D8957C817C474D90044F167 /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8957C717C474D90044F167 /* CalenderCell.m */; };
 		2D8957C917C474D90044F167 /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8957C717C474D90044F167 /* CalenderCell.m */; };
+		2D8957CE17C477920044F167 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CB17C477920044F167 /* facebook.png */; };
+		2D8957CF17C477920044F167 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CB17C477920044F167 /* facebook.png */; };
+		2D8957D017C477920044F167 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CC17C477920044F167 /* instagram.png */; };
+		2D8957D117C477920044F167 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CC17C477920044F167 /* instagram.png */; };
+		2D8957D217C477920044F167 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CD17C477920044F167 /* twitter.png */; };
+		2D8957D317C477920044F167 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CD17C477920044F167 /* twitter.png */; };
+		2D8957D817C480CD0044F167 /* gplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957D717C480CD0044F167 /* gplus.png */; };
+		2D8957D917C480CD0044F167 /* gplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957D717C480CD0044F167 /* gplus.png */; };
 		2D90878817C1F645009DDDEB /* alumni_survey_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878317C1F645009DDDEB /* alumni_survey_01.png */; };
 		2D90878917C1F645009DDDEB /* alumni_survey_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878317C1F645009DDDEB /* alumni_survey_01.png */; };
 		2D90878A17C1F645009DDDEB /* alumni_survey_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878417C1F645009DDDEB /* alumni_survey_02.png */; };
@@ -197,6 +205,10 @@
 		2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_Black_Logo_Large.png; path = "Assets/Splash Screen/EmilyCarr_Black_Logo_Large.png"; sourceTree = "<group>"; };
 		2D8957C617C474D90044F167 /* CalenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalenderCell.h; path = "Build Networks/CalenderCell.h"; sourceTree = "<group>"; };
 		2D8957C717C474D90044F167 /* CalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalenderCell.m; path = "Build Networks/CalenderCell.m"; sourceTree = "<group>"; };
+		2D8957CB17C477920044F167 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		2D8957CC17C477920044F167 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		2D8957CD17C477920044F167 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		2D8957D717C480CD0044F167 /* gplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gplus.png; sourceTree = "<group>"; };
 		2D90878317C1F645009DDDEB /* alumni_survey_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_01.png; sourceTree = "<group>"; };
 		2D90878417C1F645009DDDEB /* alumni_survey_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_02.png; sourceTree = "<group>"; };
 		2D90878517C1F645009DDDEB /* alumni_survey_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_03.png; sourceTree = "<group>"; };
@@ -455,6 +467,7 @@
 		2D47AD5C179216DA003D5D8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2D8957CA17C477920044F167 /* Build Networks */,
 				2D90879217C1F667009DDDEB /* Start Points */,
 				2D90877317C1EA5C009DDDEB /* Create Futures */,
 				2DCCA0AC17C1C45A00B81172 /* Splash Screen */,
@@ -473,6 +486,18 @@
 				2D47AD3417921513003D5D8B /* Default-568h@2x.png */,
 			);
 			name = "Launch Images";
+			sourceTree = "<group>";
+		};
+		2D8957CA17C477920044F167 /* Build Networks */ = {
+			isa = PBXGroup;
+			children = (
+				2D8957D717C480CD0044F167 /* gplus.png */,
+				2D8957CB17C477920044F167 /* facebook.png */,
+				2D8957CC17C477920044F167 /* instagram.png */,
+				2D8957CD17C477920044F167 /* twitter.png */,
+			);
+			name = "Build Networks";
+			path = "Assets/Build Networks";
 			sourceTree = "<group>";
 		};
 		2D90877317C1EA5C009DDDEB /* Create Futures */ = {
@@ -692,6 +717,10 @@
 				2DF36C2817C34402006B0994 /* studios_slideshow_03.png in Resources */,
 				2DF36C2A17C34402006B0994 /* studios_slideshow_04.png in Resources */,
 				2DF36C2C17C34402006B0994 /* studios_slideshow_05.png in Resources */,
+				2D8957CE17C477920044F167 /* facebook.png in Resources */,
+				2D8957D017C477920044F167 /* instagram.png in Resources */,
+				2D8957D217C477920044F167 /* twitter.png in Resources */,
+				2D8957D817C480CD0044F167 /* gplus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +771,10 @@
 				2DF36C2917C34402006B0994 /* studios_slideshow_03.png in Resources */,
 				2DF36C2B17C34402006B0994 /* studios_slideshow_04.png in Resources */,
 				2DF36C2D17C34402006B0994 /* studios_slideshow_05.png in Resources */,
+				2D8957CF17C477920044F167 /* facebook.png in Resources */,
+				2D8957D117C477920044F167 /* instagram.png in Resources */,
+				2D8957D317C477920044F167 /* twitter.png in Resources */,
+				2D8957D917C480CD0044F167 /* gplus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

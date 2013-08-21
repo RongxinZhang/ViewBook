@@ -12,6 +12,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="utJ-5d-Q3L"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZF-8t-5w5">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="back">
@@ -25,19 +26,15 @@
                                     <action selector="loadMainMenuStoryboard:" destination="gdR-tM-Zsy" eventType="touchUpInside" id="ZVh-Tw-aJb"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="utJ-5d-Q3L">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="480" id="PQv-cG-lQX"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" constant="44" id="0yx-9j-suV"/>
+                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="bottom" secondItem="wvR-DB-qaq" secondAttribute="bottom" type="default" id="A2F-nk-HDm"/>
                             <constraint firstItem="utJ-5d-Q3L" firstAttribute="trailing" secondItem="wvR-DB-qaq" secondAttribute="trailing" type="default" id="Ae9-vf-iiB"/>
                             <constraint firstItem="HZF-8t-5w5" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" type="default" id="OL7-HX-qlD"/>
                             <constraint firstItem="HZF-8t-5w5" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" constant="-1" id="YAu-If-sVV"/>
                             <constraint firstItem="utJ-5d-Q3L" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" type="default" id="j3o-Nq-Cfp"/>
+                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" type="default" id="kyz-UP-8ft"/>
                         </constraints>
                     </view>
                     <connections>

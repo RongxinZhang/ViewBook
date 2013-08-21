@@ -81,9 +81,6 @@
     
     calenderCell.textLabel.text = [self.eventTimes objectAtIndex:indexPath.row];
     
-    //RX displaying info
-    calenderCell.saveDateButton.backgroundColor = [UIColor blackColor];
-    
     //RX Creates button - tutorial: http://www.youtube.com/watch?v=TADTYkqF6q4
     UIButton *saveButton = [[UIButton alloc]initWithFrame:CGRectMake(210, 10, 60, 40)];
     [saveButton addTarget:self action:@selector(savePressed:) forControlEvents:UIControlEventTouchUpInside];

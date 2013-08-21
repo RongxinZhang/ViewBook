@@ -138,6 +138,10 @@
 		2DF36C2D17C34402006B0994 /* studios_slideshow_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF36C0317C34402006B0994 /* studios_slideshow_05.png */; };
 		2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
 		2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
+		7991A88817C3BE7600505821 /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991A88717C3BE7600505821 /* CalenderCell.m */; };
+		7991A88C17C3C70100505821 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88917C3C70100505821 /* twitter.png */; };
+		7991A88D17C3C70100505821 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88A17C3C70100505821 /* facebook.png */; };
+		7991A88E17C3C70100505821 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88B17C3C70100505821 /* instagram.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +254,11 @@
 		2DF36C0317C34402006B0994 /* studios_slideshow_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studios_slideshow_05.png; sourceTree = "<group>"; };
 		2DF36C2E17C346B7006B0994 /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewViewController.h; path = "Start Points/WebViewViewController.h"; sourceTree = "<group>"; };
 		2DF36C2F17C346B7006B0994 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewViewController.m; path = "Start Points/WebViewViewController.m"; sourceTree = "<group>"; };
+		7991A88617C3BE7600505821 /* CalenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderCell.h; sourceTree = "<group>"; };
+		7991A88717C3BE7600505821 /* CalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderCell.m; sourceTree = "<group>"; };
+		7991A88917C3C70100505821 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		7991A88A17C3C70100505821 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		7991A88B17C3C70100505821 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,8 +328,11 @@
 		2D29E76517C01B61004BB03C /* Build Networks */ = {
 			isa = PBXGroup;
 			children = (
-				79D0B9B117C3BC3400BC4ADD /* Calender */,
 				2D29E77617C026D2004BB03C /* BuildNetworks.storyboard */,
+				7991A88617C3BE7600505821 /* CalenderCell.h */,
+				7991A88717C3BE7600505821 /* CalenderCell.m */,
+				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
+				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
 				2D29E77917C026E4004BB03C /* BuildNetworksViewController.h */,
 				2D29E77A17C026E4004BB03C /* BuildNetworksViewController.m */,
 				2DCCA09517C1BCC000B81172 /* SocialMediaViewController.h */,
@@ -418,6 +430,9 @@
 		2D47AD2517921513003D5D8B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7991A88917C3C70100505821 /* twitter.png */,
+				7991A88A17C3C70100505821 /* facebook.png */,
+				7991A88B17C3C70100505821 /* instagram.png */,
 				2D47AD2617921513003D5D8B /* ViewBook-Info.plist */,
 				2D47AD2717921513003D5D8B /* InfoPlist.strings */,
 				2D47AD2A17921513003D5D8B /* main.m */,
@@ -566,15 +581,6 @@
 			path = "Studio Slideshow";
 			sourceTree = "<group>";
 		};
-		79D0B9B117C3BC3400BC4ADD /* Calender */ = {
-			isa = PBXGroup;
-			children = (
-				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
-				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
-			);
-			name = Calender;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -694,6 +700,9 @@
 				2DF36C2817C34402006B0994 /* studios_slideshow_03.png in Resources */,
 				2DF36C2A17C34402006B0994 /* studios_slideshow_04.png in Resources */,
 				2DF36C2C17C34402006B0994 /* studios_slideshow_05.png in Resources */,
+				7991A88C17C3C70100505821 /* twitter.png in Resources */,
+				7991A88D17C3C70100505821 /* facebook.png in Resources */,
+				7991A88E17C3C70100505821 /* instagram.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +799,7 @@
 				2D9087B917C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */,
 				2DF36BEB17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */,
 				2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */,
+				7991A88817C3BE7600505821 /* CalenderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

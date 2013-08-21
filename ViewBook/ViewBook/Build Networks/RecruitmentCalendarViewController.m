@@ -117,7 +117,7 @@
     
     NSDate *currentDate = [NSDate date];
     
-    date = date
+    date = date;
 
     NSString *message = @"There is an Emily carr Event happening now";
 

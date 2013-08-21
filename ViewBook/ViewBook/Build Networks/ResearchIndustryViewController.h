@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ResearchIndustryViewController : UIViewController
+@interface ResearchIndustryViewController : UIViewController {
+    
+    // Screen Index
+    NSInteger screenIndex;
+    
+}
+
+// Page Title
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+
+// Main Paragraph
+@property (weak, nonatomic) IBOutlet UILabel *mainParagraph;
 
 @end

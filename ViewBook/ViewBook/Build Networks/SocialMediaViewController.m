@@ -14,6 +14,10 @@
 
 @implementation SocialMediaViewController
 
+// Synthesize Variables
+
+@synthesize pageTitle;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -25,6 +29,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // Set Screen Index
+    screenIndex = 0;
+    
+    // Load PList For Page Title
+    NSString *pathToPlistFile = [[NSBundle mainBundle] pathForResource:@"BuildNetworksScreenNames" ofType:@"plist"];
+    NSArray *screenNames = [[NSArray alloc] initWithContentsOfFile:pathToPlistFile];
+    
+    // Set PList To Page Title
+    pageTitle.text = [screenNames objectAtIndex:screenIndex];
     
     
 }

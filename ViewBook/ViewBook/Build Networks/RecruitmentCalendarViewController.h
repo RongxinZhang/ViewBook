@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RecruitmentCalendarViewController : UITableViewController
+@interface RecruitmentCalendarViewController : UITableViewController {
+    
+    // Screen Index
+    NSInteger screenIndex;
+    
+}
 
 @property (strong, nonatomic) NSMutableArray *eventTimes;
 

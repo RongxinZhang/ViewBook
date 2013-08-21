@@ -10,8 +10,13 @@
 
 @interface SocialMediaViewController : UIViewController {
     
+    // Screen Index
+    NSInteger screenIndex;
     
 }
+
+// Page Title
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
 
 // Social Media Buttons
 - (IBAction)openFacebook:(id)sender;

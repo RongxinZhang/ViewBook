@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D142B0517C4895F0013F036 /* GreatNorthernWay.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D142B0217C4895F0013F036 /* GreatNorthernWay.txt */; };
+		2D142B0617C4895F0013F036 /* GreatNorthernWay.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D142B0217C4895F0013F036 /* GreatNorthernWay.txt */; };
+		2D142B0717C4895F0013F036 /* IndustryEngagement.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D142B0317C4895F0013F036 /* IndustryEngagement.txt */; };
+		2D142B0817C4895F0013F036 /* IndustryEngagement.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D142B0317C4895F0013F036 /* IndustryEngagement.txt */; };
+		2D142B0917C4895F0013F036 /* PublicEngagement.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D142B0417C4895F0013F036 /* PublicEngagement.txt */; };
+		2D142B0A17C4895F0013F036 /* PublicEngagement.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D142B0417C4895F0013F036 /* PublicEngagement.txt */; };
+		2D142B0C17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D142B0B17C48AE80013F036 /* BuildNetworksScreenNames.plist */; };
+		2D142B0D17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D142B0B17C48AE80013F036 /* BuildNetworksScreenNames.plist */; };
 		2D29E76917C01E35004BB03C /* StartPoints.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E76817C01E35004BB03C /* StartPoints.storyboard */; };
 		2D29E76A17C01E35004BB03C /* StartPoints.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E76817C01E35004BB03C /* StartPoints.storyboard */; };
 		2D29E76D17C0206B004BB03C /* StartPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E76C17C0206B004BB03C /* StartPointsViewController.m */; };
@@ -46,7 +54,6 @@
 		2D47AD4817921513003D5D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD2017921513003D5D8B /* Foundation.framework */; };
 		2D47AD5017921513003D5D8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD4E17921513003D5D8B /* InfoPlist.strings */; };
 		2D47AD5317921513003D5D8B /* ViewBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD5217921513003D5D8B /* ViewBookTests.m */; };
-		2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */; };
 		2D47AD6117921B5D003D5D8B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */; };
 		2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */; };
 		2D8957C817C474D90044F167 /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8957C717C474D90044F167 /* CalenderCell.m */; };
@@ -161,6 +168,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D142B0217C4895F0013F036 /* GreatNorthernWay.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = GreatNorthernWay.txt; path = "Assets/Text Copy/GreatNorthernWay.txt"; sourceTree = "<group>"; };
+		2D142B0317C4895F0013F036 /* IndustryEngagement.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IndustryEngagement.txt; path = "Assets/Text Copy/IndustryEngagement.txt"; sourceTree = "<group>"; };
+		2D142B0417C4895F0013F036 /* PublicEngagement.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PublicEngagement.txt; path = "Assets/Text Copy/PublicEngagement.txt"; sourceTree = "<group>"; };
+		2D142B0B17C48AE80013F036 /* BuildNetworksScreenNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BuildNetworksScreenNames.plist; path = "Assets/Property Lists/BuildNetworksScreenNames.plist"; sourceTree = "<group>"; };
 		2D29E76817C01E35004BB03C /* StartPoints.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StartPoints.storyboard; path = "Start Points/StartPoints.storyboard"; sourceTree = "<group>"; };
 		2D29E76B17C0206B004BB03C /* StartPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartPointsViewController.h; path = "Start Points/StartPointsViewController.h"; sourceTree = "<group>"; };
 		2D29E76C17C0206B004BB03C /* StartPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartPointsViewController.m; path = "Start Points/StartPointsViewController.m"; sourceTree = "<group>"; };
@@ -199,7 +210,6 @@
 		2D47AD4F17921513003D5D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D47AD5117921513003D5D8B /* ViewBookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewBookTests.h; sourceTree = "<group>"; };
 		2D47AD5217921513003D5D8B /* ViewBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewBookTests.m; sourceTree = "<group>"; };
-		2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_White_Logo_Large.png; path = "Assets/Splash Screen/EmilyCarr_White_Logo_Large.png"; sourceTree = "<group>"; };
 		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "Main Menu/MainMenuViewController.h"; sourceTree = "<group>"; };
 		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "Main Menu/MainMenuViewController.m"; sourceTree = "<group>"; };
 		2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_Black_Logo_Large.png; path = "Assets/Splash Screen/EmilyCarr_Black_Logo_Large.png"; sourceTree = "<group>"; };
@@ -239,7 +249,7 @@
 		2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecruitmentCalendarViewController.h; path = "Build Networks/RecruitmentCalendarViewController.h"; sourceTree = "<group>"; };
 		2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecruitmentCalendarViewController.m; path = "Build Networks/RecruitmentCalendarViewController.m"; sourceTree = "<group>"; };
 		2DCCA0A617C1C05700B81172 /* PortfolioRequirements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PortfolioRequirements.txt; path = "Assets/Text Copy/PortfolioRequirements.txt"; sourceTree = "<group>"; };
-		2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApplyNowScreenNames.plist; path = Assets/Plists/ApplyNowScreenNames.plist; sourceTree = "<group>"; };
+		2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApplyNowScreenNames.plist; path = "Assets/Property Lists/ApplyNowScreenNames.plist"; sourceTree = "<group>"; };
 		2DCCA0AE17C1C5BB00B81172 /* ApplicationDirections.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ApplicationDirections.txt; path = "Assets/Text Copy/ApplicationDirections.txt"; sourceTree = "<group>"; };
 		2DF36BE917C3422E006B0994 /* StudentSlideshowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentSlideshowViewController.h; path = "Start Points/StudentSlideshowViewController.h"; sourceTree = "<group>"; };
 		2DF36BEA17C3422E006B0994 /* StudentSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentSlideshowViewController.m; path = "Start Points/StudentSlideshowViewController.m"; sourceTree = "<group>"; };
@@ -467,10 +477,10 @@
 		2D47AD5C179216DA003D5D8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				2D8957CA17C477920044F167 /* Build Networks */,
-				2D90879217C1F667009DDDEB /* Start Points */,
-				2D90877317C1EA5C009DDDEB /* Create Futures */,
 				2DCCA0AC17C1C45A00B81172 /* Splash Screen */,
+				2D90879217C1F667009DDDEB /* Start Points */,
+				2D8957CA17C477920044F167 /* Build Networks */,
+				2D90877317C1EA5C009DDDEB /* Create Futures */,
 				2DCCA0A517C1C04400B81172 /* Text Copy */,
 				2D61E71017C03011003239C8 /* Launch Images */,
 				2DCCA0AD17C1C46700B81172 /* Plists */,
@@ -540,6 +550,9 @@
 		2DCCA0A517C1C04400B81172 /* Text Copy */ = {
 			isa = PBXGroup;
 			children = (
+				2D142B0217C4895F0013F036 /* GreatNorthernWay.txt */,
+				2D142B0317C4895F0013F036 /* IndustryEngagement.txt */,
+				2D142B0417C4895F0013F036 /* PublicEngagement.txt */,
 				2DCCA0AE17C1C5BB00B81172 /* ApplicationDirections.txt */,
 				2DCCA0A617C1C05700B81172 /* PortfolioRequirements.txt */,
 			);
@@ -550,7 +563,6 @@
 			isa = PBXGroup;
 			children = (
 				2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */,
-				2D47AD5D179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png */,
 			);
 			name = "Splash Screen";
 			sourceTree = "<group>";
@@ -559,6 +571,7 @@
 			isa = PBXGroup;
 			children = (
 				2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */,
+				2D142B0B17C48AE80013F036 /* BuildNetworksScreenNames.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -673,7 +686,6 @@
 				2D47AD3117921513003D5D8B /* Default.png in Resources */,
 				2D47AD3317921513003D5D8B /* Default@2x.png in Resources */,
 				2D47AD3517921513003D5D8B /* Default-568h@2x.png in Resources */,
-				2D47AD5E179216E6003D5D8B /* EmilyCarr_White_Logo_Large.png in Resources */,
 				2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */,
 				2D29E76917C01E35004BB03C /* StartPoints.storyboard in Resources */,
 				2D29E77017C0269D004BB03C /* MakePaths.storyboard in Resources */,
@@ -721,6 +733,10 @@
 				2D8957D017C477920044F167 /* instagram.png in Resources */,
 				2D8957D217C477920044F167 /* twitter.png in Resources */,
 				2D8957D817C480CD0044F167 /* gplus.png in Resources */,
+				2D142B0517C4895F0013F036 /* GreatNorthernWay.txt in Resources */,
+				2D142B0717C4895F0013F036 /* IndustryEngagement.txt in Resources */,
+				2D142B0917C4895F0013F036 /* PublicEngagement.txt in Resources */,
+				2D142B0C17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +791,10 @@
 				2D8957D117C477920044F167 /* instagram.png in Resources */,
 				2D8957D317C477920044F167 /* twitter.png in Resources */,
 				2D8957D917C480CD0044F167 /* gplus.png in Resources */,
+				2D142B0617C4895F0013F036 /* GreatNorthernWay.txt in Resources */,
+				2D142B0817C4895F0013F036 /* IndustryEngagement.txt in Resources */,
+				2D142B0A17C4895F0013F036 /* PublicEngagement.txt in Resources */,
+				2D142B0D17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

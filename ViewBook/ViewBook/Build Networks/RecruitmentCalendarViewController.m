@@ -7,7 +7,7 @@
 //
 
 #import "RecruitmentCalendarViewController.h"
-#import "CalenderCell.h"
+#import "RecruitmentCalenderCell.h"
 
 
 @interface RecruitmentCalendarViewController ()
@@ -15,6 +15,10 @@
 @end
 
 @implementation RecruitmentCalendarViewController
+
+@synthesize eventTimes;
+@synthesize currentKey, currentStringValue;
+@synthesize xmlDate, xmlTime, xmlPlace;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -37,7 +41,7 @@
     [self.eventTimes addObject:@"19-08-2013 4:19 PM"];
     
     for (NSString *date in self.eventTimes) {
-        NSLog(@"Array values: %@",date);
+        NSLog(@"Array values: %@", date);
     }
 
     // Uncomment the following line to preserve selection between presentations.
@@ -45,6 +49,30 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // XML Path
+    NSString *URLString = @"http://www.jesses.co.tt/storage/recruitments.xml";
+    NSURL *URL = [NSURL URLWithString: [URLString stringByAddingPercentEscapesUsingEncoding:
+                   NSASCIIStringEncoding]];
+    
+    // Cast XML into Data
+    NSData *dataXML = [NSData dataWithContentsOfURL:URL];
+    
+    // Save File
+    NSString *applicationDocumentsDir =
+    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *storePath = [applicationDocumentsDir stringByAppendingPathComponent:@"recruitments.xml"];
+    [dataXML writeToFile:storePath atomically:TRUE];
+    
+    // Read Data
+    NSData *readXML = [NSData dataWithContentsOfFile:storePath];
+    
+    // Parse XML
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:readXML];
+    BOOL success = [xmlParser parse];
+    
+    NSLog(@"Was The Parser Successful? ... %d", success);
+    
 }
 
 
@@ -53,6 +81,56 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// XML STUFF
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
+    
+    currentKey = nil;
+    currentStringValue = nil;
+    
+    if([elementName isEqualToString:@"dates"]){
+        if([elementName isEqualToString:@"file"]){
+            xmlDate = elementName;
+            return;
+        }
+    }
+    
+    if([elementName isEqualToString:@"times"]){
+        if([elementName isEqualToString:@"file"]){
+            xmlTime = elementName;
+            return;
+        }
+    }
+    
+    if([elementName isEqualToString:@"places"]){
+        if([elementName isEqualToString:@"file"]){
+            xmlPlace = elementName;
+            return;
+        }
+    }
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    if(currentKey){
+        if(!currentStringValue){
+            currentStringValue = [[NSMutableString alloc] initWithCapacity:200];
+        }
+        else {
+            //[currentStringValue appendString:string];
+        }
+    }
+}
+ 
+ -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+     if([elementName isEqualToString:@"Signature"] && [currentStringValue intValue] == 804){
+         //ivar.signature = [currentStringValue intValue];
+         return;
+     }
+ }
+ 
+
+// TABLE STUFF
 
 #pragma mark - Table view data source
 
@@ -74,9 +152,9 @@
 {
     static NSString *cellIdentifier = @"Cell";
     //RX Creates Calender Cell
-    CalenderCell *calenderCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    RecruitmentCalenderCell *calenderCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!calenderCell) {
-        calenderCell = [[CalenderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        calenderCell = [[RecruitmentCalenderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
     calenderCell.textLabel.text = [self.eventTimes objectAtIndex:indexPath.row];

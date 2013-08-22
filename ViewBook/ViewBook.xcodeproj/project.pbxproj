@@ -56,8 +56,8 @@
 		2D47AD5317921513003D5D8B /* ViewBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD5217921513003D5D8B /* ViewBookTests.m */; };
 		2D47AD6117921B5D003D5D8B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */; };
 		2D74036B17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */; };
-		2D8957C817C474D90044F167 /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8957C717C474D90044F167 /* CalenderCell.m */; };
-		2D8957C917C474D90044F167 /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8957C717C474D90044F167 /* CalenderCell.m */; };
+		2D8957C817C474D90044F167 /* RecruitmentCalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */; };
+		2D8957C917C474D90044F167 /* RecruitmentCalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */; };
 		2D8957CE17C477920044F167 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CB17C477920044F167 /* facebook.png */; };
 		2D8957CF17C477920044F167 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CB17C477920044F167 /* facebook.png */; };
 		2D8957D017C477920044F167 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CC17C477920044F167 /* instagram.png */; };
@@ -213,8 +213,8 @@
 		2D47AD5F17921B5D003D5D8B /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "Main Menu/MainMenuViewController.h"; sourceTree = "<group>"; };
 		2D47AD6017921B5D003D5D8B /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "Main Menu/MainMenuViewController.m"; sourceTree = "<group>"; };
 		2D74036A17A0EEFF00C2CEAD /* EmilyCarr_Black_Logo_Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EmilyCarr_Black_Logo_Large.png; path = "Assets/Splash Screen/EmilyCarr_Black_Logo_Large.png"; sourceTree = "<group>"; };
-		2D8957C617C474D90044F167 /* CalenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalenderCell.h; path = "Build Networks/CalenderCell.h"; sourceTree = "<group>"; };
-		2D8957C717C474D90044F167 /* CalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalenderCell.m; path = "Build Networks/CalenderCell.m"; sourceTree = "<group>"; };
+		2D8957C617C474D90044F167 /* RecruitmentCalenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecruitmentCalenderCell.h; path = "Build Networks/RecruitmentCalenderCell.h"; sourceTree = "<group>"; };
+		2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecruitmentCalenderCell.m; path = "Build Networks/RecruitmentCalenderCell.m"; sourceTree = "<group>"; };
 		2D8957CB17C477920044F167 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		2D8957CC17C477920044F167 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		2D8957CD17C477920044F167 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
@@ -352,8 +352,8 @@
 				2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */,
 				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
 				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
-				2D8957C617C474D90044F167 /* CalenderCell.h */,
-				2D8957C717C474D90044F167 /* CalenderCell.m */,
+				2D8957C617C474D90044F167 /* RecruitmentCalenderCell.h */,
+				2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */,
 				2DCCA09917C1BD0500B81172 /* CommunityViewController.h */,
 				2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */,
 				2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */,
@@ -841,7 +841,7 @@
 				2D9087B917C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */,
 				2DF36BEB17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */,
 				2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */,
-				2D8957C817C474D90044F167 /* CalenderCell.m in Sources */,
+				2D8957C817C474D90044F167 /* RecruitmentCalenderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,7 +863,7 @@
 				2D9087BA17C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */,
 				2DF36BEC17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */,
 				2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */,
-				2D8957C917C474D90044F167 /* CalenderCell.m in Sources */,
+				2D8957C917C474D90044F167 /* RecruitmentCalenderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,7 +922,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -947,7 +947,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

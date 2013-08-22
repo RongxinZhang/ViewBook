@@ -1,5 +1,5 @@
 //
-//  CalenderCell.h
+//  RecruitmentCalenderCell.h
 //  ViewBook
 //
 //  Created by Pandita on 2013-08-19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CalenderCell : UITableViewCell
+@interface RecruitmentCalenderCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIButton *saveDateButton;
 
 @end

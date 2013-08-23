@@ -109,35 +109,23 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Page Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-hl-hC6">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Text About Community" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="g4C-Ji-Pu3">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="LTZ-S2-vSV"/>
+                                    <constraint firstAttribute="height" constant="120" id="61x-3a-4z0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="9BB-YU-iZD">
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9BB-YU-iZD" firstAttribute="top" secondItem="sRn-hl-hC6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3t2-jX-vMn"/>
-                            <constraint firstItem="9BB-YU-iZD" firstAttribute="leading" secondItem="mxr-tg-J7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DuR-RN-Jlm"/>
-                            <constraint firstItem="sRn-hl-hC6" firstAttribute="leading" secondItem="mxr-tg-J7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="emv-6R-R5H"/>
-                            <constraint firstItem="sRn-hl-hC6" firstAttribute="top" secondItem="mxr-tg-J7g" secondAttribute="top" constant="20" symbolic="YES" type="default" id="fDU-jl-dSe"/>
-                            <constraint firstAttribute="bottom" secondItem="9BB-YU-iZD" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="loh-gz-vIg"/>
-                            <constraint firstAttribute="trailing" secondItem="9BB-YU-iZD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="q1j-mz-aIt"/>
-                            <constraint firstAttribute="trailing" secondItem="sRn-hl-hC6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="z1x-dr-MCg"/>
+                            <constraint firstItem="g4C-Ji-Pu3" firstAttribute="leading" secondItem="mxr-tg-J7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LPO-Nm-MFo"/>
+                            <constraint firstAttribute="trailing" secondItem="g4C-Ji-Pu3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Y9e-gH-904"/>
+                            <constraint firstItem="g4C-Ji-Pu3" firstAttribute="centerY" secondItem="mxr-tg-J7g" secondAttribute="centerY" type="default" id="gl7-qK-ZyL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cby-0V-YDy"/>
-                    <connections>
-                        <outlet property="mainParagraph" destination="9BB-YU-iZD" id="RZI-FY-BPl"/>
-                        <outlet property="pageTitle" destination="sRn-hl-hC6" id="M19-rM-eMh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBN-aC-xM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,35 +169,23 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Page Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="24g-X7-hLH">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Text About Research &amp; Industry" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="NJq-KS-63l">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="zMe-dv-SNY"/>
+                                    <constraint firstAttribute="height" constant="120" id="H2R-T2-1NS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ZMj-Yy-osD">
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZMj-Yy-osD" firstAttribute="top" secondItem="24g-X7-hLH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1d2-qO-LGw"/>
-                            <constraint firstAttribute="trailing" secondItem="ZMj-Yy-osD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ozo-3C-LCp"/>
-                            <constraint firstItem="24g-X7-hLH" firstAttribute="leading" secondItem="FHf-OU-2Y4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dgI-tj-iKa"/>
-                            <constraint firstAttribute="bottom" secondItem="ZMj-Yy-osD" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="lAe-Zq-kjp"/>
-                            <constraint firstItem="24g-X7-hLH" firstAttribute="top" secondItem="FHf-OU-2Y4" secondAttribute="top" constant="20" symbolic="YES" type="default" id="mYQ-GJ-7fz"/>
-                            <constraint firstAttribute="trailing" secondItem="24g-X7-hLH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sId-cH-FIf"/>
-                            <constraint firstItem="ZMj-Yy-osD" firstAttribute="leading" secondItem="FHf-OU-2Y4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yoB-XL-8pd"/>
+                            <constraint firstAttribute="trailing" secondItem="NJq-KS-63l" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GJs-j8-4vO"/>
+                            <constraint firstItem="NJq-KS-63l" firstAttribute="leading" secondItem="FHf-OU-2Y4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="e4R-Zg-8O2"/>
+                            <constraint firstItem="NJq-KS-63l" firstAttribute="centerY" secondItem="FHf-OU-2Y4" secondAttribute="centerY" type="default" id="gaX-mt-jhy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zh1-Az-4I3"/>
-                    <connections>
-                        <outlet property="mainParagraph" destination="ZMj-Yy-osD" id="V7h-Dn-JcI"/>
-                        <outlet property="pageTitle" destination="24g-X7-hLH" id="GHZ-88-I9Z"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Of-qu-hGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,26 +261,16 @@
                                     <action selector="openGooglePlus:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="rOO-GH-GVs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Page Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="8OX-1o-NA7">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="Ujr-cK-yjE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BiD-mX-nSB" firstAttribute="trailing" secondItem="dF1-JP-Xbp" secondAttribute="trailing" type="default" id="6oU-no-WW0"/>
                             <constraint firstItem="dF1-JP-Xbp" firstAttribute="bottom" secondItem="bBV-fM-xyj" secondAttribute="bottom" type="default" id="7KE-85-jJQ"/>
-                            <constraint firstItem="8OX-1o-NA7" firstAttribute="leading" secondItem="6CH-6A-lKI" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="87y-pU-xiE"/>
                             <constraint firstItem="dF1-JP-Xbp" firstAttribute="leading" secondItem="6CH-6A-lKI" secondAttribute="leading" constant="26" id="D2h-Rh-XQu"/>
                             <constraint firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" constant="33" id="GTg-Fl-666"/>
                             <constraint firstItem="pJ5-sL-rYL" firstAttribute="leading" secondItem="bBV-fM-xyj" secondAttribute="leading" type="default" id="HLg-M4-6Yo"/>
                             <constraint firstItem="pJ5-sL-rYL" firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" type="default" id="Jyh-Sb-ZU4"/>
-                            <constraint firstAttribute="trailing" secondItem="8OX-1o-NA7" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PKQ-z0-4Wt"/>
                             <constraint firstItem="pJ5-sL-rYL" firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" type="default" id="VXy-an-Zaa"/>
-                            <constraint firstItem="8OX-1o-NA7" firstAttribute="top" secondItem="6CH-6A-lKI" secondAttribute="top" constant="20" symbolic="YES" type="default" id="cMG-FU-Mox"/>
                             <constraint firstItem="bBV-fM-xyj" firstAttribute="top" secondItem="dF1-JP-Xbp" secondAttribute="top" type="default" id="grA-V3-pem"/>
                             <constraint firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" constant="142" id="hNX-dZ-5Ta"/>
                             <constraint firstItem="pJ5-sL-rYL" firstAttribute="top" secondItem="BiD-mX-nSB" secondAttribute="top" type="default" id="iou-wO-c9R"/>
@@ -313,9 +279,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ed2-vZ-QpH"/>
-                    <connections>
-                        <outlet property="pageTitle" destination="8OX-1o-NA7" id="h8y-TN-lXG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNF-t7-gfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,12 +316,6 @@
                 <relationship kind="action" name="loadMainMenuStoryboard:"/>
             </relationships>
         </class>
-        <class className="CalenderCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CalenderCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="saveDateButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
         <class className="CommunityViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CommunityViewController.h"/>
             <relationships>
@@ -382,10 +339,13 @@
         <class className="SocialMediaViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialMediaViewController.h"/>
             <relationships>
+                <relationship kind="action" name="facebook:"/>
+                <relationship kind="action" name="instagram:"/>
                 <relationship kind="action" name="openFacebook:"/>
                 <relationship kind="action" name="openGooglePlus:"/>
                 <relationship kind="action" name="openInstragram:"/>
                 <relationship kind="action" name="openTwitter:"/>
+                <relationship kind="action" name="twitter:"/>
                 <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
             </relationships>
         </class>

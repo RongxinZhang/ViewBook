@@ -64,13 +64,12 @@
     
 }
 - (IBAction)instagram:(id)sender {
-    NSURL *instagramURL = [NSURL URLWithString:@"instagram://location?id=1"];
-    if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
-        [[UIApplication sharedApplication] openURL:instagramURL];
+    NSURL *urlApp = [NSURL URLWithString:@"instagram://location?id=1"];
+    if ([[UIApplication sharedApplication] canOpenURL:urlApp]) {
+        [[UIApplication sharedApplication] openURL:urlApp];
     } else {
         NSURL *url = [ [ NSURL alloc ] initWithString: @"http://instagram.com/" ];
         [[UIApplication sharedApplication] openURL:url];
-
     }
 }
 

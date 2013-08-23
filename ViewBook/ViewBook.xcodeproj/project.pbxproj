@@ -92,6 +92,8 @@
 		2D9087B617C1FC59009DDDEB /* StudiosSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9087B417C1FC59009DDDEB /* StudiosSlideshowViewController.m */; };
 		2D9087B917C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */; };
 		2D9087BA17C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */; };
+		2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
+		2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
 		2DCCA08E17C1BBCD00B81172 /* PortfolioRequirementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */; };
 		2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */; };
 		2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */; };
@@ -234,6 +236,8 @@
 		2D9087B417C1FC59009DDDEB /* StudiosSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudiosSlideshowViewController.m; path = "Start Points/StudiosSlideshowViewController.m"; sourceTree = "<group>"; };
 		2D9087B717C1FC70009DDDEB /* CampusSlideshowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CampusSlideshowViewController.h; path = "Start Points/CampusSlideshowViewController.h"; sourceTree = "<group>"; };
 		2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusSlideshowViewController.m; path = "Start Points/CampusSlideshowViewController.m"; sourceTree = "<group>"; };
+		2DAE88CB17C733190034B8C8 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = "Build Networks/XMLParser.h"; sourceTree = "<group>"; };
+		2DAE88CC17C733190034B8C8 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Build Networks/XMLParser.m"; sourceTree = "<group>"; };
 		2DCCA08C17C1BBCD00B81172 /* PortfolioRequirementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortfolioRequirementsViewController.h; path = "Apply Now/PortfolioRequirementsViewController.h"; sourceTree = "<group>"; };
 		2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortfolioRequirementsViewController.m; path = "Apply Now/PortfolioRequirementsViewController.m"; sourceTree = "<group>"; };
 		2DCCA08F17C1BBED00B81172 /* ApplicationDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDirectionsViewController.h; path = "Apply Now/ApplicationDirectionsViewController.h"; sourceTree = "<group>"; };
@@ -352,6 +356,8 @@
 				2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */,
 				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
 				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
+				2DAE88CB17C733190034B8C8 /* XMLParser.h */,
+				2DAE88CC17C733190034B8C8 /* XMLParser.m */,
 				2D8957C617C474D90044F167 /* RecruitmentCalenderCell.h */,
 				2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */,
 				2DCCA09917C1BD0500B81172 /* CommunityViewController.h */,
@@ -842,6 +848,7 @@
 				2DF36BEB17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */,
 				2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */,
 				2D8957C817C474D90044F167 /* RecruitmentCalenderCell.m in Sources */,
+				2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +871,7 @@
 				2DF36BEC17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */,
 				2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */,
 				2D8957C917C474D90044F167 /* RecruitmentCalenderCell.m in Sources */,
+				2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -65,12 +65,16 @@
     [dataXML writeToFile:storePath atomically:TRUE];
     
     // Read Data
-    NSData *readXML = [NSData dataWithContentsOfFile:storePath];
+    NSData *savedXML = [NSData dataWithContentsOfFile:storePath];
     
     // Parse XML
-    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:readXML];
-    BOOL success = [xmlParser parse];
+    NSXMLParser *NSXmlParser = [[NSXMLParser alloc] initWithData:savedXML];
     
+    XMLParser *xmlParser = [[XMLParser alloc] initXMLParser];
+    
+    [NSXmlParser setDelegate:xmlParser];
+    
+    BOOL success = [NSXmlParser parse];
     NSLog(@"Was The Parser Successful? ... %d", success);
     
 }
@@ -83,9 +87,9 @@
 }
 
 // XML STUFF
-
+/*
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
-    
+    NSLog(@"didStartElement");
     currentKey = nil;
     currentStringValue = nil;
     
@@ -112,6 +116,7 @@
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    NSLog(@"foundCharacters");
     if(currentKey){
         if(!currentStringValue){
             currentStringValue = [[NSMutableString alloc] initWithCapacity:200];
@@ -123,12 +128,13 @@
 }
  
  -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+     NSLog(@"didEndElement");
      if([elementName isEqualToString:@"Signature"] && [currentStringValue intValue] == 804){
          //ivar.signature = [currentStringValue intValue];
          return;
      }
  }
- 
+ */
 
 // TABLE STUFF
 

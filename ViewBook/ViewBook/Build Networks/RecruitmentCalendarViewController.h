@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMLParser.h"
 
 @interface RecruitmentCalendarViewController : UITableViewController {
     
     // Screen Index
     NSInteger screenIndex;
-    
+        
 }
 
 @property (strong, nonatomic) NSMutableArray *eventTimes;

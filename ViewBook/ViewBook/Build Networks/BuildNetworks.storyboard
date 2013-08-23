@@ -339,13 +339,10 @@
         <class className="SocialMediaViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialMediaViewController.h"/>
             <relationships>
-                <relationship kind="action" name="facebook:"/>
-                <relationship kind="action" name="instagram:"/>
                 <relationship kind="action" name="openFacebook:"/>
                 <relationship kind="action" name="openGooglePlus:"/>
                 <relationship kind="action" name="openInstragram:"/>
                 <relationship kind="action" name="openTwitter:"/>
-                <relationship kind="action" name="twitter:"/>
                 <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
             </relationships>
         </class>

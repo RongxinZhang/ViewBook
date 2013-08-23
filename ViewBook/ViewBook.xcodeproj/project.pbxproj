@@ -142,6 +142,7 @@
 		7991A88C17C3C70100505821 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88917C3C70100505821 /* twitter.png */; };
 		7991A88D17C3C70100505821 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88A17C3C70100505821 /* facebook.png */; };
 		7991A88E17C3C70100505821 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88B17C3C70100505821 /* instagram.png */; };
+		79B9F60817C49075005AA832 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B9F60717C49074005AA832 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -259,6 +260,7 @@
 		7991A88917C3C70100505821 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		7991A88A17C3C70100505821 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		7991A88B17C3C70100505821 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		79B9F60717C49074005AA832 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B9F60817C49075005AA832 /* MessageUI.framework in Frameworks */,
 				2D47AD1F17921513003D5D8B /* UIKit.framework in Frameworks */,
 				2D47AD2117921513003D5D8B /* Foundation.framework in Frameworks */,
 				2D47AD2317921513003D5D8B /* CoreGraphics.framework in Frameworks */,
@@ -384,6 +387,7 @@
 		2D47AD1217921512003D5D8B = {
 			isa = PBXGroup;
 			children = (
+				79B9F60717C49074005AA832 /* MessageUI.framework */,
 				2D47AD2417921513003D5D8B /* ViewBook */,
 				2D47AD4B17921513003D5D8B /* ViewBookTests */,
 				2D47AD1D17921513003D5D8B /* Frameworks */,

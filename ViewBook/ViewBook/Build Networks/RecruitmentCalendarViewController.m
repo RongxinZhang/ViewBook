@@ -20,8 +20,7 @@
 
 
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
+- (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
@@ -29,39 +28,25 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Array To Populate Table
     self.eventTimes = [[NSMutableArray alloc]init];
-    
-    [self.eventTimes addObject:@"16-10-2013 4:15 PM"];
-    [self.eventTimes addObject:@"16-11-2013 4:17 PM"];
-    [self.eventTimes addObject:@"19-08-2013 4:19 PM"];
-    
-    for (NSString *date in self.eventTimes) {
-        NSLog(@"Array values: %@", date);
-    }
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     // XML Path
     NSString *URLString = @"http://www.jesses.co.tt/storage/recruitments.xml";
     NSURL *URL = [NSURL URLWithString: [URLString stringByAddingPercentEscapesUsingEncoding:
                    NSASCIIStringEncoding]];
     
     // Cast XML into Data
-    NSData *dataXML = [NSData dataWithContentsOfURL:URL];
+    NSData *xmlData = [NSData dataWithContentsOfURL:URL];
     
     // Save File
     NSString *applicationDocumentsDir =
     [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *storePath = [applicationDocumentsDir stringByAppendingPathComponent:@"recruitments.xml"];
-    [dataXML writeToFile:storePath atomically:TRUE];
+    [xmlData writeToFile:storePath atomically:TRUE];
     
     // Read Data
     NSData *savedXML = [NSData dataWithContentsOfFile:storePath];
@@ -76,11 +61,20 @@
     BOOL success = [NSXmlParser parse];
     NSLog(@"Was The Parser Successful? ... %d", success);
     
+    NSLog(@"Able To Get These Events: %@", [xmlParser cumulativeEvents]);
+    
+    for (NSString *event in [xmlParser cumulativeEvents]) {
+        NSLog(@"This Is An Event: %@", event);
+        [self.eventTimes addObject:event];
+    }
+    
+    for (NSString *date in self.eventTimes) {
+        NSLog(@"Final Array values: %@", date);
+    }
+    
 }
 
-
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -92,16 +86,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;
+    return [self.eventTimes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -121,8 +113,8 @@
     [saveButton setBackgroundColor:[UIColor blackColor]];
     [saveButton setTitle:@"Save" forState:UIControlStateNormal];
 
-    [calenderCell addSubview:saveButton];
-    [calenderCell setIndentationWidth:45];
+    //[calenderCell addSubview:saveButton];
+    [calenderCell setIndentationWidth:5];
     [calenderCell setIndentationLevel:2];
            
     return calenderCell;

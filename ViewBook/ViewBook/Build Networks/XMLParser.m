@@ -10,40 +10,25 @@
 
 @interface XMLParser ()
 
+
+
 @end
 
 @implementation XMLParser
 
 
 // Synthesize Variables
-@synthesize currentDate, currentTime, currentPlace;
-@synthesize cumulativeDate, cumulativeTime, cumulativePlace;
+@synthesize currentEvent, cumulativeEvents;
+
 
 -(XMLParser *)initXMLParser {
     //[super init];
     
+    // Init Strings
+    currentEvent = [[NSMutableString alloc] init];
+    cumulativeEvents = [[NSMutableArray alloc] init];
+    
     return self;
-}
-
--(BOOL)parseDocumentWithData:(NSData *)data {
-    if (data == nil)
-        return NO;
-    
-    // this is the parsing machine
-    NSXMLParser *xmlparser = [[NSXMLParser alloc] initWithData:data];
-    
-    // this class will handle the events
-    [xmlparser setDelegate:self];
-    [xmlparser setShouldResolveExternalEntities:NO];
-    
-    // now parse the document
-    BOOL ok = [xmlparser parse];
-    if (ok == NO)
-        NSLog(@"error");
-    else
-        NSLog(@"OK");
-    
-    return ok;
 }
 
 -(void)parserDidStartDocument:(NSXMLParser *)parser {
@@ -52,6 +37,7 @@
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser {
     NSLog(@"didEndDocument");
+    NSLog(@"Cumulative Events Are %@", cumulativeEvents);
 }
 
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
@@ -64,50 +50,61 @@
     if (qName != nil)
         NSLog(@"qualifiedName: %@", qName);
     
-    // print all attributes for this element
-    NSEnumerator *attribs = [attributeDict keyEnumerator];
-    NSString *key, *value;
-    
-    while((key = [attribs nextObject]) != nil) {
-        value = [attributeDict objectForKey:key];
-        NSLog(@"  attribute: %@ = %@", key, value);
-    }
-
-    if([elementName isEqualToString:@"date"]){
-        NSLog(@"Date is %@", elementName);
-
+    if([elementName isEqualToString:@"event"]){
+        // Clear String
+        [currentEvent setString:@""];
     }
     
-    if([elementName isEqualToString:@"time"]){
-        NSLog(@"Time is %@", elementName);
 
-    }
-    
-    if([elementName isEqualToString:@"place"]){
-        NSLog(@"Place is %@", elementName);
-
-    }
     
 }
 
-- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)elementName {
-    NSLog(@"Found Characters: %@", elementName);
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)characters {
+    NSLog(@"Found Characters: %@", characters);
 
-    if ([elementName isEqualToString:@"date"]) {
-        //[currentDate appendString:elementName];
-    } else if ([elementName isEqualToString:@"time"]) {
-        //[cumulativeTime appendString:elementName];
-    } else if ([elementName isEqualToString:@"place"]) {
-        //[cumulativePlace appendString:elementName];
+    if([characters length] > 0) {
+        [currentEvent appendString: [characters stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
     }
+    NSLog(@"Event: %@", currentEvent);
 
+}
+
+- (void)parser:(NSXMLParser *)parser foundIgnorableWhitespace:(NSString *)whitespaceString {
+    NSLog(@"Found Whitespace");
 }
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
     NSLog(@"didEndElement: %@", elementName);
+    
+    if([elementName isEqualToString:@"date"]){
+        //
+        NSString *comma = @", ";
+        [currentEvent appendString:comma];
+    }
+    
+    if([elementName isEqualToString:@"time"]){
+        //
+        NSString *comma = @", ";
+        [currentEvent appendString:comma];
+    }
+    
+    if([elementName isEqualToString:@"place"]){
+        NSLog(@"End Of An Event");
+
+        // Add The String To The Array
+        NSString *tempEvent = currentEvent;
+        [cumulativeEvents addObject: tempEvent];
+        
+        for (NSString *event in cumulativeEvents) {
+            NSLog(@"This Is An Event: %@", event);
+        }
+        
+    }
+    
+    
+    
 }
 
-// error handling
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
     NSLog(@"XMLParser error: %@", [parseError localizedDescription]);
 }

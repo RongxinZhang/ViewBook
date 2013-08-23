@@ -17,10 +17,7 @@
 }
 
 @property (strong, nonatomic) NSMutableArray *eventTimes;
-@property (strong, nonatomic) NSString *currentKey;
-@property (strong, nonatomic) NSString *currentStringValue;
-@property (nonatomic, retain) NSString *xmlDate;
-@property (nonatomic, retain) NSString *xmlTime;
-@property (nonatomic, retain) NSString *xmlPlace;
+
+
 
 @end

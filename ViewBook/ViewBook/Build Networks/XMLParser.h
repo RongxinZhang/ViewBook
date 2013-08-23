@@ -8,13 +8,27 @@
 
 #import <Foundation/Foundation.h>
 #import <Foundation/NSXMLParser.h>
+#import "RecruitmentEvent.h"
 
 @interface XMLParser : NSObject <NSXMLParserDelegate> {
     
         
 }
 
+// Methods
 -(XMLParser *)initXMLParser;
 -(BOOL)parseDocumentWithData:(NSData *)data;
+
+// Date
+@property (strong, nonatomic) NSMutableArray *cumulativeDate;
+@property (nonatomic, retain) NSString *currentDate;
+
+// Time
+@property (strong, nonatomic) NSMutableArray *cumulativeTime;
+@property (nonatomic, retain) NSString *currentTime;
+
+// Place
+@property (strong, nonatomic) NSMutableArray *cumulativePlace;
+@property (nonatomic, retain) NSString *currentPlace;
 
 @end

@@ -17,8 +17,7 @@
 @implementation RecruitmentCalendarViewController
 
 @synthesize eventTimes;
-@synthesize currentKey, currentStringValue;
-@synthesize xmlDate, xmlTime, xmlPlace;
+
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -86,55 +85,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-// XML STUFF
-/*
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
-    NSLog(@"didStartElement");
-    currentKey = nil;
-    currentStringValue = nil;
-    
-    if([elementName isEqualToString:@"dates"]){
-        if([elementName isEqualToString:@"file"]){
-            xmlDate = elementName;
-            return;
-        }
-    }
-    
-    if([elementName isEqualToString:@"times"]){
-        if([elementName isEqualToString:@"file"]){
-            xmlTime = elementName;
-            return;
-        }
-    }
-    
-    if([elementName isEqualToString:@"places"]){
-        if([elementName isEqualToString:@"file"]){
-            xmlPlace = elementName;
-            return;
-        }
-    }
-}
-
-- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
-    NSLog(@"foundCharacters");
-    if(currentKey){
-        if(!currentStringValue){
-            currentStringValue = [[NSMutableString alloc] initWithCapacity:200];
-        }
-        else {
-            //[currentStringValue appendString:string];
-        }
-    }
-}
- 
- -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
-     NSLog(@"didEndElement");
-     if([elementName isEqualToString:@"Signature"] && [currentStringValue intValue] == 804){
-         //ivar.signature = [currentStringValue intValue];
-         return;
-     }
- }
- */
 
 // TABLE STUFF
 

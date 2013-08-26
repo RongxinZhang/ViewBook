@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
-@property (weak, nonatomic) IBOutlet UITextField *question;
+@property (weak, nonatomic) IBOutlet UITextField *messageField;
 
 @end
 
@@ -45,10 +45,11 @@
     // Set PList To Page Title
     pageTitle.text = [screenNames objectAtIndex:screenIndex];
     
-    // 
-    CGRect frameRect = self.question.textInputView.frame;
-    frameRect.size.height = 53;
-    self.question.textInputView.frame = frameRect;
+    // Increase Size Of Message Field
+    //CGRect frameRect = self.messageField.textInputView.frame;
+    //frameRect.size.height = 90;
+    //self.messageField.textInputView.frame = frameRect;
+    self.messageField.frame = CGRectMake(160, 278, 213, 90);
 
     
 }
@@ -68,7 +69,7 @@
             NSArray *toRecipients = [NSArray arrayWithObjects:@"tzpandaman@hotmail.com", @"jessecolinscott@gmail.com", nil];
             [mailer setToRecipients:toRecipients];
             NSString *nameMessage = [NSString stringWithFormat:@"Name of Prospective Student: %@ %@\r", self.firstNameField.text,self.lastNameField.text];
-            NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.question.text, self.phoneField.text];
+            NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.messageField.text, self.phoneField.text];
             NSString *emailBody = [NSString stringWithFormat:@"%@ %@", nameMessage, questionMessage];
             [mailer setMessageBody:emailBody isHTML:NO];
             [self presentModalViewController:mailer animated:YES];

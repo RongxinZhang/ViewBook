@@ -40,6 +40,10 @@
 		2D29E79017C02AED004BB03C /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E78F17C02AED004BB03C /* MainMenu.storyboard */; };
 		2D29E79117C02AED004BB03C /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E78F17C02AED004BB03C /* MainMenu.storyboard */; };
 		2D44016B17CADAFE00F1079B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D44016A17CADAFE00F1079B /* MessageUI.framework */; };
+		2D44016E17CAE06A00F1079B /* flickr.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016C17CAE06A00F1079B /* flickr.png */; };
+		2D44016F17CAE06A00F1079B /* flickr.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016C17CAE06A00F1079B /* flickr.png */; };
+		2D44017017CAE06A00F1079B /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016D17CAE06A00F1079B /* pinterest.png */; };
+		2D44017117CAE06A00F1079B /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016D17CAE06A00F1079B /* pinterest.png */; };
 		2D47AD1F17921513003D5D8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD1E17921513003D5D8B /* UIKit.framework */; };
 		2D47AD2117921513003D5D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD2017921513003D5D8B /* Foundation.framework */; };
 		2D47AD2317921513003D5D8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD2217921513003D5D8B /* CoreGraphics.framework */; };
@@ -61,8 +65,6 @@
 		2D8957C917C474D90044F167 /* RecruitmentCalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */; };
 		2D8957CE17C477920044F167 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CB17C477920044F167 /* facebook.png */; };
 		2D8957CF17C477920044F167 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CB17C477920044F167 /* facebook.png */; };
-		2D8957D017C477920044F167 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CC17C477920044F167 /* instagram.png */; };
-		2D8957D117C477920044F167 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CC17C477920044F167 /* instagram.png */; };
 		2D8957D217C477920044F167 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CD17C477920044F167 /* twitter.png */; };
 		2D8957D317C477920044F167 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CD17C477920044F167 /* twitter.png */; };
 		2D8957D817C480CD0044F167 /* gplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957D717C480CD0044F167 /* gplus.png */; };
@@ -195,6 +197,8 @@
 		2D29E78C17C02A1E004BB03C /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = "Splash Screen/SplashScreen.storyboard"; sourceTree = "<group>"; };
 		2D29E78F17C02AED004BB03C /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainMenu.storyboard; path = "Main Menu/MainMenu.storyboard"; sourceTree = "<group>"; };
 		2D44016A17CADAFE00F1079B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2D44016C17CAE06A00F1079B /* flickr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flickr.png; sourceTree = "<group>"; };
+		2D44016D17CAE06A00F1079B /* pinterest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterest.png; sourceTree = "<group>"; };
 		2D47AD1B17921513003D5D8B /* ViewBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D47AD1E17921513003D5D8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D47AD2017921513003D5D8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -222,7 +226,6 @@
 		2D8957C617C474D90044F167 /* RecruitmentCalenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecruitmentCalenderCell.h; path = "Build Networks/RecruitmentCalenderCell.h"; sourceTree = "<group>"; };
 		2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecruitmentCalenderCell.m; path = "Build Networks/RecruitmentCalenderCell.m"; sourceTree = "<group>"; };
 		2D8957CB17C477920044F167 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
-		2D8957CC17C477920044F167 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		2D8957CD17C477920044F167 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		2D8957D717C480CD0044F167 /* gplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gplus.png; sourceTree = "<group>"; };
 		2D90878317C1F645009DDDEB /* alumni_survey_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_01.png; sourceTree = "<group>"; };
@@ -512,9 +515,10 @@
 		2D8957CA17C477920044F167 /* Build Networks */ = {
 			isa = PBXGroup;
 			children = (
+				2D44016C17CAE06A00F1079B /* flickr.png */,
+				2D44016D17CAE06A00F1079B /* pinterest.png */,
 				2D8957D717C480CD0044F167 /* gplus.png */,
 				2D8957CB17C477920044F167 /* facebook.png */,
-				2D8957CC17C477920044F167 /* instagram.png */,
 				2D8957CD17C477920044F167 /* twitter.png */,
 			);
 			name = "Build Networks";
@@ -754,13 +758,14 @@
 				2DF36C2A17C34402006B0994 /* studios_slideshow_04.png in Resources */,
 				2DF36C2C17C34402006B0994 /* studios_slideshow_05.png in Resources */,
 				2D8957CE17C477920044F167 /* facebook.png in Resources */,
-				2D8957D017C477920044F167 /* instagram.png in Resources */,
 				2D8957D217C477920044F167 /* twitter.png in Resources */,
 				2D8957D817C480CD0044F167 /* gplus.png in Resources */,
 				2D142B0517C4895F0013F036 /* GreatNorthernWay.txt in Resources */,
 				2D142B0717C4895F0013F036 /* IndustryEngagement.txt in Resources */,
 				2D142B0917C4895F0013F036 /* PublicEngagement.txt in Resources */,
 				2D142B0C17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */,
+				2D44016E17CAE06A00F1079B /* flickr.png in Resources */,
+				2D44017017CAE06A00F1079B /* pinterest.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,13 +817,14 @@
 				2DF36C2B17C34402006B0994 /* studios_slideshow_04.png in Resources */,
 				2DF36C2D17C34402006B0994 /* studios_slideshow_05.png in Resources */,
 				2D8957CF17C477920044F167 /* facebook.png in Resources */,
-				2D8957D117C477920044F167 /* instagram.png in Resources */,
 				2D8957D317C477920044F167 /* twitter.png in Resources */,
 				2D8957D917C480CD0044F167 /* gplus.png in Resources */,
 				2D142B0617C4895F0013F036 /* GreatNorthernWay.txt in Resources */,
 				2D142B0817C4895F0013F036 /* IndustryEngagement.txt in Resources */,
 				2D142B0A17C4895F0013F036 /* PublicEngagement.txt in Resources */,
 				2D142B0D17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */,
+				2D44016F17CAE06A00F1079B /* flickr.png in Resources */,
+				2D44017117CAE06A00F1079B /* pinterest.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,6 +995,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewBook/ViewBook-Prefix.pch";
 				INFOPLIST_FILE = "ViewBook/ViewBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1001,6 +1008,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewBook/ViewBook-Prefix.pch";
 				INFOPLIST_FILE = "ViewBook/ViewBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

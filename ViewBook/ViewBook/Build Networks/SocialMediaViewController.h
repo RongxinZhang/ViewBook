@@ -23,8 +23,11 @@
 
 - (IBAction)openTwitter:(id)sender;
 
-- (IBAction)openInstragram:(id)sender;
-
 - (IBAction)openGooglePlus:(id)sender;
+
+- (IBAction)openFlickr:(id)sender;
+
+- (IBAction)openPinterest:(id)sender;
+
 
 @end

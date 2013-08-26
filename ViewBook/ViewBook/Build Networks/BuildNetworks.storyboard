@@ -201,8 +201,8 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dF1-JP-Xbp">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="99" id="EiV-vj-cOQ"/>
-                                    <constraint firstAttribute="width" constant="113" id="I3f-Nq-Qjs"/>
+                                    <constraint firstAttribute="width" constant="75" id="EBW-Cd-FHH"/>
+                                    <constraint firstAttribute="height" constant="75" id="Eg0-BX-QC1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="facebook.png">
@@ -218,7 +218,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBV-fM-xyj">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="GNX-fG-Vlz"/>
+                                    <constraint firstAttribute="height" constant="75" id="Zvh-Bt-OXj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="twitter.png">
@@ -234,21 +234,40 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiD-mX-nSB">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="99" id="HSl-QO-Brv"/>
+                                    <constraint firstAttribute="height" constant="75" id="4NX-bV-veM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="instagram.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" backgroundImage="pinterest.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="openInstragram:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="FK6-F6-aCe"/>
+                                    <action selector="openPinterest:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="Wpo-Wy-qfI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZL-hk-CMN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="1Iy-oN-vLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" backgroundImage="flickr.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openFlickr:" destination="Pm8-yN-mrY" eventType="touchUpInside" id="rj5-HW-lep"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ5-sL-rYL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="ecz-lT-CE0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="gplus.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -264,18 +283,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BiD-mX-nSB" firstAttribute="trailing" secondItem="dF1-JP-Xbp" secondAttribute="trailing" type="default" id="6oU-no-WW0"/>
-                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="bottom" secondItem="bBV-fM-xyj" secondAttribute="bottom" type="default" id="7KE-85-jJQ"/>
-                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="leading" secondItem="6CH-6A-lKI" secondAttribute="leading" constant="26" id="D2h-Rh-XQu"/>
-                            <constraint firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" constant="33" id="GTg-Fl-666"/>
-                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="leading" secondItem="bBV-fM-xyj" secondAttribute="leading" type="default" id="HLg-M4-6Yo"/>
-                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" type="default" id="Jyh-Sb-ZU4"/>
-                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" type="default" id="VXy-an-Zaa"/>
-                            <constraint firstItem="bBV-fM-xyj" firstAttribute="top" secondItem="dF1-JP-Xbp" secondAttribute="top" type="default" id="grA-V3-pem"/>
-                            <constraint firstAttribute="bottom" secondItem="BiD-mX-nSB" secondAttribute="bottom" constant="142" id="hNX-dZ-5Ta"/>
-                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="top" secondItem="BiD-mX-nSB" secondAttribute="top" type="default" id="iou-wO-c9R"/>
-                            <constraint firstItem="BiD-mX-nSB" firstAttribute="leading" secondItem="dF1-JP-Xbp" secondAttribute="leading" type="default" id="yHB-iH-XD9"/>
-                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="top" secondItem="6CH-6A-lKI" secondAttribute="top" constant="141" id="yhT-pU-GSg"/>
+                            <constraint firstItem="bBV-fM-xyj" firstAttribute="leading" secondItem="dF1-JP-Xbp" secondAttribute="leading" type="default" id="01U-gR-vec"/>
+                            <constraint firstItem="bBV-fM-xyj" firstAttribute="trailing" secondItem="dF1-JP-Xbp" secondAttribute="trailing" type="default" id="01l-B2-c8A"/>
+                            <constraint firstItem="7ZL-hk-CMN" firstAttribute="top" secondItem="pJ5-sL-rYL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4GE-Er-RPU"/>
+                            <constraint firstItem="7ZL-hk-CMN" firstAttribute="leading" secondItem="BiD-mX-nSB" secondAttribute="leading" type="default" id="Ec3-cq-16D"/>
+                            <constraint firstItem="7ZL-hk-CMN" firstAttribute="trailing" secondItem="pJ5-sL-rYL" secondAttribute="trailing" type="default" id="FVz-kj-75c"/>
+                            <constraint firstItem="BiD-mX-nSB" firstAttribute="top" secondItem="7ZL-hk-CMN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Sfg-4j-Y7K"/>
+                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="centerX" secondItem="6CH-6A-lKI" secondAttribute="centerX" type="default" id="Tpc-xn-SHX"/>
+                            <constraint firstItem="7ZL-hk-CMN" firstAttribute="leading" secondItem="pJ5-sL-rYL" secondAttribute="leading" type="default" id="Trg-LZ-w1U"/>
+                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="trailing" secondItem="bBV-fM-xyj" secondAttribute="trailing" type="default" id="d0i-q3-bSN"/>
+                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="centerY" secondItem="6CH-6A-lKI" secondAttribute="centerY" type="default" id="fR5-cH-jSp"/>
+                            <constraint firstItem="dF1-JP-Xbp" firstAttribute="top" secondItem="6CH-6A-lKI" secondAttribute="top" constant="47" id="gBB-XZ-aDK"/>
+                            <constraint firstItem="pJ5-sL-rYL" firstAttribute="leading" secondItem="bBV-fM-xyj" secondAttribute="leading" type="default" id="nzx-bu-e19"/>
+                            <constraint firstItem="BiD-mX-nSB" firstAttribute="trailing" secondItem="7ZL-hk-CMN" secondAttribute="trailing" type="default" id="wEv-T4-hJI"/>
+                            <constraint firstItem="bBV-fM-xyj" firstAttribute="top" secondItem="dF1-JP-Xbp" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="yWo-gg-v3r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ed2-vZ-QpH"/>
@@ -305,8 +326,9 @@
     </scenes>
     <resources>
         <image name="facebook.png" width="100" height="100"/>
+        <image name="flickr.png" width="100" height="100"/>
         <image name="gplus.png" width="100" height="99"/>
-        <image name="instagram.png" width="100" height="100"/>
+        <image name="pinterest.png" width="100" height="100"/>
         <image name="twitter.png" width="100" height="100"/>
     </resources>
     <classes>
@@ -346,8 +368,9 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialMediaViewController.h"/>
             <relationships>
                 <relationship kind="action" name="openFacebook:"/>
+                <relationship kind="action" name="openFlickr:"/>
                 <relationship kind="action" name="openGooglePlus:"/>
-                <relationship kind="action" name="openInstragram:"/>
+                <relationship kind="action" name="openPinterest:"/>
                 <relationship kind="action" name="openTwitter:"/>
                 <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
             </relationships>

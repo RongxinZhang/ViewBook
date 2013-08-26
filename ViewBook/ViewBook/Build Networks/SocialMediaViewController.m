@@ -43,38 +43,7 @@
     
 }
 
--(IBAction)facebook:(id)sender {
-
-    NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"fb://Emily.Carr.University"]];
-    if ([[UIApplication sharedApplication] canOpenURL:urlApp]){
-        [[UIApplication sharedApplication] openURL:urlApp];
-    }else{
-        NSURL *url = [ [ NSURL alloc ] initWithString: @"https://www.facebook.com/Emily.Carr.University"];
-        [[UIApplication sharedApplication] openURL:url];
-    }
-}
-- (IBAction)twitter:(id)sender {
-    NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"twitter://user?screen_name=EmilyCarrU"]];
-    if ([[UIApplication sharedApplication] canOpenURL:urlApp]){
-        [[UIApplication sharedApplication] openURL:urlApp];
-    }else{
-        NSURL *url = [ [ NSURL alloc ] initWithString: @"https://twitter.com/EmilyCarrU" ];
-        [[UIApplication sharedApplication] openURL:url];
-    }
-    
-}
-- (IBAction)instagram:(id)sender {
-    NSURL *urlApp = [NSURL URLWithString:@"instagram://location?id=1"];
-    if ([[UIApplication sharedApplication] canOpenURL:urlApp]) {
-        [[UIApplication sharedApplication] openURL:urlApp];
-    } else {
-        NSURL *url = [ [ NSURL alloc ] initWithString: @"http://instagram.com/" ];
-        [[UIApplication sharedApplication] openURL:url];
-    }
-}
-
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -111,21 +80,6 @@
     }
 }
 
-- (IBAction)openInstragram:(id)sender {
-    // URL's
-    NSURL *instagramApp = [NSURL URLWithString:@"instagram://user?username=USERNAME"];
-    NSURL *instagramWeb = [NSURL URLWithString:@"http://twitter.com/EmilyCarrU"];
-    
-    // Open The App ?
-    if ([[UIApplication sharedApplication] canOpenURL:instagramApp]) {
-        [[UIApplication sharedApplication] openURL:instagramApp];
-    }
-    // ... Or Website
-    else {
-        [[UIApplication sharedApplication] openURL:instagramWeb];
-    }
-}
-
 - (IBAction)openGooglePlus:(id)sender {
     // URL's
     NSURL *gplusApp = [NSURL URLWithString:@"googleplus://"];
@@ -138,6 +92,36 @@
     // ... Or Website
     else {
         [[UIApplication sharedApplication] openURL:gplusWeb];
+    }
+}
+
+- (IBAction)openFlickr:(id)sender {
+    // URL's
+    NSURL *flickrApp = [NSURL URLWithString:@"flickr://www.flickr.com/photos/emilycarrrecruit/"];
+    NSURL *flickrWeb = [NSURL URLWithString:@"http://www.flickr.com/photos/emilycarrrecruit/"];
+    
+    // Open The App ?
+    if ([[UIApplication sharedApplication] canOpenURL:flickrApp]) {
+        [[UIApplication sharedApplication] openURL:flickrApp];
+    }
+    // ... Or Website
+    else {
+        [[UIApplication sharedApplication] openURL:flickrWeb];
+    }
+}
+
+- (IBAction)openPinterest:(id)sender {
+    // URL's
+    NSURL *pinterestApp = [NSURL URLWithString:@"pinit12://pinterest.com/emilycarru/recruitment-news-events/"];
+    NSURL *pinterestWeb = [NSURL URLWithString:@"http://pinterest.com/emilycarru/recruitment-news-events/"];
+    
+    // Open The App ?
+    if ([[UIApplication sharedApplication] canOpenURL:pinterestApp]) {
+        [[UIApplication sharedApplication] openURL:pinterestApp];
+    }
+    // ... Or Website
+    else {
+        [[UIApplication sharedApplication] openURL:pinterestWeb];
     }
 }
 

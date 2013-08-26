@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
-@property (weak, nonatomic) IBOutlet UITextField *messageField;
+@property (strong, nonatomic) IBOutlet UITextField *messageField;
 
 @end
 
@@ -46,11 +46,9 @@
     pageTitle.text = [screenNames objectAtIndex:screenIndex];
     
     // Increase Size Of Message Field
-    //CGRect frameRect = self.messageField.textInputView.frame;
-    //frameRect.size.height = 90;
-    //self.messageField.textInputView.frame = frameRect;
-    self.messageField.frame = CGRectMake(160, 278, 213, 90);
-
+    self.messageField.borderStyle = UITextBorderStyleLine;
+    self.messageField.frame = CGRectMake(160, 278, 213, 300);
+    self.messageField.borderStyle = UITextBorderStyleRoundedRect;
     
 }
 

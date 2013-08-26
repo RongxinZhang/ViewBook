@@ -1,5 +1,5 @@
 //
-//  CreateFuturesViewController.h
+//  AlumniSurveyViewController.h
 //  ViewBook
 //
 //  Created by Jesse Scott on 2013-08-17.
@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateFuturesViewController : UIViewController {
+@interface AlumniSurveyViewController : UIViewController {
     
+    // Screen Index
+    NSInteger screenIndex;
+    
+    // Custom Font
+    UIFont *titleFont, *paragraphFont;
     
 }
 

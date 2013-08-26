@@ -35,7 +35,7 @@
 }
 
 
--(void)embedVimeo{
+-(void)embedVimeo {
     
     NSString *embedHTML = @"<iframe width=\"300\" height=\"250\" src=\"http://player.vimeo.com/video/65436359\" frameborder=\"0\" allowfullscreen></iframe>";
         

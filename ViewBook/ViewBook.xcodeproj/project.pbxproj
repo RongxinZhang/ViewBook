@@ -104,8 +104,8 @@
 		2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */; };
 		2DCCA09717C1BCC000B81172 /* SocialMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */; };
 		2DCCA09817C1BCC000B81172 /* SocialMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */; };
-		2DCCA09B17C1BD0500B81172 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */; };
-		2DCCA09C17C1BD0500B81172 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */; };
+		2DCCA09B17C1BD0500B81172 /* PublicEngagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09A17C1BD0500B81172 /* PublicEngagementViewController.m */; };
+		2DCCA09C17C1BD0500B81172 /* PublicEngagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09A17C1BD0500B81172 /* PublicEngagementViewController.m */; };
 		2DCCA09F17C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */; };
 		2DCCA0A017C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */; };
 		2DCCA0A317C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */; };
@@ -255,8 +255,8 @@
 		2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactECUADViewController.m; path = "Apply Now/ContactECUADViewController.m"; sourceTree = "<group>"; };
 		2DCCA09517C1BCC000B81172 /* SocialMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialMediaViewController.h; path = "Build Networks/SocialMediaViewController.h"; sourceTree = "<group>"; };
 		2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialMediaViewController.m; path = "Build Networks/SocialMediaViewController.m"; sourceTree = "<group>"; };
-		2DCCA09917C1BD0500B81172 /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommunityViewController.h; path = "Build Networks/CommunityViewController.h"; sourceTree = "<group>"; };
-		2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommunityViewController.m; path = "Build Networks/CommunityViewController.m"; sourceTree = "<group>"; };
+		2DCCA09917C1BD0500B81172 /* PublicEngagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublicEngagementViewController.h; path = "Build Networks/PublicEngagementViewController.h"; sourceTree = "<group>"; };
+		2DCCA09A17C1BD0500B81172 /* PublicEngagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PublicEngagementViewController.m; path = "Build Networks/PublicEngagementViewController.m"; sourceTree = "<group>"; };
 		2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResearchIndustryViewController.h; path = "Build Networks/ResearchIndustryViewController.h"; sourceTree = "<group>"; };
 		2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResearchIndustryViewController.m; path = "Build Networks/ResearchIndustryViewController.m"; sourceTree = "<group>"; };
 		2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecruitmentCalendarViewController.h; path = "Build Networks/RecruitmentCalendarViewController.h"; sourceTree = "<group>"; };
@@ -367,8 +367,8 @@
 				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
 				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
 				2DAE88D317C73C780034B8C8 /* xml */,
-				2DCCA09917C1BD0500B81172 /* CommunityViewController.h */,
-				2DCCA09A17C1BD0500B81172 /* CommunityViewController.m */,
+				2DCCA09917C1BD0500B81172 /* PublicEngagementViewController.h */,
+				2DCCA09A17C1BD0500B81172 /* PublicEngagementViewController.m */,
 				2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */,
 				2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */,
 			);
@@ -864,7 +864,7 @@
 				2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */,
 				2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */,
 				2DCCA09717C1BCC000B81172 /* SocialMediaViewController.m in Sources */,
-				2DCCA09B17C1BD0500B81172 /* CommunityViewController.m in Sources */,
+				2DCCA09B17C1BD0500B81172 /* PublicEngagementViewController.m in Sources */,
 				2DCCA09F17C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */,
 				2DCCA0A317C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */,
 				2D9087B517C1FC59009DDDEB /* StudiosSlideshowViewController.m in Sources */,
@@ -888,7 +888,7 @@
 				2D29E78317C02705004BB03C /* CreateFuturesViewController.m in Sources */,
 				2D29E78A17C02724004BB03C /* ApplyNowViewController.m in Sources */,
 				2DCCA09817C1BCC000B81172 /* SocialMediaViewController.m in Sources */,
-				2DCCA09C17C1BD0500B81172 /* CommunityViewController.m in Sources */,
+				2DCCA09C17C1BD0500B81172 /* PublicEngagementViewController.m in Sources */,
 				2DCCA0A017C1BD1B00B81172 /* ResearchIndustryViewController.m in Sources */,
 				2DCCA0A417C1BD6D00B81172 /* RecruitmentCalendarViewController.m in Sources */,
 				2D9087B617C1FC59009DDDEB /* StudiosSlideshowViewController.m in Sources */,

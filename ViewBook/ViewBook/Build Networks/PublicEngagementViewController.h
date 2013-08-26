@@ -1,5 +1,5 @@
 //
-//  CommunityViewController.h
+//  PublicEngagementViewController.h
 //  ViewBook
 //
 //  Created by Jesse Scott on 2013-08-18.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CommunityViewController : UIViewController {
+@interface PublicEngagementViewController : UIViewController {
     
     // Screen Index
     NSInteger screenIndex;

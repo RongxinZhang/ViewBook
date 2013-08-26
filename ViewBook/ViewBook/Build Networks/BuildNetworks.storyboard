@@ -101,31 +101,46 @@
             </objects>
             <point key="canvasLocation" x="-397" y="70"/>
         </scene>
-        <!--Community-->
+        <!--Public Engagement-->
         <scene sceneID="30f-Hw-cCC">
             <objects>
-                <viewController id="m0y-Uc-ImE" userLabel="Community" customClass="CommunityViewController" sceneMemberID="viewController">
+                <viewController id="m0y-Uc-ImE" userLabel="Public Engagement" customClass="PublicEngagementViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mxr-tg-J7g">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Text About Community" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="g4C-Ji-Pu3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="iN2-kA-0z7">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="61x-3a-4z0"/>
+                                    <constraint firstAttribute="height" constant="68" id="BFJ-LG-Xji"/>
                                 </constraints>
+                                <string key="text">Page Title
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="uQ9-uS-MPn">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g4C-Ji-Pu3" firstAttribute="leading" secondItem="mxr-tg-J7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LPO-Nm-MFo"/>
-                            <constraint firstAttribute="trailing" secondItem="g4C-Ji-Pu3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Y9e-gH-904"/>
-                            <constraint firstItem="g4C-Ji-Pu3" firstAttribute="centerY" secondItem="mxr-tg-J7g" secondAttribute="centerY" type="default" id="gl7-qK-ZyL"/>
+                            <constraint firstItem="iN2-kA-0z7" firstAttribute="top" secondItem="mxr-tg-J7g" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Cjo-jX-Bjw"/>
+                            <constraint firstAttribute="trailing" secondItem="iN2-kA-0z7" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="D7e-CJ-h8b"/>
+                            <constraint firstAttribute="bottom" secondItem="uQ9-uS-MPn" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Ip5-TR-eGv"/>
+                            <constraint firstItem="iN2-kA-0z7" firstAttribute="leading" secondItem="mxr-tg-J7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SOd-rA-Snq"/>
+                            <constraint firstItem="uQ9-uS-MPn" firstAttribute="top" secondItem="iN2-kA-0z7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="W3O-uz-H6N"/>
+                            <constraint firstItem="uQ9-uS-MPn" firstAttribute="leading" secondItem="mxr-tg-J7g" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fLN-Qu-b3P"/>
+                            <constraint firstAttribute="trailing" secondItem="uQ9-uS-MPn" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="p0b-ml-Ofh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cby-0V-YDy"/>
+                    <connections>
+                        <outlet property="mainParagraph" destination="uQ9-uS-MPn" id="ZQ2-6H-7oL"/>
+                        <outlet property="pageTitle" destination="iN2-kA-0z7" id="G81-X0-cbo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBN-aC-xM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,23 +184,38 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Text About Research &amp; Industry" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="NJq-KS-63l">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2N5-JA-Gqz">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="H2R-T2-1NS"/>
+                                    <constraint firstAttribute="height" constant="68" id="LV8-3K-18B"/>
                                 </constraints>
+                                <string key="text">Page Title
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="xDB-Mp-VWY">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="NJq-KS-63l" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GJs-j8-4vO"/>
-                            <constraint firstItem="NJq-KS-63l" firstAttribute="leading" secondItem="FHf-OU-2Y4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="e4R-Zg-8O2"/>
-                            <constraint firstItem="NJq-KS-63l" firstAttribute="centerY" secondItem="FHf-OU-2Y4" secondAttribute="centerY" type="default" id="gaX-mt-jhy"/>
+                            <constraint firstItem="xDB-Mp-VWY" firstAttribute="top" secondItem="2N5-JA-Gqz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Dr5-w9-xW5"/>
+                            <constraint firstAttribute="bottom" secondItem="xDB-Mp-VWY" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="KVI-8v-6wl"/>
+                            <constraint firstItem="2N5-JA-Gqz" firstAttribute="leading" secondItem="FHf-OU-2Y4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="NNe-Sp-qyF"/>
+                            <constraint firstItem="2N5-JA-Gqz" firstAttribute="top" secondItem="FHf-OU-2Y4" secondAttribute="top" constant="20" symbolic="YES" type="default" id="XKt-0x-wnD"/>
+                            <constraint firstAttribute="trailing" secondItem="2N5-JA-Gqz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="khT-yS-DBP"/>
+                            <constraint firstItem="xDB-Mp-VWY" firstAttribute="leading" secondItem="FHf-OU-2Y4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tpy-uc-ctM"/>
+                            <constraint firstAttribute="trailing" secondItem="xDB-Mp-VWY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ydT-Yx-rLV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zh1-Az-4I3"/>
+                    <connections>
+                        <outlet property="mainParagraph" destination="xDB-Mp-VWY" id="KvU-3t-7UI"/>
+                        <outlet property="pageTitle" destination="2N5-JA-Gqz" id="F00-Mk-f3f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Of-qu-hGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,15 +368,15 @@
                 <relationship kind="action" name="loadMainMenuStoryboard:"/>
             </relationships>
         </class>
-        <class className="CommunityViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CommunityViewController.h"/>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PublicEngagementViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PublicEngagementViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="mainParagraph" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
             </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="RecruitmentCalendarViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RecruitmentCalendarViewController.h"/>

@@ -57,8 +57,6 @@
     return YES;
 }
 
-//RX mail tutorial: http://mobile.tutsplus.com/tutorials/iphone/mfmailcomposeviewcontroller/
-
 - (IBAction)sendEmailBtn:(id)sender {
         if ([MFMailComposeViewController canSendMail]) {
             MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
@@ -70,11 +68,11 @@
             NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.messageField.text, self.phoneField.text];
             NSString *emailBody = [NSString stringWithFormat:@"%@ %@", nameMessage, questionMessage];
             [mailer setMessageBody:emailBody isHTML:NO];
-            [self presentModalViewController:mailer animated:YES];
+            [self presentViewController:mailer animated:YES completion:nil];
         }
         else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
-                                                            message:@"Your device doesn't support the composer sheet"
+                                                            message:@"Your device doesn't have a mail account setup"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
@@ -102,7 +100,7 @@
     }
     
     // Remove the mail view
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

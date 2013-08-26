@@ -1,18 +1,18 @@
 //
-//  ResearchIndustryViewController.m
+//  CommunityViewController.m
 //  ViewBook
 //
 //  Created by Jesse Scott on 2013-08-18.
 //  Copyright (c) 2013 Emily Carr Institute of Art + Design. All rights reserved.
 //
 
-#import "ResearchIndustryViewController.h"
+#import "PublicEngagementViewController.h"
 
-@interface ResearchIndustryViewController ()
+@interface PublicEngagementViewController ()
 
 @end
 
-@implementation ResearchIndustryViewController
+@implementation PublicEngagementViewController
 
 // Synthesize Variables
 
@@ -32,7 +32,11 @@
 	// Do any additional setup after loading the view.
     
     // Set Screen Index
-    screenIndex = 3;
+    screenIndex = 2;
+    
+    // Load Fonts
+    titleFont = [UIFont fontWithName:@"LeituraHeadline-Serif It" size:24];
+    paragraphFont = [UIFont fontWithName:@"LeituraSans-Grot 1" size:12];
     
     // Load PList For Page Title
     NSString *pathToPlistFile = [[NSBundle mainBundle] pathForResource:@"BuildNetworksScreenNames" ofType:@"plist"];
@@ -40,14 +44,18 @@
     
     // Set PList To Page Title
     pageTitle.text = [screenNames objectAtIndex:screenIndex];
+    pageTitle.font = [UIFont fontWithName:@"LeituraHeadline-Serif It" size:24];
+    //pageTitle.font = titleFont;
     
     // Load Text File For Main Paragraph
-    NSString *pathToTextFile = [[NSBundle mainBundle] pathForResource:@"IndustryEngagement" ofType:@"txt"];
+    NSString *pathToTextFile = [[NSBundle mainBundle] pathForResource:@"PublicEngagement" ofType:@"txt"];
     NSString *fileContent = [NSString stringWithContentsOfFile:pathToTextFile encoding:NSUTF8StringEncoding error:NULL];
     
     // Set Text File To Main Paragraph Label
     mainParagraph.numberOfLines = 25;
     mainParagraph.text = fileContent;
+    mainParagraph.font = [UIFont fontWithName:@"LeituraSans-Grot 1" size:12];
+    //mainParagraph.font = [UIFont systemFontOfSize:24];
     
 }
 

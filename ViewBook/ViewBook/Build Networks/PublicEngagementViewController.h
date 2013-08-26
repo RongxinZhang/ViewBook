@@ -1,5 +1,5 @@
 //
-//  SocialMediaViewController.h
+//  PublicEngagementViewController.h
 //  ViewBook
 //
 //  Created by Jesse Scott on 2013-08-18.
@@ -8,26 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SocialMediaViewController : UIViewController {
+@interface PublicEngagementViewController : UIViewController {
     
     // Screen Index
     NSInteger screenIndex;
+    
+    // Custom Font
+    UIFont *titleFont, *paragraphFont;
     
 }
 
 // Page Title
 @property (weak, nonatomic) IBOutlet UILabel *pageTitle;
 
-// Social Media Buttons
-- (IBAction)openFacebook:(id)sender;
-
-- (IBAction)openTwitter:(id)sender;
-
-- (IBAction)openGooglePlus:(id)sender;
-
-- (IBAction)openFlickr:(id)sender;
-
-- (IBAction)openPinterest:(id)sender;
-
+// Main Paragraph
+@property (weak, nonatomic) IBOutlet UILabel *mainParagraph;
 
 @end

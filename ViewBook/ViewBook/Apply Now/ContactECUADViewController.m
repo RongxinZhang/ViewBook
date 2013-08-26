@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
 @property (weak, nonatomic) IBOutlet UITextField *question;
+
 @end
 
 @implementation ContactECUADViewController
@@ -44,11 +45,11 @@
     // Set PList To Page Title
     pageTitle.text = [screenNames objectAtIndex:screenIndex];
     
+    // 
     CGRect frameRect = self.question.textInputView.frame;
     frameRect.size.height = 53;
     self.question.textInputView.frame = frameRect;
-//    UITextField *field = [[UITextField alloc] initWithFrame:CGRectMake(20, 80, 280, 120)];
-//    [field setBorderStyle:UITextBorderStyleRoundedRect];
+
     
 }
 
@@ -66,9 +67,6 @@
             [mailer setSubject:@"Prospective student"];
             NSArray *toRecipients = [NSArray arrayWithObjects:@"tzpandaman@hotmail.com", @"jessecolinscott@gmail.com", nil];
             [mailer setToRecipients:toRecipients];
-//            UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
-//            NSData *imageData = UIImagePNGRepresentation(myImage);
-//            [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
             NSString *nameMessage = [NSString stringWithFormat:@"Name of Prospective Student: %@ %@\r", self.firstNameField.text,self.lastNameField.text];
             NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.question.text, self.phoneField.text];
             NSString *emailBody = [NSString stringWithFormat:@"%@ %@", nameMessage, questionMessage];
@@ -85,10 +83,8 @@
         }
 }
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
-{
-    switch (result)
-    {
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+    switch (result) {
         case MFMailComposeResultCancelled:
             NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued.");
             break;
@@ -105,6 +101,7 @@
             NSLog(@"Mail not sent.");
             break;
     }
+    
     // Remove the mail view
     [self dismissModalViewControllerAnimated:YES];
 }

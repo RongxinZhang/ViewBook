@@ -64,17 +64,18 @@
             MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
             mailer.mailComposeDelegate = self;
             [mailer setSubject:@"Prospective student"];
-            NSArray *toRecipients = [NSArray arrayWithObjects:@"tzpandaman@hotmail.com", @"secondMail@example.com", nil];
+            NSArray *toRecipients = [NSArray arrayWithObjects:@"tzpandaman@hotmail.com", @"jessecolinscott@gmail.com", nil];
             [mailer setToRecipients:toRecipients];
 //            UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
 //            NSData *imageData = UIImagePNGRepresentation(myImage);
 //            [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
-            NSString *nameMessage = [NSString stringWithFormat:@"Name of Prospective %@ %@\r", self.firstNameField.text,self.lastNameField.text];
-            NSString *questionMessage = [NSString stringWithFormat:@"Name of Prospective %@ %@\r", self.firstNameField.text,self.lastNameField.text];
-            NSString *emailBody = [NSString stringWithFormat:@"%@ %@", nameMessage,questionMessage];
+            NSString *nameMessage = [NSString stringWithFormat:@"Name of Prospective Student: %@ %@\r", self.firstNameField.text,self.lastNameField.text];
+            NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.question.text, self.phoneField.text];
+            NSString *emailBody = [NSString stringWithFormat:@"%@ %@", nameMessage, questionMessage];
             [mailer setMessageBody:emailBody isHTML:NO];
             [self presentModalViewController:mailer animated:YES];
-        } else {
+        }
+        else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
                                                             message:@"Your device doesn't support the composer sheet"
                                                            delegate:nil

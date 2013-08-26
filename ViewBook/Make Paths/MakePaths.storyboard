@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JNn-gM-O8y">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Make Paths-->
+        <scene sceneID="CF3-el-5uf">
+            <objects>
+                <viewController id="Tpa-3o-fPF" userLabel="Make Paths" customClass="MakePathsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y6z-Uo-wD6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-IF-RUB">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadMainMenuStoryboard:" destination="Tpa-3o-fPF" eventType="touchUpInside" id="iqg-9y-rPP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-Ar-NH5">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Undergraduate">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3D2-5z-qmG" kind="push" id="i3X-Ma-WQ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-9f-GjB">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Graduate">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tGG-JI-bp1" kind="push" id="W3F-Vy-9oN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWZ-nr-c4R">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Continuing Studies">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Aai-6P-Joa" kind="push" id="wPa-CV-zfx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lLb-9f-GjB" firstAttribute="trailing" secondItem="1fk-Ar-NH5" secondAttribute="trailing" type="default" id="2c9-oh-JUM"/>
+                            <constraint firstItem="1fk-Ar-NH5" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="50" type="user" id="4eb-qd-196"/>
+                            <constraint firstItem="OWZ-nr-c4R" firstAttribute="centerX" secondItem="y6z-Uo-wD6" secondAttribute="centerX" type="default" id="6kv-XL-soC"/>
+                            <constraint firstAttribute="bottom" secondItem="OWZ-nr-c4R" secondAttribute="bottom" constant="50" type="user" id="K7i-J5-E7u"/>
+                            <constraint firstItem="v6a-IF-RUB" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="-1" id="KDK-y4-T4E"/>
+                            <constraint firstItem="v6a-IF-RUB" firstAttribute="leading" secondItem="y6z-Uo-wD6" secondAttribute="leading" type="default" id="Kta-HU-p0X"/>
+                            <constraint firstItem="lLb-9f-GjB" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="230" id="gSg-po-g54"/>
+                            <constraint firstItem="OWZ-nr-c4R" firstAttribute="trailing" secondItem="lLb-9f-GjB" secondAttribute="trailing" type="default" id="k6r-1u-mhy"/>
+                            <constraint firstItem="OWZ-nr-c4R" firstAttribute="leading" secondItem="lLb-9f-GjB" secondAttribute="leading" type="default" id="pD6-bc-RZe"/>
+                            <constraint firstItem="lLb-9f-GjB" firstAttribute="leading" secondItem="1fk-Ar-NH5" secondAttribute="leading" type="default" id="zjg-0D-f8h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wSH-Kg-Adf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJh-Qy-aPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="62"/>
+        </scene>
+        <!--Undergraduate-->
+        <scene sceneID="F5R-rs-Akg">
+            <objects>
+                <viewController id="3D2-5z-qmG" userLabel="Undergraduate" customClass="UnderGradraduateViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ccx-JF-Kbx">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-B7-e0z">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="b3d-2C-XPO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RE-j0-mEo">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="396" id="5as-sP-fdi"/>
+                                    <constraint firstAttribute="width" constant="300" id="SK8-9x-HIA"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3RE-j0-mEo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="1jM-zj-4kL"/>
+                            <constraint firstAttribute="trailing" secondItem="9bI-B7-e0z" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HgM-jY-gLJ"/>
+                            <constraint firstItem="3RE-j0-mEo" firstAttribute="centerX" secondItem="9bI-B7-e0z" secondAttribute="centerX" type="default" id="QU6-wY-hk7"/>
+                            <constraint firstItem="3RE-j0-mEo" firstAttribute="top" secondItem="9bI-B7-e0z" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="RGN-9d-6wu"/>
+                            <constraint firstItem="9bI-B7-e0z" firstAttribute="leading" secondItem="ccx-JF-Kbx" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UhC-fd-pLw"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5mg-bg-sq8" appends="YES" id="Lzx-EL-UKg"/>
+                            <outletCollection property="gestureRecognizers" destination="IAD-nm-iHl" appends="YES" id="FKF-BM-DuR"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="ApR-PX-fSa"/>
+                    <connections>
+                        <outlet property="courseDescriptionLabel" destination="3RE-j0-mEo" id="s8Z-t1-bfS"/>
+                        <outlet property="courseNameLabel" destination="9bI-B7-e0z" id="Al5-Ob-aNt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SzL-JH-KV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="IAD-nm-iHl">
+                    <connections>
+                        <action selector="leftSwipe:" destination="3D2-5z-qmG" id="1m8-eH-2XM"/>
+                        <outlet property="delegate" destination="3D2-5z-qmG" id="Esf-RY-Opb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="5mg-bg-sq8">
+                    <connections>
+                        <action selector="rightSwipe:" destination="3D2-5z-qmG" id="N8v-sI-Nts"/>
+                        <outlet property="delegate" destination="3D2-5z-qmG" id="GYq-0D-Xlt"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="569" y="-649"/>
+        </scene>
+        <!--Graduate-->
+        <scene sceneID="gv9-gS-Ckf">
+            <objects>
+                <viewController id="tGG-JI-bp1" userLabel="Graduate" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K55-hG-gkF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="UVw-6i-ocB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="w6M-3o-H2t"/>
+                                </constraints>
+                                <string key="text">Master of Design
+Master of Applied Arts
+Master of Digital Media</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UVw-6i-ocB" firstAttribute="leading" secondItem="K55-hG-gkF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="IB5-7A-ZAa"/>
+                            <constraint firstItem="UVw-6i-ocB" firstAttribute="centerY" secondItem="K55-hG-gkF" secondAttribute="centerY" type="default" id="Wuo-A6-Vej"/>
+                            <constraint firstAttribute="trailing" secondItem="UVw-6i-ocB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="eYA-ao-Kug"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="B5x-if-0BB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FY8-BB-CIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="62"/>
+        </scene>
+        <!--Continuing Studies-->
+        <scene sceneID="yWI-s3-NhV">
+            <objects>
+                <viewController id="Aai-6P-Joa" userLabel="Continuing Studies" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4xg-w9-avW">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="V7g-on-RCp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="L61-te-Ut1"/>
+                                </constraints>
+                                <string key="text">Design Essentials
+IDX Essentials
+Welcome Lab
+Summer Teen Institute</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V7g-on-RCp" firstAttribute="centerY" secondItem="4xg-w9-avW" secondAttribute="centerY" type="default" id="6rr-Px-wdC"/>
+                            <constraint firstItem="V7g-on-RCp" firstAttribute="leading" secondItem="4xg-w9-avW" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ecV-Nd-xdx"/>
+                            <constraint firstAttribute="trailing" secondItem="V7g-on-RCp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gIY-qh-vEO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gAf-Ok-6oY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZH-q6-8DE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="772"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BAb-2y-4FB">
+            <objects>
+                <navigationController id="JNn-gM-O8y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2jK-tc-ext">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tpa-3o-fPF" kind="relationship" relationship="rootViewController" id="Nth-YR-euU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2g-0P-py9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-803" y="62"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="MakePathsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MakePathsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loadMainMenuStoryboard:"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UnderGradraduateViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UnderGradraduateViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="leftSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="rightSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="courseDescriptionLabel" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="courseNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

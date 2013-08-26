@@ -140,6 +140,7 @@
 		2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
 		79676B2F17C74A7E00039CB9 /* ungrad_courses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79676B2E17C74A7E00039CB9 /* ungrad_courses.plist */; };
 		79676B3217C74AA700039CB9 /* UnderGradraduateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79676B3117C74AA700039CB9 /* UnderGradraduateViewController.m */; };
+		79801DE117CBCB3C000BE847 /* VideoThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79801DE017CBCB3C000BE847 /* VideoThumbnailViewController.m */; };
 		7991A88817C3BE7600505821 /* CalenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991A88717C3BE7600505821 /* CalenderCell.m */; };
 		7991A88C17C3C70100505821 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88917C3C70100505821 /* twitter.png */; };
 		7991A88D17C3C70100505821 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7991A88A17C3C70100505821 /* facebook.png */; };
@@ -260,6 +261,8 @@
 		79676B2E17C74A7E00039CB9 /* ungrad_courses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ungrad_courses.plist; sourceTree = "<group>"; };
 		79676B3017C74AA700039CB9 /* UnderGradraduateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderGradraduateViewController.h; sourceTree = "<group>"; };
 		79676B3117C74AA700039CB9 /* UnderGradraduateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderGradraduateViewController.m; sourceTree = "<group>"; };
+		79801DDF17CBCB3C000BE847 /* VideoThumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoThumbnailViewController.h; sourceTree = "<group>"; };
+		79801DE017CBCB3C000BE847 /* VideoThumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoThumbnailViewController.m; sourceTree = "<group>"; };
 		7991A88617C3BE7600505821 /* CalenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderCell.h; sourceTree = "<group>"; };
 		7991A88717C3BE7600505821 /* CalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderCell.m; sourceTree = "<group>"; };
 		7991A88917C3C70100505821 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
@@ -308,6 +311,8 @@
 		2D29E76317C01B52004BB03C /* Start Points */ = {
 			isa = PBXGroup;
 			children = (
+				79801DDF17CBCB3C000BE847 /* VideoThumbnailViewController.h */,
+				79801DE017CBCB3C000BE847 /* VideoThumbnailViewController.m */,
 				2D29E76817C01E35004BB03C /* StartPoints.storyboard */,
 				2DF36C2E17C346B7006B0994 /* WebViewViewController.h */,
 				2DF36C2F17C346B7006B0994 /* WebViewViewController.m */,
@@ -814,6 +819,7 @@
 				2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */,
 				7991A88817C3BE7600505821 /* CalenderCell.m in Sources */,
 				79676B3217C74AA700039CB9 /* UnderGradraduateViewController.m in Sources */,
+				79801DE117CBCB3C000BE847 /* VideoThumbnailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

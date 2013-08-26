@@ -306,6 +306,37 @@ Instagram</string>
         <image name="instagram.png" width="518" height="518"/>
         <image name="twitter.png" width="300" height="300"/>
     </resources>
+    <classes>
+        <class className="BuildNetworksViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BuildNetworksViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loadMainMenuStoryboard:"/>
+            </relationships>
+        </class>
+        <class className="CalenderCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CalenderCell.h"/>
+        </class>
+        <class className="CommunityViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CommunityViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="RecruitmentCalendarViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecruitmentCalendarViewController.h"/>
+        </class>
+        <class className="ResearchIndustryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResearchIndustryViewController.h"/>
+        </class>
+        <class className="SocialMediaViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialMediaViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="facebook:"/>
+                <relationship kind="action" name="instagram:"/>
+                <relationship kind="action" name="twitter:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

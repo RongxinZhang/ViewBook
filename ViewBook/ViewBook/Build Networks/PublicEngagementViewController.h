@@ -13,6 +13,9 @@
     // Screen Index
     NSInteger screenIndex;
     
+    // Custom Font
+    UIFont *titleFont, *paragraphFont;
+    
 }
 
 // Page Title

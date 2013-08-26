@@ -24,6 +24,11 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>LeituraHeadline-Serif It.otf</string>
+		<string>LeituraSans-Grot 1.otf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>SplashScreen</string>
 	<key>UIMainStoryboardFile~ipad</key>
@@ -35,8 +40,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

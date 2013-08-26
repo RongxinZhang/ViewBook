@@ -34,12 +34,18 @@
     // Set Screen Index
     screenIndex = 2;
     
+    // Load Fonts
+    titleFont = [UIFont fontWithName:@"LeituraHeadline-Serif It" size:24];
+    paragraphFont = [UIFont fontWithName:@"LeituraSans-Grot 1" size:12];
+    
     // Load PList For Page Title
     NSString *pathToPlistFile = [[NSBundle mainBundle] pathForResource:@"BuildNetworksScreenNames" ofType:@"plist"];
     NSArray *screenNames = [[NSArray alloc] initWithContentsOfFile:pathToPlistFile];
     
     // Set PList To Page Title
     pageTitle.text = [screenNames objectAtIndex:screenIndex];
+    pageTitle.font = [UIFont fontWithName:@"LeituraHeadline-Serif It" size:24];
+    //pageTitle.font = titleFont;
     
     // Load Text File For Main Paragraph
     NSString *pathToTextFile = [[NSBundle mainBundle] pathForResource:@"PublicEngagement" ofType:@"txt"];
@@ -48,6 +54,8 @@
     // Set Text File To Main Paragraph Label
     mainParagraph.numberOfLines = 25;
     mainParagraph.text = fileContent;
+    mainParagraph.font = [UIFont fontWithName:@"LeituraSans-Grot 1" size:12];
+    //mainParagraph.font = [UIFont systemFontOfSize:24];
     
 }
 

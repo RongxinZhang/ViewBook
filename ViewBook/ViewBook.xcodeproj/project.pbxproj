@@ -44,6 +44,10 @@
 		2D44016F17CAE06A00F1079B /* flickr.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016C17CAE06A00F1079B /* flickr.png */; };
 		2D44017017CAE06A00F1079B /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016D17CAE06A00F1079B /* pinterest.png */; };
 		2D44017117CAE06A00F1079B /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D44016D17CAE06A00F1079B /* pinterest.png */; };
+		2D44017517CAEC4600F1079B /* LeituraHeadline-Serif It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44017317CAEC4600F1079B /* LeituraHeadline-Serif It.otf */; };
+		2D44017617CAEC4600F1079B /* LeituraHeadline-Serif It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44017317CAEC4600F1079B /* LeituraHeadline-Serif It.otf */; };
+		2D44017717CAEC4600F1079B /* LeituraSans-Grot 1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44017417CAEC4600F1079B /* LeituraSans-Grot 1.otf */; };
+		2D44017817CAEC4600F1079B /* LeituraSans-Grot 1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44017417CAEC4600F1079B /* LeituraSans-Grot 1.otf */; };
 		2D47AD1F17921513003D5D8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD1E17921513003D5D8B /* UIKit.framework */; };
 		2D47AD2117921513003D5D8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD2017921513003D5D8B /* Foundation.framework */; };
 		2D47AD2317921513003D5D8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D47AD2217921513003D5D8B /* CoreGraphics.framework */; };
@@ -199,6 +203,8 @@
 		2D44016A17CADAFE00F1079B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		2D44016C17CAE06A00F1079B /* flickr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flickr.png; sourceTree = "<group>"; };
 		2D44016D17CAE06A00F1079B /* pinterest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterest.png; sourceTree = "<group>"; };
+		2D44017317CAEC4600F1079B /* LeituraHeadline-Serif It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeituraHeadline-Serif It.otf"; sourceTree = "<group>"; };
+		2D44017417CAEC4600F1079B /* LeituraSans-Grot 1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeituraSans-Grot 1.otf"; sourceTree = "<group>"; };
 		2D47AD1B17921513003D5D8B /* ViewBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D47AD1E17921513003D5D8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D47AD2017921513003D5D8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -411,6 +417,16 @@
 			name = "Main Menu";
 			sourceTree = "<group>";
 		};
+		2D44017217CAEC4600F1079B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2D44017317CAEC4600F1079B /* LeituraHeadline-Serif It.otf */,
+				2D44017417CAEC4600F1079B /* LeituraSans-Grot 1.otf */,
+			);
+			name = Fonts;
+			path = Assets/Fonts;
+			sourceTree = "<group>";
+		};
 		2D47AD1217921512003D5D8B = {
 			isa = PBXGroup;
 			children = (
@@ -491,6 +507,7 @@
 		2D47AD5C179216DA003D5D8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2D44017217CAEC4600F1079B /* Fonts */,
 				2DCCA0AC17C1C45A00B81172 /* Splash Screen */,
 				2D90879217C1F667009DDDEB /* Start Points */,
 				2D8957CA17C477920044F167 /* Build Networks */,
@@ -766,6 +783,8 @@
 				2D142B0C17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */,
 				2D44016E17CAE06A00F1079B /* flickr.png in Resources */,
 				2D44017017CAE06A00F1079B /* pinterest.png in Resources */,
+				2D44017517CAEC4600F1079B /* LeituraHeadline-Serif It.otf in Resources */,
+				2D44017717CAEC4600F1079B /* LeituraSans-Grot 1.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,6 +844,8 @@
 				2D142B0D17C48AE80013F036 /* BuildNetworksScreenNames.plist in Resources */,
 				2D44016F17CAE06A00F1079B /* flickr.png in Resources */,
 				2D44017117CAE06A00F1079B /* pinterest.png in Resources */,
+				2D44017617CAEC4600F1079B /* LeituraHeadline-Serif It.otf in Resources */,
+				2D44017817CAEC4600F1079B /* LeituraSans-Grot 1.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

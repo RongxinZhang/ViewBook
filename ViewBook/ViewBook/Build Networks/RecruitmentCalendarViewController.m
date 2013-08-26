@@ -32,9 +32,9 @@
     
     self.eventTimes = [[NSMutableArray alloc]init];
     
-    [self.eventTimes addObject:@"16-10-2013 4:15 PM"];
-    [self.eventTimes addObject:@"16-11-2013 4:17 PM"];
-    [self.eventTimes addObject:@"19-08-2013 4:19 PM"];
+    [self.eventTimes addObject:@"Nov 21, 9AM, Montreal"];
+    [self.eventTimes addObject:@"Nov 22, 9AM, Boston"];
+    [self.eventTimes addObject:@"Nov 22, 2PM, New York"];
     
     for (NSString *date in self.eventTimes) {
         NSLog(@"Array values: %@",date);
@@ -82,13 +82,13 @@
     calenderCell.textLabel.text = [self.eventTimes objectAtIndex:indexPath.row];
     
     //RX Creates button - tutorial: http://www.youtube.com/watch?v=TADTYkqF6q4
-    UIButton *saveButton = [[UIButton alloc]initWithFrame:CGRectMake(210, 10, 60, 40)];
+    UIButton *saveButton = [[UIButton alloc]initWithFrame:CGRectMake(250, 10, 60, 40)];
     [saveButton addTarget:self action:@selector(savePressed:) forControlEvents:UIControlEventTouchUpInside];
     [saveButton setBackgroundColor:[UIColor blackColor]];
     [saveButton setTitle:@"Save" forState:UIControlStateNormal];
 
     [calenderCell addSubview:saveButton];
-    [calenderCell setIndentationWidth:45];
+    [calenderCell setIndentationWidth:5];
     [calenderCell setIndentationLevel:2];
            
     return calenderCell;

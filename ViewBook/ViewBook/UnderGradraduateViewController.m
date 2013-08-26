@@ -31,10 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *path = [[NSBundle mainBundle] pathForResource:
-                      @"ungrad_courses" ofType:@"plist"];
-    // Build the array from the plist
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"ungrad_courses" ofType:@"plist"];
     self.array = [[NSMutableArray alloc] initWithContentsOfFile:path];
+    
     self.courseNameLabel.lineBreakMode = NSLineBreakByWordWrapping;
     self.courseNameLabel.numberOfLines = 0;
     
@@ -51,6 +51,8 @@
     NSLog(@"swipping count: %i | array count: %i",self.swipeCount,self.array.count);
     
     if (self.swipeCount+1==self.array.count) {
+//        NSString *pathToFile = [[NSBundle mainBundle] pathForResource:@"ApplicationDirections" ofType:@"txt"];
+//        NSString *fileContent = [NSString stringWithContentsOfFile:pathToFile encoding:NSUTF8StringEncoding error:NULL];
         self.courseName=[self getCourses:self.swipeCount course:@"course_name"];
         self.courseDescription=[self getCourses:self.swipeCount course:@"course_description"];
         NSLog(@"swipping left END -> count: %i",self.swipeCount);
@@ -63,6 +65,7 @@
         
     }
     self.courseNameLabel.text = self.courseName;
+    NSLog(@"NAME %@", self.courseName);
     self.courseDescriptionLabel.text = self.courseDescription;
 }
 - (IBAction)rightSwipe:(UISwipeGestureRecognizer *)sender {
@@ -81,6 +84,7 @@
     }
     
     self.courseNameLabel.text = self.courseName;
+    NSLog(@"NAME %@", self.courseName);
     self.courseDescriptionLabel.text = self.courseDescription;
 }
 

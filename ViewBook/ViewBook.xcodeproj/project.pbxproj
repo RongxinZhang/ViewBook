@@ -31,8 +31,6 @@
 		2D1D722717CB26EC00C3DBE3 /* gnw_campus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D721A17CB26EC00C3DBE3 /* gnw_campus.png */; };
 		2D1D722817CB26EC00C3DBE3 /* luke_parnell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D721B17CB26EC00C3DBE3 /* luke_parnell.png */; };
 		2D1D722917CB26EC00C3DBE3 /* luke_parnell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D721B17CB26EC00C3DBE3 /* luke_parnell.png */; };
-		2D1D722C17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D722B17CB27DF00C3DBE3 /* VideoThumbnailViewController.m */; };
-		2D1D722D17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D722B17CB27DF00C3DBE3 /* VideoThumbnailViewController.m */; };
 		2D29E76917C01E35004BB03C /* StartPoints.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E76817C01E35004BB03C /* StartPoints.storyboard */; };
 		2D29E76A17C01E35004BB03C /* StartPoints.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D29E76817C01E35004BB03C /* StartPoints.storyboard */; };
 		2D29E76D17C0206B004BB03C /* StartPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D29E76C17C0206B004BB03C /* StartPointsViewController.m */; };
@@ -221,8 +219,6 @@
 		2D1D721917CB26EC00C3DBE3 /* giant_ant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giant_ant.png; sourceTree = "<group>"; };
 		2D1D721A17CB26EC00C3DBE3 /* gnw_campus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gnw_campus.png; sourceTree = "<group>"; };
 		2D1D721B17CB26EC00C3DBE3 /* luke_parnell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luke_parnell.png; sourceTree = "<group>"; };
-		2D1D722A17CB27DF00C3DBE3 /* VideoThumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoThumbnailViewController.h; path = "Start Points/VideoThumbnailViewController.h"; sourceTree = "<group>"; };
-		2D1D722B17CB27DF00C3DBE3 /* VideoThumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoThumbnailViewController.m; path = "Start Points/VideoThumbnailViewController.m"; sourceTree = "<group>"; };
 		2D29E76817C01E35004BB03C /* StartPoints.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StartPoints.storyboard; path = "Start Points/StartPoints.storyboard"; sourceTree = "<group>"; };
 		2D29E76B17C0206B004BB03C /* StartPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartPointsViewController.h; path = "Start Points/StartPointsViewController.h"; sourceTree = "<group>"; };
 		2D29E76C17C0206B004BB03C /* StartPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartPointsViewController.m; path = "Start Points/StartPointsViewController.m"; sourceTree = "<group>"; };
@@ -406,6 +402,8 @@
 			isa = PBXGroup;
 			children = (
 				2D29E76817C01E35004BB03C /* StartPoints.storyboard */,
+				2DF36C2E17C346B7006B0994 /* WebViewViewController.h */,
+				2DF36C2F17C346B7006B0994 /* WebViewViewController.m */,
 				2D29E76B17C0206B004BB03C /* StartPointsViewController.h */,
 				2D29E76C17C0206B004BB03C /* StartPointsViewController.m */,
 				2D9087B317C1FC59009DDDEB /* StudiosSlideshowViewController.h */,
@@ -414,10 +412,6 @@
 				2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */,
 				2DF36BE917C3422E006B0994 /* StudentSlideshowViewController.h */,
 				2DF36BEA17C3422E006B0994 /* StudentSlideshowViewController.m */,
-				2D1D722A17CB27DF00C3DBE3 /* VideoThumbnailViewController.h */,
-				2D1D722B17CB27DF00C3DBE3 /* VideoThumbnailViewController.m */,
-				2DF36C2E17C346B7006B0994 /* WebViewViewController.h */,
-				2DF36C2F17C346B7006B0994 /* WebViewViewController.m */,
 			);
 			name = "Start Points";
 			sourceTree = "<group>";
@@ -1006,8 +1000,11 @@
 				2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */,
 				2DAE88D117C73C660034B8C8 /* RecruitmentEvent.m in Sources */,
 				2D44017B17CB1A2900F1079B /* GNWViewController.m in Sources */,
+<<<<<<< HEAD
 				2D1D722C17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */,
 >>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
+=======
+>>>>>>> parent of 7e274ad... Passign Vimeo Id To New Screen
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,7 +1030,6 @@
 				2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */,
 				2DAE88D217C73C660034B8C8 /* RecruitmentEvent.m in Sources */,
 				2D44017C17CB1A2900F1079B /* GNWViewController.m in Sources */,
-				2D1D722D17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

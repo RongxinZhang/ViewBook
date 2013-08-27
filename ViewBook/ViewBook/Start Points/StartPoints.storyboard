@@ -367,6 +367,8 @@
             <point key="canvasLocation" x="-656" y="72"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
+=======
     <resources>
         <image name="creative_future.png" width="300" height="300"/>
         <image name="day_in_the_life.png" width="300" height="300"/>
@@ -375,6 +377,56 @@
         <image name="giant_ant.png" width="300" height="300"/>
         <image name="luke_parnell.png" width="300" height="299"/>
     </resources>
+<<<<<<< HEAD
+=======
+    <classes>
+        <class className="CampusSlideshowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CampusSlideshowViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="StartPointsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartPointsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loadMainMenuStoryboard:"/>
+            </relationships>
+        </class>
+        <class className="StudentSlideshowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StudentSlideshowViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="StudiosSlideshowViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StudiosSlideshowViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="VideoThumbnailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VideoThumbnailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="launchCreativeFuture:"/>
+                <relationship kind="action" name="launchDayInTheLife:"/>
+                <relationship kind="action" name="launchDesignCommunity:"/>
+                <relationship kind="action" name="launchErinBoniferro:"/>
+                <relationship kind="action" name="launchGiantAnt:"/>
+                <relationship kind="action" name="launchLukeParnell:"/>
+            </relationships>
+        </class>
+        <class className="WebViewViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
+>>>>>>> 7e274adb6178aa681ffbce9b1a0a1e6873653142
+>>>>>>> e17874b58bd53bea5f741c90387610062c9aebf3
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

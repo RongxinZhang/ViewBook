@@ -136,10 +136,14 @@
     [dateFormatter setLocale:[NSLocale currentLocale]];
     
     //NSDate *date = [self.eventTimes objectAtIndex:rowNumber];
-    NSDate *date = [dateFormatter dateFromString:@"Aug 27 2013 12:30"];
+    NSString *baseDate = [self.eventTimes objectAtIndex:rowNumber];
+    NSString *trimmedDate = [baseDate substringToIndex:17];
+    NSLog(@"Trimmed %@", trimmedDate);
+    NSDate *date = [dateFormatter dateFromString:trimmedDate];
+    //NSDate *date = [dateFormatter dateFromString:@"Aug 27 2013 12:30"];
     NSLog(@"date: %@", date);
     
-    NSString *message = @"There is an Emily carr Event happening now";
+    NSString *message = @"Your Emily Carr University event happening now! ";
 
     [self scheduleLocalNotificationWithDate:date: message];
     

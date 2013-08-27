@@ -69,14 +69,14 @@
     
     if([elementName isEqualToString:@"date"]){
         //
-        NSString *comma = @", ";
+        NSString *comma = @" ";
         [currentEvent appendString:comma];
     }
     
     if([elementName isEqualToString:@"time"]){
         //
         NSString *comma = @", ";
-        [currentEvent appendString:comma];
+        //[currentEvent appendString:comma];
     }
     
     if([elementName isEqualToString:@"place"]){

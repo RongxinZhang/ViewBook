@@ -96,18 +96,21 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *cellIdentifier = @"Cell";
-    //RX Creates Calender Cell
+
     RecruitmentCalenderCell *calenderCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!calenderCell) {
         calenderCell = [[RecruitmentCalenderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
     calenderCell.textLabel.text = [self.eventTimes objectAtIndex:indexPath.row];
+    [calenderCell.textLabel setFont:[UIFont systemFontOfSize:18]];
     
     // Buttons
     UIButton *saveButton = [UIButton buttonWithType:UIButtonTypeRoundedRect ];
-    saveButton.frame = CGRectMake(0, 0, 50, 25);
+    saveButton.frame = CGRectMake(0, 0, 50, 35);
     [saveButton setTitle:@"Save" forState:UIControlStateNormal];
+    [saveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [saveButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
     [saveButton addTarget:self action:@selector(savePressed:) forControlEvents:UIControlEventTouchUpInside];
     calenderCell.accessoryView = saveButton;
     
@@ -127,14 +130,15 @@
 
 //RX Creates multiple Local Notifications 
 -(void)createLocalNotifications:(UITableViewCell *)currentCell rowNumber:(NSInteger)rowNumber {
+
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MMM dd yyyy hh:mm"];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
     
-    NSString *cellTextLabel = currentCell.textLabel.text;
-
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"dd-MM-yyyy hh:mm a"];    //RX Main Date format
-    NSDate *date = [dateFormatter dateFromString:cellTextLabel];
-    NSLog(@"date: %@",date);
-
+    //NSDate *date = [self.eventTimes objectAtIndex:rowNumber];
+    NSDate *date = [dateFormatter dateFromString:@"Aug 27 2013 12:30"];
+    NSLog(@"date: %@", date);
+    
     NSString *message = @"There is an Emily carr Event happening now";
 
     [self scheduleLocalNotificationWithDate:date: message];
@@ -151,7 +155,7 @@
     //notification.repeatInterval = NSDayCalendarUnit;
     
     [[UIApplication sharedApplication]scheduleLocalNotification:notification];
-    [self showMessage:@"A Reminder has been set"];
+    [self showMessage:@"This date has been saved."];
     
 }
 

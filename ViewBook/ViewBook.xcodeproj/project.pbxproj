@@ -420,11 +420,11 @@
 				2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */,
 				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
 				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
-				2DAE88D317C73C780034B8C8 /* xml */,
 				2DCCA09917C1BD0500B81172 /* PublicEngagementViewController.h */,
 				2DCCA09A17C1BD0500B81172 /* PublicEngagementViewController.m */,
 				2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */,
 				2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */,
+				2DAE88D317C73C780034B8C8 /* xml */,
 			);
 			name = "Build Networks";
 			sourceTree = "<group>";
@@ -480,7 +480,6 @@
 		2D47AD1217921512003D5D8B = {
 			isa = PBXGroup;
 			children = (
-				2D44016A17CADAFE00F1079B /* MessageUI.framework */,
 				2D47AD2417921513003D5D8B /* ViewBook */,
 				2D47AD4B17921513003D5D8B /* ViewBookTests */,
 				2D47AD1D17921513003D5D8B /* Frameworks */,
@@ -500,6 +499,7 @@
 		2D47AD1D17921513003D5D8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D44016A17CADAFE00F1079B /* MessageUI.framework */,
 				2D47AD1E17921513003D5D8B /* UIKit.framework */,
 				2D47AD2017921513003D5D8B /* Foundation.framework */,
 				2D47AD2217921513003D5D8B /* CoreGraphics.framework */,

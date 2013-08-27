@@ -34,16 +34,9 @@
 - (void)viewDidLoad {
    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    self.swipeCount=0;
-    [slideshow setImage:[self.campus objectAtIndex:self.swipeCount]];
+	// Do any additional setup after loading the view. 
     
     // Load Images
-    [self.view addGestureRecognizer:self.leftSwipe];
-    [self.view addGestureRecognizer:self.rightSwipe];
-    self.caption.text=@"Hello";
-    self.caption.backgroundColor = [UIColor blueColor];
-    
     self.campus = [NSArray arrayWithObjects:
                         [UIImage imageNamed:@"campus_slideshow_01"],
                         [UIImage imageNamed:@"campus_slideshow_02"],
@@ -62,6 +55,15 @@
                          @"Ma Niggers",
                          @"Ma Dinner",
                         nil];
+    
+    // Set Gestures and load first image and caption
+    self.swipeCount=0;
+    [slideshow setImage:[self.campus objectAtIndex:self.swipeCount]];
+    
+    [self.view addGestureRecognizer:self.leftSwipe];
+    [self.view addGestureRecognizer:self.rightSwipe];
+    self.caption.text=@"Hello";
+    self.caption.backgroundColor = [UIColor blueColor];
 
     // Set ImageView
 //    [slideshow setAnimationImages:campus];
@@ -83,7 +85,6 @@
 
 - (IBAction)previousImage:(UISwipeGestureRecognizer *)sender {
     NSLog(@"right swipe");
-    NSLog(@"left swipe");
     if(self.swipeCount >0){
         NSLog(@"swipe count: %i  |*| array count: %i",self.swipeCount,self.campus.count-1);
         self.swipeCount=self.swipeCount-1;

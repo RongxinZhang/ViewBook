@@ -7,7 +7,6 @@
 //
 
 #import "WebViewViewController.h"
-#import "VideoThumbnailViewController.h"
 
 @interface WebViewViewController ()
 
@@ -32,7 +31,6 @@
     return self;
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -44,16 +42,6 @@
     
 }
 
-- (IBAction)sendBackToThumbnails:(id)sender {
-    
-    VideoThumbnailViewController *controller = [[VideoThumbnailViewController alloc] init];
-
-    //UIViewController *initialView = [UIStoryboard instantiateInitialViewController];
-    //initialView.modalPresentationStyle = UIModalPresentationFullScreen;
-    
-    [self presentViewController:controller animated:YES completion:NULL];
-
-}
 
 -(void)embedVimeo {
     

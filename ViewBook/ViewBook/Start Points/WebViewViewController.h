@@ -23,7 +23,4 @@
 // Custom Init
 -(id)initWithURL:(NSString*)url;
 
-// Back Button
-- (IBAction)sendBackToThumbnails:(id)sender;
-
 @end

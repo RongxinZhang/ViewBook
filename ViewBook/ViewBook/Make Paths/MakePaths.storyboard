@@ -68,14 +68,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lLb-9f-GjB" firstAttribute="trailing" secondItem="1fk-Ar-NH5" secondAttribute="trailing" type="default" id="2c9-oh-JUM"/>
-                            <constraint firstItem="1fk-Ar-NH5" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="50" type="user" id="4eb-qd-196"/>
-                            <constraint firstItem="OWZ-nr-c4R" firstAttribute="centerX" secondItem="y6z-Uo-wD6" secondAttribute="centerX" type="default" id="6kv-XL-soC"/>
-                            <constraint firstAttribute="bottom" secondItem="OWZ-nr-c4R" secondAttribute="bottom" constant="50" type="user" id="K7i-J5-E7u"/>
-                            <constraint firstItem="v6a-IF-RUB" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="-1" id="KDK-y4-T4E"/>
+                            <constraint firstItem="1fk-Ar-NH5" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="97" id="4eb-qd-196"/>
+                            <constraint firstItem="lLb-9f-GjB" firstAttribute="trailing" secondItem="OWZ-nr-c4R" secondAttribute="trailing" type="default" id="9PE-bm-Kem"/>
                             <constraint firstItem="v6a-IF-RUB" firstAttribute="leading" secondItem="y6z-Uo-wD6" secondAttribute="leading" type="default" id="Kta-HU-p0X"/>
-                            <constraint firstItem="lLb-9f-GjB" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="230" id="gSg-po-g54"/>
-                            <constraint firstItem="OWZ-nr-c4R" firstAttribute="trailing" secondItem="lLb-9f-GjB" secondAttribute="trailing" type="default" id="k6r-1u-mhy"/>
-                            <constraint firstItem="OWZ-nr-c4R" firstAttribute="leading" secondItem="lLb-9f-GjB" secondAttribute="leading" type="default" id="pD6-bc-RZe"/>
+                            <constraint firstItem="OWZ-nr-c4R" firstAttribute="leading" secondItem="lLb-9f-GjB" secondAttribute="leading" type="default" id="Ncg-Ai-1sg"/>
+                            <constraint firstItem="lLb-9f-GjB" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" constant="187" id="Z7Y-Ud-p3P"/>
+                            <constraint firstAttribute="bottom" secondItem="OWZ-nr-c4R" secondAttribute="bottom" constant="176" id="ZwS-s6-X3N"/>
+                            <constraint firstItem="v6a-IF-RUB" firstAttribute="top" secondItem="y6z-Uo-wD6" secondAttribute="top" type="default" id="bno-vi-RWI"/>
+                            <constraint firstItem="1fk-Ar-NH5" firstAttribute="centerX" secondItem="y6z-Uo-wD6" secondAttribute="centerX" type="default" id="mrA-Ng-Ne0"/>
                             <constraint firstItem="lLb-9f-GjB" firstAttribute="leading" secondItem="1fk-Ar-NH5" secondAttribute="leading" type="default" id="zjg-0D-f8h"/>
                         </constraints>
                     </view>
@@ -88,62 +88,33 @@
         <!--Undergraduate-->
         <scene sceneID="F5R-rs-Akg">
             <objects>
-                <viewController id="3D2-5z-qmG" userLabel="Undergraduate" customClass="UnderGradraduateViewController" sceneMemberID="viewController">
+                <viewController id="3D2-5z-qmG" userLabel="Undergraduate" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ccx-JF-Kbx">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-B7-e0z">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="OhS-vL-0wQ">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="b3d-2C-XPO"/>
+                                    <constraint firstAttribute="height" constant="120" id="hC3-er-BLb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <string key="text">Bachelor of Design
+Bachelor of Media Arts
+Bachelor of Visual Arts</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RE-j0-mEo">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="396" id="5as-sP-fdi"/>
-                                    <constraint firstAttribute="width" constant="300" id="SK8-9x-HIA"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="3RE-j0-mEo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="1jM-zj-4kL"/>
-                            <constraint firstAttribute="trailing" secondItem="9bI-B7-e0z" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HgM-jY-gLJ"/>
-                            <constraint firstItem="3RE-j0-mEo" firstAttribute="centerX" secondItem="9bI-B7-e0z" secondAttribute="centerX" type="default" id="QU6-wY-hk7"/>
-                            <constraint firstItem="3RE-j0-mEo" firstAttribute="top" secondItem="9bI-B7-e0z" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="RGN-9d-6wu"/>
-                            <constraint firstItem="9bI-B7-e0z" firstAttribute="leading" secondItem="ccx-JF-Kbx" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UhC-fd-pLw"/>
+                            <constraint firstItem="OhS-vL-0wQ" firstAttribute="centerY" secondItem="ccx-JF-Kbx" secondAttribute="centerY" type="default" id="0sM-Ch-DTo"/>
+                            <constraint firstItem="OhS-vL-0wQ" firstAttribute="leading" secondItem="ccx-JF-Kbx" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gcp-iO-skl"/>
+                            <constraint firstAttribute="trailing" secondItem="OhS-vL-0wQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lqi-v1-h9S"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="5mg-bg-sq8" appends="YES" id="Lzx-EL-UKg"/>
-                            <outletCollection property="gestureRecognizers" destination="IAD-nm-iHl" appends="YES" id="FKF-BM-DuR"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="ApR-PX-fSa"/>
-                    <connections>
-                        <outlet property="courseDescriptionLabel" destination="3RE-j0-mEo" id="s8Z-t1-bfS"/>
-                        <outlet property="courseNameLabel" destination="9bI-B7-e0z" id="Al5-Ob-aNt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzL-JH-KV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="IAD-nm-iHl">
-                    <connections>
-                        <action selector="leftSwipe:" destination="3D2-5z-qmG" id="1m8-eH-2XM"/>
-                        <outlet property="delegate" destination="3D2-5z-qmG" id="Esf-RY-Opb"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="5mg-bg-sq8">
-                    <connections>
-                        <action selector="rightSwipe:" destination="3D2-5z-qmG" id="N8v-sI-Nts"/>
-                        <outlet property="delegate" destination="3D2-5z-qmG" id="GYq-0D-Xlt"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="569" y="-649"/>
         </scene>
@@ -242,15 +213,6 @@ Summer Teen Institute</string>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UnderGradraduateViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UnderGradraduateViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="leftSwipe:" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="action" name="rightSwipe:" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="outlet" name="courseDescriptionLabel" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="courseNameLabel" candidateClass="UILabel"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

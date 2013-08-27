@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UnderGradraduateViewController : UIViewController<UIGestureRecognizerDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *courseNameLabel;
-@property (weak, nonatomic) IBOutlet UITextView *courseDescriptionLabel;
+@interface UnderGradraduateViewController : UIViewController
 
 @end

@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gdR-tM-Zsy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uY2-3b-AeJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Create Futures-->
-        <scene sceneID="z1c-IH-NjC">
+        <!--Alumni-->
+        <scene sceneID="rWJ-ir-aaq">
             <objects>
-                <viewController id="gdR-tM-Zsy" userLabel="Create Futures" customClass="CreateFuturesViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wvR-DB-qaq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                <viewController id="WNA-Mu-uRf" userLabel="Alumni" customClass="AlumniSurveyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FTK-eh-hOf">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="utJ-5d-Q3L">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmT-R5-FMD"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqh-8m-30n">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="524" id="0F7-LZ-snn"/>
+                                    <constraint firstAttribute="width" constant="73" id="kxz-xU-Koq"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZF-8t-5w5">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="back">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,34 +26,120 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loadMainMenuStoryboard:" destination="gdR-tM-Zsy" eventType="touchUpInside" id="ZVh-Tw-aJb"/>
+                                    <action selector="loadMainMenuStoryboard:" destination="WNA-Mu-uRf" eventType="touchUpInside" id="TvU-lF-hkh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="trailing" secondItem="wvR-DB-qaq" secondAttribute="trailing" type="default" id="Ae9-vf-iiB"/>
-                            <constraint firstItem="HZF-8t-5w5" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" type="default" id="OL7-HX-qlD"/>
-                            <constraint firstItem="HZF-8t-5w5" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" constant="-1" id="YAu-If-sVV"/>
-                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="leading" secondItem="wvR-DB-qaq" secondAttribute="leading" type="default" id="j3o-Nq-Cfp"/>
-                            <constraint firstItem="utJ-5d-Q3L" firstAttribute="top" secondItem="wvR-DB-qaq" secondAttribute="top" type="default" id="wrS-JK-k9F"/>
+                            <constraint firstItem="PmT-R5-FMD" firstAttribute="trailing" secondItem="FTK-eh-hOf" secondAttribute="trailing" type="default" id="ESn-Tc-nUa"/>
+                            <constraint firstItem="PmT-R5-FMD" firstAttribute="leading" secondItem="FTK-eh-hOf" secondAttribute="leading" type="default" id="bH6-wf-tW0"/>
+                            <constraint firstItem="PmT-R5-FMD" firstAttribute="top" secondItem="FTK-eh-hOf" secondAttribute="top" type="default" id="qMm-cl-0sl"/>
+                            <constraint firstItem="Iqh-8m-30n" firstAttribute="leading" secondItem="FTK-eh-hOf" secondAttribute="leading" type="default" id="tkT-gJ-HBm"/>
+                            <constraint firstItem="PmT-R5-FMD" firstAttribute="bottom" secondItem="FTK-eh-hOf" secondAttribute="bottom" type="default" id="xfC-GT-ROq"/>
+                            <constraint firstItem="Iqh-8m-30n" firstAttribute="top" secondItem="FTK-eh-hOf" secondAttribute="top" type="default" id="yH9-jk-g99"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Alumni Survey" id="Ul8-fY-Oop"/>
                     <connections>
-                        <outlet property="slideshow" destination="utJ-5d-Q3L" id="uQ7-b1-llA"/>
+                        <outlet property="slideshow" destination="PmT-R5-FMD" id="q7e-qB-IsR"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fPz-l8-HPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RM5-ZJ-C5E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148" y="75"/>
+            <point key="canvasLocation" x="-733" y="244"/>
+        </scene>
+        <!--GNW-->
+        <scene sceneID="03h-fB-OfU">
+            <objects>
+                <viewController id="1MH-BX-af0" userLabel="GNW" customClass="GNWViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="853-dY-F6T">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7vO-pY-PJM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="xAW-WN-2oe"/>
+                                </constraints>
+                                <string key="text">Page Title
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2E2-9B-sL4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="InP-tW-muL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-BJ-oTZ">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="JKz-aw-aa1"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wCX-BJ-oTZ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="2hd-EQ-p7T"/>
+                            <constraint firstItem="wCX-BJ-oTZ" firstAttribute="trailing" secondItem="853-dY-F6T" secondAttribute="trailing" type="default" id="4ZS-LJ-1LM"/>
+                            <constraint firstItem="7vO-pY-PJM" firstAttribute="top" secondItem="853-dY-F6T" secondAttribute="top" constant="20" symbolic="YES" type="default" id="DDl-1M-VJs"/>
+                            <constraint firstItem="2E2-9B-sL4" firstAttribute="leading" secondItem="853-dY-F6T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="OGi-I9-cde"/>
+                            <constraint firstItem="wCX-BJ-oTZ" firstAttribute="leading" secondItem="853-dY-F6T" secondAttribute="leading" type="default" id="Rw4-sd-PRG"/>
+                            <constraint firstItem="2E2-9B-sL4" firstAttribute="top" secondItem="7vO-pY-PJM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UDc-zT-lla"/>
+                            <constraint firstAttribute="trailing" secondItem="7vO-pY-PJM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cjz-Ao-M7W"/>
+                            <constraint firstAttribute="trailing" secondItem="2E2-9B-sL4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ivf-WH-1MI"/>
+                            <constraint firstItem="7vO-pY-PJM" firstAttribute="leading" secondItem="853-dY-F6T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tNK-Cx-OuZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Great Northern Way" id="6ct-RA-GP7"/>
+                    <connections>
+                        <outlet property="mainParagraph" destination="2E2-9B-sL4" id="u45-GA-3EG"/>
+                        <outlet property="pageTitle" destination="7vO-pY-PJM" id="EF5-jO-45u"/>
+                        <outlet property="webView" destination="wCX-BJ-oTZ" id="XNN-wq-AF1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ens-9f-bSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-733" y="-409"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yn5-DG-liX">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="uY2-3b-AeJ" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Vhh-Og-bEU">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1MH-BX-af0" kind="relationship" relationship="viewControllers" id="C0e-yp-xeW"/>
+                        <segue destination="WNA-Mu-uRf" kind="relationship" relationship="viewControllers" id="q9G-Sg-9oT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4St-WH-8gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1267" y="-82"/>
         </scene>
     </scenes>
     <classes>
-        <class className="CreateFuturesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateFuturesViewController.h"/>
+        <class className="AlumniSurveyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlumniSurveyViewController.h"/>
             <relationships>
                 <relationship kind="action" name="loadMainMenuStoryboard:"/>
                 <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="GNWViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GNWViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainParagraph" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

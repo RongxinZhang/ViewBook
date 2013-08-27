@@ -7,7 +7,7 @@
 //
 
 #import "RecruitmentCalendarViewController.h"
-#import "CalenderCell.h"
+#import "RecruitmentCalenderCell.h"
 
 
 @interface RecruitmentCalendarViewController ()
@@ -16,9 +16,11 @@
 
 @implementation RecruitmentCalendarViewController
 
+@synthesize eventTimes;
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
+
+
+- (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
@@ -26,68 +28,92 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Array To Populate Table
     self.eventTimes = [[NSMutableArray alloc]init];
+
+    // XML Path
+    NSString *URLString = @"http://www.jesses.co.tt/storage/recruitments.xml";
+    NSURL *URL = [NSURL URLWithString: [URLString stringByAddingPercentEscapesUsingEncoding:
+                   NSASCIIStringEncoding]];
     
-    [self.eventTimes addObject:@"Nov 21, 9AM, Montreal"];
-    [self.eventTimes addObject:@"Nov 22, 9AM, Boston"];
-    [self.eventTimes addObject:@"Nov 22, 2PM, New York"];
+    // Cast XML into Data
+    NSData *xmlData = [NSData dataWithContentsOfURL:URL];
+    
+    // Save File
+    NSString *applicationDocumentsDir =
+    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *storePath = [applicationDocumentsDir stringByAppendingPathComponent:@"recruitments.xml"];
+    [xmlData writeToFile:storePath atomically:TRUE];
+    
+    // Read Data
+    NSData *savedXML = [NSData dataWithContentsOfFile:storePath];
+    
+    // Parse XML
+    NSXMLParser *NSXmlParser = [[NSXMLParser alloc] initWithData:savedXML];
+    
+    XMLParser *xmlParser = [[XMLParser alloc] initXMLParser];
+    
+    [NSXmlParser setDelegate:xmlParser];
+    
+    BOOL success = [NSXmlParser parse];
+    NSLog(@"Was The Parser Successful? ... %d", success);
+    
+    NSLog(@"Able To Get These Events: %@", [xmlParser cumulativeEvents]);
+    
+    for (NSString *event in [xmlParser cumulativeEvents]) {
+        NSLog(@"This Is An Event: %@", event);
+        [self.eventTimes addObject:event];
+    }
     
     for (NSString *date in self.eventTimes) {
-        NSLog(@"Array values: %@",date);
+        NSLog(@"Final Array values: %@", date);
     }
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
-
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+// TABLE STUFF
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;
+    return [self.eventTimes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"Cell";
     //RX Creates Calender Cell
-    CalenderCell *calenderCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    RecruitmentCalenderCell *calenderCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!calenderCell) {
-        calenderCell = [[CalenderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        calenderCell = [[RecruitmentCalenderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
     calenderCell.textLabel.text = [self.eventTimes objectAtIndex:indexPath.row];
     
     //RX Creates button - tutorial: http://www.youtube.com/watch?v=TADTYkqF6q4
-    UIButton *saveButton = [[UIButton alloc]initWithFrame:CGRectMake(250, 10, 60, 40)];
+    UIButton *saveButton = [[UIButton alloc]initWithFrame:CGRectMake(210, 10, 60, 40)];
     [saveButton addTarget:self action:@selector(savePressed:) forControlEvents:UIControlEventTouchUpInside];
     [saveButton setBackgroundColor:[UIColor blackColor]];
     [saveButton setTitle:@"Save" forState:UIControlStateNormal];
 
-    [calenderCell addSubview:saveButton];
+    //[calenderCell addSubview:saveButton];
     [calenderCell setIndentationWidth:5];
     [calenderCell setIndentationLevel:2];
            
@@ -111,7 +137,6 @@
     [dateFormatter setDateFormat:@"dd-MM-yyyy hh:mm a"];    //RX Main Date format
     NSDate *date = [dateFormatter dateFromString:cellTextLabel];
     NSLog(@"date: %@",date);
-    
 
     NSString *message = @"There is an Emily carr Event happening now";
 

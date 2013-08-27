@@ -13,7 +13,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
-@property (weak, nonatomic) IBOutlet UITextField *question;
+@property (strong, nonatomic) IBOutlet UITextField *messageField;
+
 @end
 
 @implementation ContactECUADViewController
@@ -44,11 +45,10 @@
     // Set PList To Page Title
     pageTitle.text = [screenNames objectAtIndex:screenIndex];
     
-    CGRect frameRect = self.question.textInputView.frame;
-    frameRect.size.height = 53;
-    self.question.textInputView.frame = frameRect;
-//    UITextField *field = [[UITextField alloc] initWithFrame:CGRectMake(20, 80, 280, 120)];
-//    [field setBorderStyle:UITextBorderStyleRoundedRect];
+    // Increase Size Of Message Field
+    self.messageField.borderStyle = UITextBorderStyleLine;
+    self.messageField.frame = CGRectMake(160, 278, 213, 300);
+    self.messageField.borderStyle = UITextBorderStyleRoundedRect;
     
 }
 
@@ -57,8 +57,6 @@
     return YES;
 }
 
-//RX mail tutorial: http://mobile.tutsplus.com/tutorials/iphone/mfmailcomposeviewcontroller/
-
 - (IBAction)sendEmailBtn:(id)sender {
         if ([MFMailComposeViewController canSendMail]) {
             MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
@@ -66,18 +64,15 @@
             [mailer setSubject:@"Prospective student"];
             NSArray *toRecipients = [NSArray arrayWithObjects:@"tzpandaman@hotmail.com", @"jessecolinscott@gmail.com", nil];
             [mailer setToRecipients:toRecipients];
-//            UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
-//            NSData *imageData = UIImagePNGRepresentation(myImage);
-//            [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
-            NSString *nameMessage = [NSString stringWithFormat:@"Name of Prospective Student %@ %@\r", self.firstNameField.text,self.lastNameField.text];
-            NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.question.text, self.phoneField.text];
+            NSString *nameMessage = [NSString stringWithFormat:@"Name of Prospective Student: %@ %@\r", self.firstNameField.text,self.lastNameField.text];
+            NSString *questionMessage = [NSString stringWithFormat:@"Message: %@ %@\r", self.messageField.text, self.phoneField.text];
             NSString *emailBody = [NSString stringWithFormat:@"%@ %@", nameMessage, questionMessage];
             [mailer setMessageBody:emailBody isHTML:NO];
-            [self presentModalViewController:mailer animated:YES];
+            [self presentViewController:mailer animated:YES completion:nil];
         }
         else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
-                                                            message:@"Your device doesn't support the composer sheet"
+                                                            message:@"Your device doesn't have a mail account setup"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
@@ -85,10 +80,8 @@
         }
 }
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
-{
-    switch (result)
-    {
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+    switch (result) {
         case MFMailComposeResultCancelled:
             NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued.");
             break;
@@ -105,8 +98,9 @@
             NSLog(@"Mail not sent.");
             break;
     }
+    
     // Remove the mail view
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

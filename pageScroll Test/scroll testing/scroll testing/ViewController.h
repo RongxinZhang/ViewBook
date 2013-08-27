@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UIGestureRecognizerDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (weak, nonatomic) IBOutlet UILabel *description;
+@interface ViewController : UIViewController
 
 @end

@@ -8,6 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SocialMediaViewController : UIViewController
+@interface SocialMediaViewController : UIViewController {
+    
+    // Screen Index
+    NSInteger screenIndex;
+    
+}
+
+// Page Title
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+
+// Social Media Buttons
+- (IBAction)openFacebook:(id)sender;
+
+- (IBAction)openTwitter:(id)sender;
+
+- (IBAction)openGooglePlus:(id)sender;
+
+- (IBAction)openFlickr:(id)sender;
+
+- (IBAction)openPinterest:(id)sender;
+
 
 @end

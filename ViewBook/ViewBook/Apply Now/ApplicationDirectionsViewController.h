@@ -18,7 +18,6 @@
 // Page Title
 @property (weak, nonatomic) IBOutlet UILabel *pageTitle;
 
-
 // Main Paragraph
 @property (weak, nonatomic) IBOutlet UILabel *mainParagraph;
 

@@ -296,7 +296,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mvx-lC-tNd"/>
                     <connections>
-                        <segue destination="J7J-0d-zEP" kind="modal" identifier="playCreativeFuture" id="Fcd-OX-cOC"/>
+                        <segue destination="J7J-0d-zEP" kind="modal" identifier="loadVimeoVideo" id="Fcd-OX-cOC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fp9-zs-Yeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -314,6 +314,20 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQq-Fc-pBc">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ju-B5-K7E">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadMainMenuStoryboard:" destination="FHv-tt-ogo" eventType="touchUpInside" id="0OU-zy-VBQ"/>
+                                    <action selector="sendBackToThumbnails:" destination="J7J-0d-zEP" eventType="touchUpInside" id="N5g-bT-uPs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -321,6 +335,8 @@
                             <constraint firstItem="kQq-Fc-pBc" firstAttribute="bottom" secondItem="iGD-Fr-n9J" secondAttribute="bottom" type="default" id="6Zs-Ya-LjT"/>
                             <constraint firstItem="kQq-Fc-pBc" firstAttribute="trailing" secondItem="iGD-Fr-n9J" secondAttribute="trailing" type="default" id="Rxb-8X-QDY"/>
                             <constraint firstItem="kQq-Fc-pBc" firstAttribute="top" secondItem="iGD-Fr-n9J" secondAttribute="top" type="default" id="YBx-r6-33G"/>
+                            <constraint firstItem="1ju-B5-K7E" firstAttribute="top" secondItem="iGD-Fr-n9J" secondAttribute="top" type="default" id="itR-gy-f97"/>
+                            <constraint firstItem="1ju-B5-K7E" firstAttribute="leading" secondItem="iGD-Fr-n9J" secondAttribute="leading" type="default" id="kNk-ET-ZUX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wmu-bH-sit"/>
@@ -330,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyW-DB-0JA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184" y="763"/>
+            <point key="canvasLocation" x="1549" y="478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="imZ-bB-lGZ">
@@ -359,52 +375,6 @@
         <image name="giant_ant.png" width="300" height="300"/>
         <image name="luke_parnell.png" width="300" height="299"/>
     </resources>
-    <classes>
-        <class className="CampusSlideshowViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CampusSlideshowViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="StartPointsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartPointsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="loadMainMenuStoryboard:"/>
-            </relationships>
-        </class>
-        <class className="StudentSlideshowViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StudentSlideshowViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="StudiosSlideshowViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StudiosSlideshowViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="VideoThumbnailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VideoThumbnailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="launchCreativeFuture:"/>
-                <relationship kind="action" name="launchDayInTheLife:"/>
-                <relationship kind="action" name="launchDesignCommunity:"/>
-                <relationship kind="action" name="launchErinBoniferro:"/>
-                <relationship kind="action" name="launchGiantAnt:"/>
-                <relationship kind="action" name="launchLukeParnell:"/>
-            </relationships>
-        </class>
-        <class className="WebViewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -41,7 +41,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"Sending..");
-    if([segue.identifier isEqualToString:@"playCreativeFuture"]) {
+    if([segue.identifier isEqualToString:@"loadVimeoVideo"]) {
         WebViewViewController *controller = (WebViewViewController *)segue.destinationViewController;
         controller.vimeoURL = vimeoURL;
     }
@@ -50,21 +50,36 @@
 - (IBAction)launchCreativeFuture:(id)sender {
     vimeoURL = @"72053500";
     NSLog(@"The URL sent is %@", vimeoURL);
-    [self performSegueWithIdentifier:@"playCreativeFuture" sender:sender];
+    [self performSegueWithIdentifier:@"loadVimeoVideo" sender:sender];
 }
 
 - (IBAction)launchDayInTheLife:(id)sender {
+    vimeoURL = @"50235843";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"loadVimeoVideo" sender:sender];
 }
 
 - (IBAction)launchDesignCommunity:(id)sender {
+    vimeoURL = @"51320873";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"loadVimeoVideo" sender:sender];
 }
 
 - (IBAction)launchErinBoniferro:(id)sender {
+    vimeoURL = @"64750565";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"loadVimeoVideo" sender:sender];
 }
 
 - (IBAction)launchGiantAnt:(id)sender {
+    vimeoURL = @"68332198";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"loadVimeoVideo" sender:sender];
 }
 
 - (IBAction)launchLukeParnell:(id)sender {
+    vimeoURL = @"56767251";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"loadVimeoVideo" sender:sender];
 }
 @end

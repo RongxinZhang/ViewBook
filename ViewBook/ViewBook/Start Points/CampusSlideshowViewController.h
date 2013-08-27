@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CampusSlideshowViewController : UIViewController {
+@interface CampusSlideshowViewController : UIViewController <UIGestureRecognizerDelegate>{
     
     
 }

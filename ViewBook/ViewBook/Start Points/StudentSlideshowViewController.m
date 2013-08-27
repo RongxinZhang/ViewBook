@@ -9,6 +9,12 @@
 #import "StudentSlideshowViewController.h"
 
 @interface StudentSlideshowViewController ()
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *leftSwipe;
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *rightSwipe;
+@property (nonatomic) NSInteger swipeCount;
+@property (copy,nonatomic) NSArray *students;
+@property (weak, nonatomic) IBOutlet UILabel *caption;
+@property (copy,nonatomic) NSArray *captionText;
 
 @end
 
@@ -29,8 +35,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    // Set Gestures and load first image and caption
+    self.swipeCount=0;
+    [slideshow setImage:[self.students objectAtIndex:self.swipeCount]];
+    
+    [self.view addGestureRecognizer:self.leftSwipe];
+    [self.view addGestureRecognizer:self.rightSwipe];
+    self.caption.text=@"Hello";
+    self.caption.backgroundColor = [UIColor blueColor];
+    
     // Load Images
-    NSArray *students = [NSArray arrayWithObjects:
+     self.students = [NSArray arrayWithObjects:
                        [UIImage imageNamed:@"student_slideshow_01"],
                        [UIImage imageNamed:@"student_slideshow_02"],
                        [UIImage imageNamed:@"student_slideshow_03"],
@@ -49,12 +64,54 @@
                        [UIImage imageNamed:@"student_slideshow_16"],
                        nil];
     
+    self.captionText = [NSArray arrayWithObjects:
+                        @"View",
+                        @"Ma Trees",
+                        @"Ma Condos",
+                        @"Ma GFlowers",
+                        @"Ma Niggers",
+                        @"Ma Dinner",
+                        @"View",
+                        @"Ma Trees",
+                        @"Ma Condos",
+                        @"Ma GFlowers",
+                        @"Ma Niggers",
+                        @"Ma Dinner",
+                        @"View",
+                        @"Ma Trees",
+                        @"Ma Condos",
+                        @"Ma GFlowers",
+                        @"Ma Niggers",
+                        @"Ma Dinner",
+                        @"View",
+                        @"Ma Trees",
+                        @"Ma Condos",
+                        nil];
     // Set ImageView
-    [slideshow setAnimationImages:students];
-    slideshow.animationDuration = 80.0;
-    slideshow.animationRepeatCount = 0;
-    [slideshow startAnimating];
+//    [slideshow setAnimationImages:students];
+//    slideshow.animationDuration = 80.0;
+//    slideshow.animationRepeatCount = 0;
+//    [slideshow startAnimating];
     
+}
+- (IBAction)previousImage:(UISwipeGestureRecognizer *)sender {
+    NSLog(@"left swipe");
+    if(self.swipeCount < self.students.count-1){
+        NSLog(@"swipe count: %i  |*| array count: %i",self.swipeCount,self.students.count-1);
+        self.swipeCount=self.swipeCount+1;
+        [slideshow setImage:[self.students objectAtIndex:self.swipeCount]];
+        self.caption.text = [self.captionText objectAtIndex:self.swipeCount];
+    }
+}
+
+- (IBAction)nextImage:(UISwipeGestureRecognizer *)sender {
+    NSLog(@"right swipe");
+    if(self.swipeCount > 0){
+        NSLog(@"swipe count: %i  |*| array count: %i",self.swipeCount,self.students.count-1);
+        self.swipeCount=self.swipeCount-1;
+        [slideshow setImage:[self.students objectAtIndex:self.swipeCount]];
+        self.caption.text = [self.captionText objectAtIndex:self.swipeCount];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

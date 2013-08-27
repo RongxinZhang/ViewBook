@@ -9,6 +9,12 @@
 #import "CampusSlideshowViewController.h"
 
 @interface CampusSlideshowViewController ()
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *leftSwipe;
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *rightSwipe;
+@property (nonatomic) NSInteger swipeCount;
+@property (copy,nonatomic) NSArray *campus;
+@property (weak, nonatomic) IBOutlet UILabel *caption;
+@property (copy,nonatomic) NSArray *captionText;
 
 @end
 
@@ -26,11 +32,12 @@
 }
 
 - (void)viewDidLoad {
+   
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// Do any additional setup after loading the view. 
     
     // Load Images
-    NSArray *campus = [NSArray arrayWithObjects:
+    self.campus = [NSArray arrayWithObjects:
                         [UIImage imageNamed:@"campus_slideshow_01"],
                         [UIImage imageNamed:@"campus_slideshow_02"],
                         [UIImage imageNamed:@"campus_slideshow_03"],
@@ -38,14 +45,54 @@
                         [UIImage imageNamed:@"campus_slideshow_05"],
                         [UIImage imageNamed:@"campus_slideshow_06"],
                         nil];
+
     
+    self.captionText = [NSArray arrayWithObjects:
+                         @"View",
+                         @"Ma Trees",
+                         @"Ma Condos",
+                         @"Ma GFlowers",
+                         @"Ma Niggers",
+                         @"Ma Dinner",
+                        nil];
+    
+    // Set Gestures and load first image and caption
+    self.swipeCount=0;
+    [slideshow setImage:[self.campus objectAtIndex:self.swipeCount]];
+    
+    [self.view addGestureRecognizer:self.leftSwipe];
+    [self.view addGestureRecognizer:self.rightSwipe];
+    self.caption.text=@"Hello";
+    self.caption.backgroundColor = [UIColor blueColor];
+
     // Set ImageView
-    [slideshow setAnimationImages:campus];
-    slideshow.animationDuration = 30.0;
-    slideshow.animationRepeatCount = 0;
-    [slideshow startAnimating];
+//    [slideshow setAnimationImages:campus];
+//    slideshow.animationDuration = 30.0;
+//    slideshow.animationRepeatCount = 0;
+//    [slideshow startAnimating];
+
     
 }
+- (IBAction)nextImage:(UISwipeGestureRecognizer *)sender {
+    NSLog(@"left swipe");
+    if(self.swipeCount < self.campus.count-1){
+        NSLog(@"swipe count: %i  |*| array count: %i",self.swipeCount,self.campus.count-1);
+        self.swipeCount=self.swipeCount+1;
+        [slideshow setImage:[self.campus objectAtIndex:self.swipeCount]];
+        self.caption.text = [self.captionText objectAtIndex:self.swipeCount];
+    }
+}
+
+- (IBAction)previousImage:(UISwipeGestureRecognizer *)sender {
+    NSLog(@"right swipe");
+    if(self.swipeCount >0){
+        NSLog(@"swipe count: %i  |*| array count: %i",self.swipeCount,self.campus.count-1);
+        self.swipeCount=self.swipeCount-1;
+        [slideshow setImage:[self.campus objectAtIndex:self.swipeCount]];
+        self.caption.text = [self.captionText objectAtIndex:self.swipeCount];
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

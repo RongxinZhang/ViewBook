@@ -121,8 +121,6 @@
 		2D9087BA17C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */; };
 		2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
 		2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
-		2DAE88D117C73C660034B8C8 /* RecruitmentEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88D017C73C660034B8C8 /* RecruitmentEvent.m */; };
-		2DAE88D217C73C660034B8C8 /* RecruitmentEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88D017C73C660034B8C8 /* RecruitmentEvent.m */; };
 		2DCCA08E17C1BBCD00B81172 /* PortfolioRequirementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */; };
 		2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */; };
 		2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */; };
@@ -283,8 +281,6 @@
 		2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusSlideshowViewController.m; path = "Start Points/CampusSlideshowViewController.m"; sourceTree = "<group>"; };
 		2DAE88CB17C733190034B8C8 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = "Build Networks/XMLParser.h"; sourceTree = "<group>"; };
 		2DAE88CC17C733190034B8C8 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Build Networks/XMLParser.m"; sourceTree = "<group>"; };
-		2DAE88CF17C73C650034B8C8 /* RecruitmentEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecruitmentEvent.h; path = "Build Networks/RecruitmentEvent.h"; sourceTree = "<group>"; };
-		2DAE88D017C73C660034B8C8 /* RecruitmentEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecruitmentEvent.m; path = "Build Networks/RecruitmentEvent.m"; sourceTree = "<group>"; };
 		2DCCA08C17C1BBCD00B81172 /* PortfolioRequirementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortfolioRequirementsViewController.h; path = "Apply Now/PortfolioRequirementsViewController.h"; sourceTree = "<group>"; };
 		2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortfolioRequirementsViewController.m; path = "Apply Now/PortfolioRequirementsViewController.m"; sourceTree = "<group>"; };
 		2DCCA08F17C1BBED00B81172 /* ApplicationDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDirectionsViewController.h; path = "Apply Now/ApplicationDirectionsViewController.h"; sourceTree = "<group>"; };
@@ -418,13 +414,16 @@
 				2D29E77A17C026E4004BB03C /* BuildNetworksViewController.m */,
 				2DCCA09517C1BCC000B81172 /* SocialMediaViewController.h */,
 				2DCCA09617C1BCC000B81172 /* SocialMediaViewController.m */,
-				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
-				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
 				2DCCA09917C1BD0500B81172 /* PublicEngagementViewController.h */,
 				2DCCA09A17C1BD0500B81172 /* PublicEngagementViewController.m */,
 				2DCCA09D17C1BD1B00B81172 /* ResearchIndustryViewController.h */,
 				2DCCA09E17C1BD1B00B81172 /* ResearchIndustryViewController.m */,
-				2DAE88D317C73C780034B8C8 /* xml */,
+				2DCCA0A117C1BD6D00B81172 /* RecruitmentCalendarViewController.h */,
+				2DCCA0A217C1BD6D00B81172 /* RecruitmentCalendarViewController.m */,
+				2D8957C617C474D90044F167 /* RecruitmentCalenderCell.h */,
+				2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */,
+				2DAE88CB17C733190034B8C8 /* XMLParser.h */,
+				2DAE88CC17C733190034B8C8 /* XMLParser.m */,
 			);
 			name = "Build Networks";
 			sourceTree = "<group>";
@@ -628,19 +627,6 @@
 				2D90879917C1F667009DDDEB /* campus_slideshow_06.png */,
 			);
 			path = "Campus Slideshow";
-			sourceTree = "<group>";
-		};
-		2DAE88D317C73C780034B8C8 /* xml */ = {
-			isa = PBXGroup;
-			children = (
-				2DAE88CB17C733190034B8C8 /* XMLParser.h */,
-				2DAE88CC17C733190034B8C8 /* XMLParser.m */,
-				2DAE88CF17C73C650034B8C8 /* RecruitmentEvent.h */,
-				2DAE88D017C73C660034B8C8 /* RecruitmentEvent.m */,
-				2D8957C617C474D90044F167 /* RecruitmentCalenderCell.h */,
-				2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */,
-			);
-			name = xml;
 			sourceTree = "<group>";
 		};
 		2DCCA0A517C1C04400B81172 /* Text Copy */ = {
@@ -962,7 +948,6 @@
 				2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */,
 				2D8957C817C474D90044F167 /* RecruitmentCalenderCell.m in Sources */,
 				2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */,
-				2DAE88D117C73C660034B8C8 /* RecruitmentEvent.m in Sources */,
 				2D44017B17CB1A2900F1079B /* GNWViewController.m in Sources */,
 				2D1D722C17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */,
 			);
@@ -988,7 +973,6 @@
 				2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */,
 				2D8957C917C474D90044F167 /* RecruitmentCalenderCell.m in Sources */,
 				2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */,
-				2DAE88D217C73C660034B8C8 /* RecruitmentEvent.m in Sources */,
 				2D44017C17CB1A2900F1079B /* GNWViewController.m in Sources */,
 				2D1D722D17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */,
 			);

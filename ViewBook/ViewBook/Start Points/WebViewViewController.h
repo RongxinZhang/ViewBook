@@ -10,17 +10,14 @@
 
 @interface WebViewViewController : UIViewController {
     
-    //NSString *vimeoURL;
     
 }
 
 // Web View
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
-// URL
-@property (strong, nonatomic) NSString *vimeoURL;
 
-// Custom Init
--(id)initWithURL:(NSString*)url;
+// Back Button
+- (IBAction)sendBackToThumbnails:(id)sender;
 
 @end

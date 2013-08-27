@@ -24,7 +24,7 @@
 -(XMLParser *)initXMLParser {
     //[super init];
     
-    // Init Strings
+    // Init Variables
     currentEvent = [[NSMutableString alloc] init];
     cumulativeEvents = [[NSMutableArray alloc] init];
     
@@ -33,10 +33,12 @@
 
 -(void)parserDidStartDocument:(NSXMLParser *)parser {
     NSLog(@"didStartDocument");
+    NSLog(@"\n");
 }
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser {
     NSLog(@"didEndDocument");
+    NSLog(@"\n");
     NSLog(@"Cumulative Events Are %@", cumulativeEvents);
 }
 
@@ -49,24 +51,13 @@
     
     if (qName != nil)
         NSLog(@"qualifiedName: %@", qName);
-    
-    if([elementName isEqualToString:@"event"]){
-        // Clear String
-        [currentEvent setString:@""];
-    }
-    
 
-    
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)characters {
-    NSLog(@"Found Characters: %@", characters);
-
     if([characters length] > 0) {
         [currentEvent appendString: [characters stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
     }
-    NSLog(@"Event: %@", currentEvent);
-
 }
 
 - (void)parser:(NSXMLParser *)parser foundIgnorableWhitespace:(NSString *)whitespaceString {
@@ -74,7 +65,7 @@
 }
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
-    NSLog(@"didEndElement: %@", elementName);
+    //NSLog(@"didEndElement: %@", elementName);
     
     if([elementName isEqualToString:@"date"]){
         //
@@ -89,19 +80,20 @@
     }
     
     if([elementName isEqualToString:@"place"]){
-        NSLog(@"End Of An Event");
+        //NSLog(@"End Of An Event");
 
         // Add The String To The Array
-        NSString *tempEvent = currentEvent;
+        NSMutableString *tempEvent = currentEvent;
+        NSString *space = @" ";
+        [tempEvent appendString:space];
         [cumulativeEvents addObject: tempEvent];
         
         for (NSString *event in cumulativeEvents) {
-            NSLog(@"This Is An Event: %@", event);
+            NSLog(@" ===== This Is An Event: %@", event);
         }
         
+        currentEvent = [[NSMutableString alloc] init];
     }
-    
-    
     
 }
 

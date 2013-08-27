@@ -60,7 +60,6 @@
     
     BOOL success = [NSXmlParser parse];
     NSLog(@"Was The Parser Successful? ... %d", success);
-    
     NSLog(@"Able To Get These Events: %@", [xmlParser cumulativeEvents]);
     
     for (NSString *event in [xmlParser cumulativeEvents]) {
@@ -95,6 +94,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     static NSString *cellIdentifier = @"Cell";
     //RX Creates Calender Cell
     RecruitmentCalenderCell *calenderCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -172,6 +172,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"The Index Is %i", indexPath.row);
     
+    NSLog(@"The Text Is %@", [self.eventTimes objectAtIndex:indexPath.row]);
 
 }
 

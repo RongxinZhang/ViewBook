@@ -11,6 +11,8 @@
 
 @interface XMLParser : NSObject <NSXMLParserDelegate> {
     
+//    NSMutableString *currentEvent;
+//    NSMutableArray *cumulativeEvents;
     
 }
 

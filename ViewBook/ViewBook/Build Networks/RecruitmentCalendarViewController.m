@@ -84,20 +84,17 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     return [self.eventTimes count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
     //RX Creates Calender Cell
     RecruitmentCalenderCell *calenderCell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -107,13 +104,13 @@
     
     calenderCell.textLabel.text = [self.eventTimes objectAtIndex:indexPath.row];
     
-    //RX Creates button - tutorial: http://www.youtube.com/watch?v=TADTYkqF6q4
-    UIButton *saveButton = [[UIButton alloc]initWithFrame:CGRectMake(210, 10, 60, 40)];
-    [saveButton addTarget:self action:@selector(savePressed:) forControlEvents:UIControlEventTouchUpInside];
-    [saveButton setBackgroundColor:[UIColor blackColor]];
+    // Buttons
+    UIButton *saveButton = [UIButton buttonWithType:UIButtonTypeRoundedRect ];
+    saveButton.frame = CGRectMake(0, 0, 50, 25);
     [saveButton setTitle:@"Save" forState:UIControlStateNormal];
-
-    //[calenderCell addSubview:saveButton];
+    [saveButton addTarget:self action:@selector(savePressed:) forControlEvents:UIControlEventTouchUpInside];
+    calenderCell.accessoryView = saveButton;
+    
     [calenderCell setIndentationWidth:5];
     [calenderCell setIndentationLevel:2];
            
@@ -121,7 +118,7 @@
 }
 
 //RX Button Click action
--(void)savePressed:(UIButton *)sender{
+-(void)savePressed:(UIButton *)sender {
     UITableViewCell *cell = ((UITableViewCell *)[sender superview]);
     NSInteger cellRow = [[self.tableView indexPathForCell:cell] row];
     NSLog(@"Button Number: %i",cellRow);
@@ -129,7 +126,7 @@
 }
 
 //RX Creates multiple Local Notifications 
--(void)createLocalNotifications:(UITableViewCell *)currentCell rowNumber:(NSInteger)rowNumber{
+-(void)createLocalNotifications:(UITableViewCell *)currentCell rowNumber:(NSInteger)rowNumber {
     
     NSString *cellTextLabel = currentCell.textLabel.text;
 
@@ -145,12 +142,13 @@
 }
 
 //RX creates local notification
--(void)scheduleLocalNotificationWithDate:(NSDate *)fireDate :(NSString *)alertMessage{
+-(void)scheduleLocalNotificationWithDate:(NSDate *)fireDate :(NSString *)alertMessage {
+    
     UILocalNotification *notification = [[UILocalNotification alloc]init];
     
     notification.fireDate = fireDate;
     notification.alertBody = alertMessage;
-//    notification.repeatInterval = NSDayCalendarUnit;
+    //notification.repeatInterval = NSDayCalendarUnit;
     
     [[UIApplication sharedApplication]scheduleLocalNotification:notification];
     [self showMessage:@"A Reminder has been set"];
@@ -158,7 +156,8 @@
 }
 
 //RX Creates alert to notify user that notification has been set
-- (void)showMessage:(NSString *)bodyTexts{
+- (void)showMessage:(NSString *)bodyTexts {
+    
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Reminder"
                                                      message :bodyTexts
                                                      delegate:nil
@@ -168,56 +167,12 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"The Index Is %i", indexPath.row);
+    
+
 }
 
 @end

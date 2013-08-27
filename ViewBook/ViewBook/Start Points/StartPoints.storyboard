@@ -93,6 +93,8 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M20-Cl-QtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="gBD-HD-0BM"/>
+                <swipeGestureRecognizer direction="left" id="pKe-6Q-pBp"/>
             </objects>
             <point key="canvasLocation" x="1152" y="72"/>
         </scene>
@@ -120,6 +122,8 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9AX-Ps-C0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="90F-XB-djk"/>
+                <swipeGestureRecognizer direction="left" id="lIy-MW-zpg"/>
             </objects>
             <point key="canvasLocation" x="1549" y="-254"/>
         </scene>
@@ -132,21 +136,47 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLR-T1-biL"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALC-Wk-cxE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="e3p-jo-evz"/>
+                                    <constraint firstAttribute="width" constant="249" id="inR-0r-epm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qLR-T1-biL" firstAttribute="bottom" secondItem="CWw-Fz-bvL" secondAttribute="bottom" type="default" id="Btt-4b-c9f"/>
                             <constraint firstItem="qLR-T1-biL" firstAttribute="leading" secondItem="CWw-Fz-bvL" secondAttribute="leading" type="default" id="CNQ-CX-vX9"/>
                             <constraint firstItem="qLR-T1-biL" firstAttribute="top" secondItem="CWw-Fz-bvL" secondAttribute="top" type="default" id="FwQ-js-90L"/>
+                            <constraint firstAttribute="bottom" secondItem="ALC-Wk-cxE" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Ioc-Gf-uqW"/>
                             <constraint firstItem="qLR-T1-biL" firstAttribute="trailing" secondItem="CWw-Fz-bvL" secondAttribute="trailing" type="default" id="tQH-bw-nxn"/>
+                            <constraint firstItem="ALC-Wk-cxE" firstAttribute="leading" secondItem="CWw-Fz-bvL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zli-Qa-QCy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Campus" id="e06-6E-ABN" userLabel="Campus"/>
                     <connections>
+                        <outlet property="caption" destination="ALC-Wk-cxE" id="8f8-ov-zaF"/>
+                        <outlet property="leftSwipe" destination="98i-wZ-aGZ" id="qTu-0J-SyC"/>
+                        <outlet property="rightSwipe" destination="jq2-cS-rCV" id="Ma7-P0-LZt"/>
                         <outlet property="slideshow" destination="qLR-T1-biL" id="knS-e0-Hai"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvM-2J-jSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="jq2-cS-rCV">
+                    <connections>
+                        <action selector="nextImage:" destination="G9d-7P-xPl" id="4d2-ZU-Hg7"/>
+                        <outlet property="delegate" destination="G9d-7P-xPl" id="age-v7-jU5"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="98i-wZ-aGZ">
+                    <connections>
+                        <action selector="previousImage:" destination="G9d-7P-xPl" id="2nS-gR-JHG"/>
+                        <outlet property="delegate" destination="G9d-7P-xPl" id="dNH-Th-bXe"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1152" y="-581"/>
         </scene>
@@ -363,6 +393,9 @@
         <class className="CampusSlideshowViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CampusSlideshowViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="caption" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="leftSwipe" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="rightSwipe" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
             </relationships>
         </class>

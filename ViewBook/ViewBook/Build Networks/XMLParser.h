@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <Foundation/NSXMLParser.h>
-#import "RecruitmentEvent.h"
 
 @interface XMLParser : NSObject <NSXMLParserDelegate> {
     
+//    NSMutableString *currentEvent;
+//    NSMutableArray *cumulativeEvents;
     
 }
 

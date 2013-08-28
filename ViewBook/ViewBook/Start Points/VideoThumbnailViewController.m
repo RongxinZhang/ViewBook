@@ -15,8 +15,7 @@
 
 @implementation VideoThumbnailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -24,8 +23,7 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
@@ -33,8 +31,7 @@
     
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -47,6 +44,8 @@
     }
 }
 
+// Vimeo Actions
+
 - (IBAction)launchCreativeFuture:(id)sender {
     vimeoURL = @"72053500";
     NSLog(@"The URL sent is %@", vimeoURL);
@@ -54,17 +53,40 @@
 }
 
 - (IBAction)launchDayInTheLife:(id)sender {
+    vimeoURL = @"50235843";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"playCreativeFuture" sender:sender];
 }
 
 - (IBAction)launchDesignCommunity:(id)sender {
+    vimeoURL = @"51320873";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"playCreativeFuture" sender:sender];
 }
 
 - (IBAction)launchErinBoniferro:(id)sender {
+    vimeoURL = @"64750565";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"playCreativeFuture" sender:sender];
 }
 
 - (IBAction)launchGiantAnt:(id)sender {
+    vimeoURL = @"68332198";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"playCreativeFuture" sender:sender];
 }
 
 - (IBAction)launchLukeParnell:(id)sender {
+    vimeoURL = @"56767251";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"playCreativeFuture" sender:sender];
 }
+
+- (IBAction)launchLisaFraser:(id)sender {
+    vimeoURL = @"73250441";
+    NSLog(@"The URL sent is %@", vimeoURL);
+    [self performSegueWithIdentifier:@"playCreativeFuture" sender:sender];
+}
+
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "WebViewViewController.h"
+#import "VideoThumbnailViewController.h"
 
 @interface WebViewViewController ()
 
@@ -31,6 +32,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -45,6 +47,12 @@
 
 -(void)embedVimeo {
     
+    float width = self.view.frame.size.width;
+    float height = self.view.frame.size.height;
+    NSString *windowWidth = [NSString stringWithFormat:@"%f", width];
+    NSLog(@"W %f", width);
+    NSLog(@"WW %@", windowWidth);
+    
     NSString *pre = @"<iframe width=\"300\" height=\"250\" src=\"http://player.vimeo.com/video/";
     NSString *post = @"\" frameborder=\"0\" allowfullscreen></iframe>";
     
@@ -53,6 +61,15 @@
     
     [webView loadHTMLString:embedHTML baseURL:nil];
     //[self.view addSubview:webView];
+}
+
+
+- (IBAction)backToThumbnails:(id)sender {
+    //VideoThumbnailViewController *viewController = [[VideoThumbnailViewController alloc] init];
+    //viewController.modalPresentationStyle = UIModalPresentationFullScreen;
+    //[self presentViewController:viewController animated:YES completion:NULL];
+
+    [self performSegueWithIdentifier:@"returnToThumbnails" sender:sender];
 }
 
 

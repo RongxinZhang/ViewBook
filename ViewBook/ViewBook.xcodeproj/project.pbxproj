@@ -138,6 +138,8 @@
 		2DCCA0AB17C1C44F00B81172 /* ApplyNowScreenNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */; };
 		2DCCA0AF17C1C5BB00B81172 /* ApplicationDirections.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCA0AE17C1C5BB00B81172 /* ApplicationDirections.txt */; };
 		2DCCA0B017C1C5BB00B81172 /* ApplicationDirections.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DCCA0AE17C1C5BB00B81172 /* ApplicationDirections.txt */; };
+		2DD13AFD17CDBC13002D52BB /* lisa_fraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD13AFC17CDBC13002D52BB /* lisa_fraser.png */; };
+		2DD13AFE17CDBC13002D52BB /* lisa_fraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD13AFC17CDBC13002D52BB /* lisa_fraser.png */; };
 		2DF36BEB17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36BEA17C3422E006B0994 /* StudentSlideshowViewController.m */; };
 		2DF36BEC17C3422E006B0994 /* StudentSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36BEA17C3422E006B0994 /* StudentSlideshowViewController.m */; };
 		2DF36C0417C34402006B0994 /* student_slideshow_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF36BEE17C34402006B0994 /* student_slideshow_01.png */; };
@@ -298,6 +300,7 @@
 		2DCCA0A617C1C05700B81172 /* PortfolioRequirements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PortfolioRequirements.txt; path = "Assets/Text Copy/PortfolioRequirements.txt"; sourceTree = "<group>"; };
 		2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApplyNowScreenNames.plist; path = "Assets/Property Lists/ApplyNowScreenNames.plist"; sourceTree = "<group>"; };
 		2DCCA0AE17C1C5BB00B81172 /* ApplicationDirections.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ApplicationDirections.txt; path = "Assets/Text Copy/ApplicationDirections.txt"; sourceTree = "<group>"; };
+		2DD13AFC17CDBC13002D52BB /* lisa_fraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisa_fraser.png; sourceTree = "<group>"; };
 		2DF36BE917C3422E006B0994 /* StudentSlideshowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentSlideshowViewController.h; path = "Start Points/StudentSlideshowViewController.h"; sourceTree = "<group>"; };
 		2DF36BEA17C3422E006B0994 /* StudentSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentSlideshowViewController.m; path = "Start Points/StudentSlideshowViewController.m"; sourceTree = "<group>"; };
 		2DF36BEE17C34402006B0994 /* student_slideshow_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = student_slideshow_01.png; sourceTree = "<group>"; };
@@ -353,6 +356,7 @@
 		2D1D721417CB26EC00C3DBE3 /* Video Thumbnails */ = {
 			isa = PBXGroup;
 			children = (
+				2DD13AFC17CDBC13002D52BB /* lisa_fraser.png */,
 				2D1D721517CB26EC00C3DBE3 /* creative_future.png */,
 				2D1D721617CB26EC00C3DBE3 /* day_in_the_life.png */,
 				2D1D721717CB26EC00C3DBE3 /* design_doc.png */,
@@ -831,6 +835,7 @@
 				2D1D722417CB26EC00C3DBE3 /* giant_ant.png in Resources */,
 				2D1D722617CB26EC00C3DBE3 /* gnw_campus.png in Resources */,
 				2D1D722817CB26EC00C3DBE3 /* luke_parnell.png in Resources */,
+				2DD13AFD17CDBC13002D52BB /* lisa_fraser.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,6 +905,7 @@
 				2D1D722517CB26EC00C3DBE3 /* giant_ant.png in Resources */,
 				2D1D722717CB26EC00C3DBE3 /* gnw_campus.png in Resources */,
 				2D1D722917CB26EC00C3DBE3 /* luke_parnell.png in Resources */,
+				2DD13AFE17CDBC13002D52BB /* lisa_fraser.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

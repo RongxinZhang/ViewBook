@@ -37,7 +37,6 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"Sending..");
     if([segue.identifier isEqualToString:@"playCreativeFuture"]) {
         WebViewViewController *controller = (WebViewViewController *)segue.destinationViewController;
         controller.vimeoURL = vimeoURL;

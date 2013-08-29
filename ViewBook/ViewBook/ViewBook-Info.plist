@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>Jesse-Scott-Hybridity.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>Jesse-Scott-Personal.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,6 +28,8 @@
 	<array>
 		<string>LeituraHeadline-Serif It.otf</string>
 		<string>LeituraSans-Grot 1.otf</string>
+		<string>GothamRnd-Bold.otf</string>
+		<string>GothamRnd-Medium.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>SplashScreen</string>

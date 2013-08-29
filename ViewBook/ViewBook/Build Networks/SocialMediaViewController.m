@@ -80,10 +80,10 @@
     }
 }
 
-- (IBAction)openGooglePlus:(id)sender {
+- (IBAction)openInstagram:(id)sender {
     // URL's
-    NSURL *gplusApp = [NSURL URLWithString:@"googleplus://"];
-    NSURL *gplusWeb = [NSURL URLWithString:@"http://plus.google.com/u/0/101682024092527104043/posts"];
+    NSURL *gplusApp = [NSURL URLWithString:@"instagram://user?username="];
+    NSURL *gplusWeb = [NSURL URLWithString:@"http://instagram.com"];
     
     // Open The App ?
     if ([[UIApplication sharedApplication] canOpenURL:gplusApp]) {

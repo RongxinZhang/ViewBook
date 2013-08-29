@@ -23,4 +23,7 @@
 // Custom Init
 -(id)initWithURL:(NSString*)url;
 
+// Back To Previous Screen
+- (IBAction)backToThumbnails:(id)sender;
+
 @end

@@ -74,9 +74,7 @@
     }
     
     if([elementName isEqualToString:@"time"]){
-        //
-        NSString *comma = @", ";
-        //[currentEvent appendString:comma];
+
     }
     
     if([elementName isEqualToString:@"place"]){

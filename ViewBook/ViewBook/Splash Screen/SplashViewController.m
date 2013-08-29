@@ -21,11 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    start = [[UIImage alloc] initWithContentsOfFile:@"start.png"];
+    
     // Timer
     // RX edtied timer to make loading faster
     if(self.timer == nil) {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(switchView) userInfo:nil repeats:NO];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(switchView) userInfo:nil repeats:NO];
     }
+    
+    
     
 }
 

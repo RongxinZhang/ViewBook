@@ -67,37 +67,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Paragraph" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2E2-9B-sL4">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="178" id="InP-tW-muL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-BJ-oTZ">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="210" id="JKz-aw-aa1"/>
-                                </constraints>
                             </webView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="657-c4-4Vx">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="qGz-It-xml"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="wCX-BJ-oTZ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="2hd-EQ-p7T"/>
                             <constraint firstItem="wCX-BJ-oTZ" firstAttribute="trailing" secondItem="853-dY-F6T" secondAttribute="trailing" type="default" id="4ZS-LJ-1LM"/>
+                            <constraint firstAttribute="trailing" secondItem="657-c4-4Vx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CCw-1t-t8i"/>
                             <constraint firstItem="7vO-pY-PJM" firstAttribute="top" secondItem="853-dY-F6T" secondAttribute="top" constant="20" symbolic="YES" type="default" id="DDl-1M-VJs"/>
-                            <constraint firstItem="2E2-9B-sL4" firstAttribute="leading" secondItem="853-dY-F6T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="OGi-I9-cde"/>
                             <constraint firstItem="wCX-BJ-oTZ" firstAttribute="leading" secondItem="853-dY-F6T" secondAttribute="leading" type="default" id="Rw4-sd-PRG"/>
-                            <constraint firstItem="2E2-9B-sL4" firstAttribute="top" secondItem="7vO-pY-PJM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UDc-zT-lla"/>
+                            <constraint firstItem="wCX-BJ-oTZ" firstAttribute="top" secondItem="657-c4-4Vx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bzb-vg-Ti1"/>
                             <constraint firstAttribute="trailing" secondItem="7vO-pY-PJM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cjz-Ao-M7W"/>
-                            <constraint firstAttribute="trailing" secondItem="2E2-9B-sL4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ivf-WH-1MI"/>
+                            <constraint firstItem="657-c4-4Vx" firstAttribute="leading" secondItem="853-dY-F6T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="np2-ZO-lku"/>
                             <constraint firstItem="7vO-pY-PJM" firstAttribute="leading" secondItem="853-dY-F6T" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tNK-Cx-OuZ"/>
+                            <constraint firstItem="657-c4-4Vx" firstAttribute="top" secondItem="7vO-pY-PJM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xMX-j6-omR"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Great Northern Way" id="6ct-RA-GP7"/>
                     <connections>
-                        <outlet property="mainParagraph" destination="2E2-9B-sL4" id="u45-GA-3EG"/>
+                        <outlet property="mainParagraph" destination="657-c4-4Vx" id="Svz-8q-efd"/>
                         <outlet property="pageTitle" destination="7vO-pY-PJM" id="EF5-jO-45u"/>
                         <outlet property="webView" destination="wCX-BJ-oTZ" id="XNN-wq-AF1"/>
                     </connections>
@@ -126,26 +125,6 @@
             <point key="canvasLocation" x="-1267" y="-82"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AlumniSurveyViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlumniSurveyViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="loadMainMenuStoryboard:"/>
-                <relationship kind="outlet" name="slideshow" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="GNWViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GNWViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mainParagraph" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pageTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

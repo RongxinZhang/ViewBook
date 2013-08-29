@@ -7,6 +7,7 @@
 //
 
 #import "WebViewViewController.h"
+#import "VideoThumbnailViewController.h"
 
 @interface WebViewViewController ()
 
@@ -27,20 +28,37 @@
 
 -(id)initWithURL:(NSString*)url {
     vimeoURL = [[NSString alloc] initWithString:url];
-    NSLog(@"The URL received is %@", vimeoURL);
+    //NSLog(@"The URL received is %@", vimeoURL);
     return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    //
+    if ([UIDevice instancesRespondToSelector:@selector(setOrientation:)]) {
+        //[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationPortrait];
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    NSLog(@"VDL");
-    
+        
     // Embed the Video
     [self embedVimeo];
+
     
 }
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    if ((toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
+}
+
+
 
 
 -(void)embedVimeo {
@@ -49,10 +67,14 @@
     NSString *post = @"\" frameborder=\"0\" allowfullscreen></iframe>";
     
     NSString *embedHTML = [NSString stringWithFormat:@"%@%@%@", pre, vimeoURL, post];
-    NSLog(@"%@", embedHTML);
     
     [webView loadHTMLString:embedHTML baseURL:nil];
-    //[self.view addSubview:webView];
+}
+
+
+- (IBAction)backToThumbnails:(id)sender {
+
+    [self performSegueWithIdentifier:@"returnToThumbnails" sender:sender];
 }
 
 

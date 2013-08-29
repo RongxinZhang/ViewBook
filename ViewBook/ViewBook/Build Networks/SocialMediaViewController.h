@@ -23,7 +23,7 @@
 
 - (IBAction)openTwitter:(id)sender;
 
-- (IBAction)openGooglePlus:(id)sender;
+- (IBAction)openInstagram:(id)sender;
 
 - (IBAction)openFlickr:(id)sender;
 

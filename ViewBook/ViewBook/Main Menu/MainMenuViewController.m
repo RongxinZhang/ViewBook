@@ -14,6 +14,9 @@
 
 @implementation MainMenuViewController
 
+// Synthesize Variables
+@synthesize startPointsButton, makePathsButton, buildNetworksButton, createFuturesButton, applyNowButton;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,6 +31,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    
+    
+    // Load Font
+    buttonFont = [UIFont fontWithName:@"GothamRounded-Medium" size:18];
+    startPointsButton.titleLabel.font = buttonFont;
+    makePathsButton.titleLabel.font = buttonFont;
+    buildNetworksButton.titleLabel.font = buttonFont;
+    createFuturesButton.titleLabel.font = buttonFont;
+    applyNowButton.titleLabel.font = buttonFont;
     
 }
 

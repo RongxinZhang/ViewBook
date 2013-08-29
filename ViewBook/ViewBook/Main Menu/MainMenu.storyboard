@@ -13,8 +13,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IW-bh-8qn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="P1e-aN-gKZ"/>
+                                    <constraint firstAttribute="width" constant="280" id="sDu-ie-nde"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Start Points">
+                                <state key="normal" title="Start Points" backgroundImage="arrow1.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,8 +30,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWk-GZ-Nx3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cPl-gi-IgO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Make Paths">
+                                <state key="normal" title="Make Paths" backgroundImage="arrow2.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,8 +46,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-Qt-A7N">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="4Ew-Ps-zV2"/>
+                                    <constraint firstAttribute="height" constant="44" id="Jhk-NX-d2S"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Build Networks">
+                                <state key="normal" title="Build Networks" backgroundImage="arrow3.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,8 +63,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FC4-tb-4Kp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="LWj-br-VzY"/>
+                                    <constraint firstAttribute="height" constant="44" id="mh6-ng-9Vm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Create Futures">
+                                <state key="normal" title="Create Futures" backgroundImage="arrow4.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -66,10 +81,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drq-Kc-cTj">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="jZw-QJ-ZFx"/>
+                                    <constraint firstAttribute="height" constant="44" id="3Sw-Sz-mjw"/>
+                                    <constraint firstAttribute="width" constant="280" id="fbA-8o-z1u"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Apply Now">
+                                <state key="normal" title="Apply Now" backgroundImage="arrow5.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -83,28 +99,39 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="drq-Kc-cTj" firstAttribute="trailing" secondItem="FC4-tb-4Kp" secondAttribute="trailing" type="default" id="0Ky-cy-u5H"/>
-                            <constraint firstItem="h6a-Qt-A7N" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="209" id="3jW-au-5wG"/>
-                            <constraint firstItem="h6a-Qt-A7N" firstAttribute="trailing" secondItem="iWk-GZ-Nx3" secondAttribute="trailing" type="default" id="GPF-z1-91r"/>
-                            <constraint firstItem="drq-Kc-cTj" firstAttribute="leading" secondItem="hBg-CV-JkD" secondAttribute="leading" constant="111" id="Nv5-HN-HkJ"/>
-                            <constraint firstItem="iWk-GZ-Nx3" firstAttribute="trailing" secondItem="8IW-bh-8qn" secondAttribute="trailing" type="default" id="R4C-i1-lES"/>
-                            <constraint firstAttribute="bottom" secondItem="drq-Kc-cTj" secondAttribute="bottom" constant="142" id="RPM-Wm-m5H"/>
-                            <constraint firstItem="drq-Kc-cTj" firstAttribute="leading" secondItem="FC4-tb-4Kp" secondAttribute="leading" type="default" id="WFg-no-A7E"/>
-                            <constraint firstItem="8IW-bh-8qn" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="55" id="Ziv-4K-iWx"/>
-                            <constraint firstItem="FC4-tb-4Kp" firstAttribute="trailing" secondItem="h6a-Qt-A7N" secondAttribute="trailing" type="default" id="bko-0W-aue"/>
-                            <constraint firstItem="h6a-Qt-A7N" firstAttribute="leading" secondItem="iWk-GZ-Nx3" secondAttribute="leading" type="default" id="dEr-zb-d6F"/>
-                            <constraint firstItem="iWk-GZ-Nx3" firstAttribute="leading" secondItem="8IW-bh-8qn" secondAttribute="leading" type="default" id="eZ5-Vd-XG7"/>
-                            <constraint firstItem="FC4-tb-4Kp" firstAttribute="leading" secondItem="h6a-Qt-A7N" secondAttribute="leading" type="default" id="mbK-Gb-OLa"/>
-                            <constraint firstAttribute="bottom" secondItem="FC4-tb-4Kp" secondAttribute="bottom" constant="220" id="oAZ-qb-eDx"/>
-                            <constraint firstItem="iWk-GZ-Nx3" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="136" id="sSv-HH-ubJ"/>
+                            <constraint firstAttribute="trailing" secondItem="iWk-GZ-Nx3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1mM-q9-gVv"/>
+                            <constraint firstItem="FC4-tb-4Kp" firstAttribute="leading" secondItem="hBg-CV-JkD" secondAttribute="leading" constant="60" id="Ued-KI-1Gg"/>
+                            <constraint firstItem="h6a-Qt-A7N" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="210" id="Uun-6Q-Cj8"/>
+                            <constraint firstItem="drq-Kc-cTj" firstAttribute="leading" secondItem="hBg-CV-JkD" secondAttribute="leading" constant="80" id="ZEC-lD-MlA"/>
+                            <constraint firstItem="drq-Kc-cTj" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="298" id="hMu-pO-naO"/>
+                            <constraint firstItem="8IW-bh-8qn" firstAttribute="leading" secondItem="hBg-CV-JkD" secondAttribute="leading" type="default" id="nyK-oZ-yIk"/>
+                            <constraint firstItem="h6a-Qt-A7N" firstAttribute="trailing" secondItem="hBg-CV-JkD" secondAttribute="trailing" type="default" id="obz-3a-Q1Q"/>
+                            <constraint firstItem="iWk-GZ-Nx3" firstAttribute="leading" secondItem="hBg-CV-JkD" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oh7-O0-7jk"/>
+                            <constraint firstItem="8IW-bh-8qn" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="122" id="t4r-tS-dmj"/>
+                            <constraint firstItem="FC4-tb-4Kp" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="254" id="xz2-Xg-k5g"/>
+                            <constraint firstItem="iWk-GZ-Nx3" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="166" id="zvk-DA-bnf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="applyNowButton" destination="drq-Kc-cTj" id="YKK-HW-ohI"/>
+                        <outlet property="buildNetworksButton" destination="h6a-Qt-A7N" id="RFS-LQ-mye"/>
+                        <outlet property="createFuturesButton" destination="FC4-tb-4Kp" id="ocQ-nB-MXZ"/>
+                        <outlet property="makePathsButton" destination="iWk-GZ-Nx3" id="NLq-cn-3ZK"/>
+                        <outlet property="startPointsButton" destination="8IW-bh-8qn" id="eeu-Wp-Ikw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdE-vG-fBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="228" y="93"/>
+            <point key="canvasLocation" x="233" y="72"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow1.png" width="671" height="38"/>
+        <image name="arrow2.png" width="673" height="38"/>
+        <image name="arrow3.png" width="672" height="38"/>
+        <image name="arrow4.png" width="671" height="38"/>
+        <image name="arrow5.png" width="671" height="38"/>
+    </resources>
     <classes>
         <class className="MainMenuViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
@@ -114,6 +141,11 @@
                 <relationship kind="action" name="loadCreateFuturesStoryboard:"/>
                 <relationship kind="action" name="loadMakePathsStoryboard:"/>
                 <relationship kind="action" name="loadStartPointsStoryboard:"/>
+                <relationship kind="outlet" name="applyNowButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buildNetworksButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="createFuturesButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="makePathsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="startPointsButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

@@ -14,6 +14,8 @@
     // Timer To Control Animation To Next Screen
     NSTimer *timer;
     
+    UIImage *start;
+    
 }
 
 @property (nonatomic, retain) NSTimer *timer;

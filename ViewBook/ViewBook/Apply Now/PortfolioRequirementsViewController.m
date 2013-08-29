@@ -34,17 +34,28 @@
     // Set Screen Index
     screenIndex = 0;
     
+    // Load Fonts
+    titleFont = [UIFont fontWithName:@"Leitura Headline" size:24];
+    paragraphFont = [UIFont fontWithName:@"Leitura Sans" size:12];
+    
     // Load PList For Page Title
     NSString *pathToPlistFile = [[NSBundle mainBundle] pathForResource:@"ApplyNowScreenNames" ofType:@"plist"];
     NSArray *screenNames = [[NSArray alloc] initWithContentsOfFile:pathToPlistFile];
     
     // Set PList To Page Title
     pageTitle.text = [screenNames objectAtIndex:screenIndex];
+    pageTitle.font = titleFont;
     
     // Load Text File For Main Paragraph
     NSString *pathToTextFile = [[NSBundle mainBundle] pathForResource:@"PortfolioRequirements" ofType:@"txt"];
     NSString *fileContent = [NSString stringWithContentsOfFile:pathToTextFile encoding:NSUTF8StringEncoding error:NULL];
-    self.mainParagraph.text = fileContent;
+    
+    
+    // Set Text File To Label
+    mainParagraph.text = fileContent;
+    mainParagraph.font = paragraphFont;
+    
+    //self.mainParagraph.text = fileContent;
     // Set Text File To Main Paragraph Label
 //    mainParagraph.numberOfLines = 15;
 //    mainParagraph.text = fileContent;

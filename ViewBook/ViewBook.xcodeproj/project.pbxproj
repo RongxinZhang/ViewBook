@@ -115,6 +115,14 @@
 		2D9087B617C1FC59009DDDEB /* StudiosSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9087B417C1FC59009DDDEB /* StudiosSlideshowViewController.m */; };
 		2D9087B917C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */; };
 		2D9087BA17C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */; };
+		2D915EEE17CFFCA8008A3978 /* FutureArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D915EED17CFFCA7008A3978 /* FutureArtistsViewController.m */; };
+		2D915EEF17CFFCA8008A3978 /* FutureArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D915EED17CFFCA7008A3978 /* FutureArtistsViewController.m */; };
+		2D915EF217CFFEC2008A3978 /* FutureArtists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D915EF017CFFEC2008A3978 /* FutureArtists.txt */; };
+		2D915EF317CFFEC2008A3978 /* FutureArtists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D915EF017CFFEC2008A3978 /* FutureArtists.txt */; };
+		2D915EF417CFFEC2008A3978 /* VisitUs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D915EF117CFFEC2008A3978 /* VisitUs.txt */; };
+		2D915EF517CFFEC2008A3978 /* VisitUs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D915EF117CFFEC2008A3978 /* VisitUs.txt */; };
+		2D915EF817CFFF5F008A3978 /* VisitUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D915EF717CFFF5F008A3978 /* VisitUsViewController.m */; };
+		2D915EF917CFFF5F008A3978 /* VisitUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D915EF717CFFF5F008A3978 /* VisitUsViewController.m */; };
 		2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
 		2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
 		2DB3FBE617CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */; };
@@ -300,6 +308,12 @@
 		2D9087B417C1FC59009DDDEB /* StudiosSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudiosSlideshowViewController.m; path = "Start Points/StudiosSlideshowViewController.m"; sourceTree = "<group>"; };
 		2D9087B717C1FC70009DDDEB /* CampusSlideshowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CampusSlideshowViewController.h; path = "Start Points/CampusSlideshowViewController.h"; sourceTree = "<group>"; };
 		2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusSlideshowViewController.m; path = "Start Points/CampusSlideshowViewController.m"; sourceTree = "<group>"; };
+		2D915EEC17CFFCA7008A3978 /* FutureArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FutureArtistsViewController.h; path = "Apply Now/FutureArtistsViewController.h"; sourceTree = "<group>"; };
+		2D915EED17CFFCA7008A3978 /* FutureArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FutureArtistsViewController.m; path = "Apply Now/FutureArtistsViewController.m"; sourceTree = "<group>"; };
+		2D915EF017CFFEC2008A3978 /* FutureArtists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FutureArtists.txt; path = "Assets/Text Copy/FutureArtists.txt"; sourceTree = "<group>"; };
+		2D915EF117CFFEC2008A3978 /* VisitUs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = VisitUs.txt; path = "Assets/Text Copy/VisitUs.txt"; sourceTree = "<group>"; };
+		2D915EF617CFFF5F008A3978 /* VisitUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisitUsViewController.h; path = "Apply Now/VisitUsViewController.h"; sourceTree = "<group>"; };
+		2D915EF717CFFF5F008A3978 /* VisitUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisitUsViewController.m; path = "Apply Now/VisitUsViewController.m"; sourceTree = "<group>"; };
 		2DAE88CB17C733190034B8C8 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = "Build Networks/XMLParser.h"; sourceTree = "<group>"; };
 		2DAE88CC17C733190034B8C8 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Build Networks/XMLParser.m"; sourceTree = "<group>"; };
 		2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UndergraduateCourses.plist; path = "Assets/Property Lists/UndergraduateCourses.plist"; sourceTree = "<group>"; };
@@ -490,6 +504,10 @@
 				2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */,
 				2DCCA09217C1BC0100B81172 /* ContactECUADViewController.h */,
 				2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */,
+				2D915EEC17CFFCA7008A3978 /* FutureArtistsViewController.h */,
+				2D915EED17CFFCA7008A3978 /* FutureArtistsViewController.m */,
+				2D915EF617CFFF5F008A3978 /* VisitUsViewController.h */,
+				2D915EF717CFFF5F008A3978 /* VisitUsViewController.m */,
 			);
 			name = "Apply Now";
 			sourceTree = "<group>";
@@ -673,6 +691,8 @@
 		2DCCA0A517C1C04400B81172 /* Text Copy */ = {
 			isa = PBXGroup;
 			children = (
+				2D915EF017CFFEC2008A3978 /* FutureArtists.txt */,
+				2D915EF117CFFEC2008A3978 /* VisitUs.txt */,
 				2D142B0217C4895F0013F036 /* GreatNorthernWay.txt */,
 				2D142B0317C4895F0013F036 /* IndustryEngagement.txt */,
 				2D142B0417C4895F0013F036 /* PublicEngagement.txt */,
@@ -899,6 +919,8 @@
 				2DB3FBE917CFBDB00045D85C /* instagram.png in Resources */,
 				2DB3FBED17CFC40D0045D85C /* GothamRnd-Bold.otf in Resources */,
 				2DB3FBEF17CFC40D0045D85C /* GothamRnd-Medium.otf in Resources */,
+				2D915EF217CFFEC2008A3978 /* FutureArtists.txt in Resources */,
+				2D915EF417CFFEC2008A3978 /* VisitUs.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,6 +1000,8 @@
 				2DB3FBEE17CFC40D0045D85C /* GothamRnd-Bold.otf in Resources */,
 				2DB3FBF017CFC40D0045D85C /* GothamRnd-Medium.otf in Resources */,
 				2DB3FBF217CFC41F0045D85C /* ViewBook-Info.plist in Resources */,
+				2D915EF317CFFEC2008A3978 /* FutureArtists.txt in Resources */,
+				2D915EF517CFFEC2008A3978 /* VisitUs.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1029,6 +1053,8 @@
 				2D44017B17CB1A2900F1079B /* GNWViewController.m in Sources */,
 				2D1D722C17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */,
 				79896D2E17CEB91E000B747D /* UnderGradraduateViewController.m in Sources */,
+				2D915EEE17CFFCA8008A3978 /* FutureArtistsViewController.m in Sources */,
+				2D915EF817CFFF5F008A3978 /* VisitUsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,6 +1080,8 @@
 				2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */,
 				2D44017C17CB1A2900F1079B /* GNWViewController.m in Sources */,
 				2D1D722D17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */,
+				2D915EEF17CFFCA8008A3978 /* FutureArtistsViewController.m in Sources */,
+				2D915EF917CFFF5F008A3978 /* VisitUsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

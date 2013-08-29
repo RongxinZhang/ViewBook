@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="FHv-tt-ogo" userLabel="Start Points" customClass="StartPointsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2O0-HD-Tfk">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cbg-oH-hrc">
@@ -68,7 +68,7 @@
             <objects>
                 <viewController id="Ue7-Xb-H76" userLabel="Studios And Labs" customClass="StudiosSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nu1-pi-DoC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="r42-X0-Ah8">
@@ -112,7 +112,7 @@
             <objects>
                 <viewController id="4Gr-ym-wzi" userLabel="Students" customClass="StudentSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bvf-wz-A0z">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="fWG-C7-fRu">
@@ -156,7 +156,7 @@
             <objects>
                 <viewController id="G9d-7P-xPl" userLabel="Campus" customClass="CampusSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CWw-Fz-bvL">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="qLR-T1-biL">
@@ -221,7 +221,7 @@
             <objects>
                 <viewController id="OnM-45-lGv" userLabel="Thumbnails" customClass="VideoThumbnailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZV-V9-l6P">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cTX-dL-J3Y">
@@ -339,7 +339,7 @@
             <objects>
                 <viewController id="J7J-0d-zEP" userLabel="Video Galleries" customClass="WebViewViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGD-Fr-n9J">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleAspectFit" id="kQq-Fc-pBc">
@@ -405,6 +405,8 @@
         <class className="CampusSlideshowViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CampusSlideshowViewController.h"/>
             <relationships>
+                <relationship kind="action" name="nextImage:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="previousImage:" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="outlet" name="caption" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="leftSwipe" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="outlet" name="rightSwipe" candidateClass="UISwipeGestureRecognizer"/>
@@ -460,7 +462,7 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="6V4-In-wqR"/>

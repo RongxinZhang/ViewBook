@@ -29,13 +29,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
 	// Do any additional setup after loading the view.
     
     // Set Screen Index
     screenIndex = 2;
     
     // Load Fonts
-    titleFont = [UIFont fontWithName:@"LeituraHeadline-Serif It" size:24];
+    titleFont = [UIFont fontWithName:@"Leitura Headline" size:24];
     paragraphFont = [UIFont fontWithName:@"LeituraSans-Grot 1" size:12];
     
     // Load PList For Page Title
@@ -43,8 +52,10 @@
     NSArray *screenNames = [[NSArray alloc] initWithContentsOfFile:pathToPlistFile];
     
     // Set PList To Page Title
-    pageTitle.text = [screenNames objectAtIndex:screenIndex];
-    pageTitle.font = [UIFont fontWithName:@"LeituraHeadline-Serif It" size:24];
+//    pageTitle.text = [screenNames objectAtIndex:screenIndex];
+    self.pageTitle.font= [UIFont fontWithName:@"LeituraSans-Grot 1" size:24];
+    self.pageTitle.text=@"hello";
+//    pageTitle.font = [UIFont fontWithName:@"LeituraHeadline-Serif It" size:24];
     //pageTitle.font = titleFont;
     
     // Load Text File For Main Paragraph

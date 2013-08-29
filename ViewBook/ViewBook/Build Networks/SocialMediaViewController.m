@@ -82,8 +82,8 @@
 
 - (IBAction)openInstagram:(id)sender {
     // URL's
-    NSURL *gplusApp = [NSURL URLWithString:@"instagram://user?username="];
-    NSURL *gplusWeb = [NSURL URLWithString:@"http://instagram.com"];
+    NSURL *gplusApp = [NSURL URLWithString:@"instagram://user?username=emilycarru"];
+    NSURL *gplusWeb = [NSURL URLWithString:@"http://instagram.com/emilycarru#"];
     
     // Open The App ?
     if ([[UIApplication sharedApplication] canOpenURL:gplusApp]) {

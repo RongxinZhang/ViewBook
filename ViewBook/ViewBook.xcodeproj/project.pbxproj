@@ -206,6 +206,62 @@
 		2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
 		2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
 		79896D2E17CEB91E000B747D /* UnderGradraduateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896D2D17CEB91E000B747D /* UnderGradraduateViewController.m */; };
+		79CEE42117CFDE1400C9D12B /* GraduateCourses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42017CFDE1400C9D12B /* GraduateCourses.plist */; };
+		79CEE42217CFDE1400C9D12B /* GraduateCourses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42017CFDE1400C9D12B /* GraduateCourses.plist */; };
+		79CEE42417CFE28A00C9D12B /* ContinuingStudies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42317CFE28A00C9D12B /* ContinuingStudies.plist */; };
+		79CEE42517CFE28A00C9D12B /* ContinuingStudies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42317CFE28A00C9D12B /* ContinuingStudies.plist */; };
+		79CEE42717CFE4A500C9D12B /* Foundation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42617CFE4A500C9D12B /* Foundation.plist */; };
+		79CEE42817CFE4A500C9D12B /* Foundation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42617CFE4A500C9D12B /* Foundation.plist */; };
+		79CEE44317CFEEAD00C9D12B /* FDT-01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42B17CFEEAD00C9D12B /* FDT-01.txt */; };
+		79CEE44417CFEEAD00C9D12B /* FDT-01.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42B17CFEEAD00C9D12B /* FDT-01.txt */; };
+		79CEE44517CFEEAD00C9D12B /* GRA0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42D17CFEEAD00C9D12B /* GRA0.txt */; };
+		79CEE44617CFEEAD00C9D12B /* GRA0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42D17CFEEAD00C9D12B /* GRA0.txt */; };
+		79CEE44717CFEEAD00C9D12B /* GRA1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42E17CFEEAD00C9D12B /* GRA1.txt */; };
+		79CEE44817CFEEAD00C9D12B /* GRA1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42E17CFEEAD00C9D12B /* GRA1.txt */; };
+		79CEE44917CFEEAD00C9D12B /* GRA2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42F17CFEEAD00C9D12B /* GRA2.txt */; };
+		79CEE44A17CFEEAD00C9D12B /* GRA2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE42F17CFEEAD00C9D12B /* GRA2.txt */; };
+		79CEE44B17CFEEAD00C9D12B /* BAC0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43117CFEEAD00C9D12B /* BAC0.txt */; };
+		79CEE44C17CFEEAD00C9D12B /* BAC0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43117CFEEAD00C9D12B /* BAC0.txt */; };
+		79CEE44D17CFEEAD00C9D12B /* BAC1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43217CFEEAD00C9D12B /* BAC1.txt */; };
+		79CEE44E17CFEEAD00C9D12B /* BAC1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43217CFEEAD00C9D12B /* BAC1.txt */; };
+		79CEE44F17CFEEAD00C9D12B /* BAC10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43317CFEEAD00C9D12B /* BAC10.txt */; };
+		79CEE45017CFEEAD00C9D12B /* BAC10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43317CFEEAD00C9D12B /* BAC10.txt */; };
+		79CEE45117CFEEAD00C9D12B /* BAC11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43417CFEEAD00C9D12B /* BAC11.txt */; };
+		79CEE45217CFEEAD00C9D12B /* BAC11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43417CFEEAD00C9D12B /* BAC11.txt */; };
+		79CEE45317CFEEAD00C9D12B /* BAC12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43517CFEEAD00C9D12B /* BAC12.txt */; };
+		79CEE45417CFEEAD00C9D12B /* BAC12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43517CFEEAD00C9D12B /* BAC12.txt */; };
+		79CEE45517CFEEAD00C9D12B /* BAC13.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43617CFEEAD00C9D12B /* BAC13.txt */; };
+		79CEE45617CFEEAD00C9D12B /* BAC13.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43617CFEEAD00C9D12B /* BAC13.txt */; };
+		79CEE45717CFEEAD00C9D12B /* BAC14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43717CFEEAD00C9D12B /* BAC14.txt */; };
+		79CEE45817CFEEAD00C9D12B /* BAC14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43717CFEEAD00C9D12B /* BAC14.txt */; };
+		79CEE45917CFEEAD00C9D12B /* BAC15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43817CFEEAD00C9D12B /* BAC15.txt */; };
+		79CEE45A17CFEEAD00C9D12B /* BAC15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43817CFEEAD00C9D12B /* BAC15.txt */; };
+		79CEE45B17CFEEAD00C9D12B /* BAC16.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43917CFEEAD00C9D12B /* BAC16.txt */; };
+		79CEE45C17CFEEAD00C9D12B /* BAC16.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43917CFEEAD00C9D12B /* BAC16.txt */; };
+		79CEE45D17CFEEAD00C9D12B /* BAC17.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43A17CFEEAD00C9D12B /* BAC17.txt */; };
+		79CEE45E17CFEEAD00C9D12B /* BAC17.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43A17CFEEAD00C9D12B /* BAC17.txt */; };
+		79CEE45F17CFEEAD00C9D12B /* BAC2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43B17CFEEAD00C9D12B /* BAC2.txt */; };
+		79CEE46017CFEEAD00C9D12B /* BAC2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43B17CFEEAD00C9D12B /* BAC2.txt */; };
+		79CEE46117CFEEAD00C9D12B /* BAC3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43C17CFEEAD00C9D12B /* BAC3.txt */; };
+		79CEE46217CFEEAD00C9D12B /* BAC3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43C17CFEEAD00C9D12B /* BAC3.txt */; };
+		79CEE46317CFEEAD00C9D12B /* BAC4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43D17CFEEAD00C9D12B /* BAC4.txt */; };
+		79CEE46417CFEEAD00C9D12B /* BAC4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43D17CFEEAD00C9D12B /* BAC4.txt */; };
+		79CEE46517CFEEAD00C9D12B /* BAC5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43E17CFEEAD00C9D12B /* BAC5.txt */; };
+		79CEE46617CFEEAD00C9D12B /* BAC5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43E17CFEEAD00C9D12B /* BAC5.txt */; };
+		79CEE46717CFEEAD00C9D12B /* BAC6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43F17CFEEAD00C9D12B /* BAC6.txt */; };
+		79CEE46817CFEEAD00C9D12B /* BAC6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE43F17CFEEAD00C9D12B /* BAC6.txt */; };
+		79CEE46917CFEEAD00C9D12B /* BAC7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE44017CFEEAD00C9D12B /* BAC7.txt */; };
+		79CEE46A17CFEEAD00C9D12B /* BAC7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE44017CFEEAD00C9D12B /* BAC7.txt */; };
+		79CEE46B17CFEEAD00C9D12B /* BAC8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE44117CFEEAD00C9D12B /* BAC8.txt */; };
+		79CEE46C17CFEEAD00C9D12B /* BAC8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE44117CFEEAD00C9D12B /* BAC8.txt */; };
+		79CEE46D17CFEEAD00C9D12B /* BAC9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE44217CFEEAD00C9D12B /* BAC9.txt */; };
+		79CEE46E17CFEEAD00C9D12B /* BAC9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE44217CFEEAD00C9D12B /* BAC9.txt */; };
+		79CEE47317CFF01B00C9D12B /* CST0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE47017CFF01B00C9D12B /* CST0.txt */; };
+		79CEE47417CFF01B00C9D12B /* CST0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE47017CFF01B00C9D12B /* CST0.txt */; };
+		79CEE47517CFF01B00C9D12B /* CST1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE47117CFF01B00C9D12B /* CST1.txt */; };
+		79CEE47617CFF01B00C9D12B /* CST1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE47117CFF01B00C9D12B /* CST1.txt */; };
+		79CEE47717CFF01B00C9D12B /* CST2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE47217CFF01B00C9D12B /* CST2.txt */; };
+		79CEE47817CFF01B00C9D12B /* CST2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79CEE47217CFF01B00C9D12B /* CST2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -358,6 +414,34 @@
 		2DF36C2F17C346B7006B0994 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewViewController.m; path = "Start Points/WebViewViewController.m"; sourceTree = "<group>"; };
 		79896D2C17CEB91E000B747D /* UnderGradraduateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnderGradraduateViewController.h; path = "Make Paths/UnderGradraduateViewController.h"; sourceTree = "<group>"; };
 		79896D2D17CEB91E000B747D /* UnderGradraduateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnderGradraduateViewController.m; path = "Make Paths/UnderGradraduateViewController.m"; sourceTree = "<group>"; };
+		79CEE42017CFDE1400C9D12B /* GraduateCourses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GraduateCourses.plist; path = "Assets/Property Lists/GraduateCourses.plist"; sourceTree = "<group>"; };
+		79CEE42317CFE28A00C9D12B /* ContinuingStudies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ContinuingStudies.plist; path = "Assets/Property Lists/ContinuingStudies.plist"; sourceTree = "<group>"; };
+		79CEE42617CFE4A500C9D12B /* Foundation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Foundation.plist; path = "Assets/Property Lists/Foundation.plist"; sourceTree = "<group>"; };
+		79CEE42B17CFEEAD00C9D12B /* FDT-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "FDT-01.txt"; sourceTree = "<group>"; };
+		79CEE42D17CFEEAD00C9D12B /* GRA0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GRA0.txt; sourceTree = "<group>"; };
+		79CEE42E17CFEEAD00C9D12B /* GRA1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GRA1.txt; sourceTree = "<group>"; };
+		79CEE42F17CFEEAD00C9D12B /* GRA2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GRA2.txt; sourceTree = "<group>"; };
+		79CEE43117CFEEAD00C9D12B /* BAC0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC0.txt; sourceTree = "<group>"; };
+		79CEE43217CFEEAD00C9D12B /* BAC1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC1.txt; sourceTree = "<group>"; };
+		79CEE43317CFEEAD00C9D12B /* BAC10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC10.txt; sourceTree = "<group>"; };
+		79CEE43417CFEEAD00C9D12B /* BAC11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC11.txt; sourceTree = "<group>"; };
+		79CEE43517CFEEAD00C9D12B /* BAC12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC12.txt; sourceTree = "<group>"; };
+		79CEE43617CFEEAD00C9D12B /* BAC13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC13.txt; sourceTree = "<group>"; };
+		79CEE43717CFEEAD00C9D12B /* BAC14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC14.txt; sourceTree = "<group>"; };
+		79CEE43817CFEEAD00C9D12B /* BAC15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC15.txt; sourceTree = "<group>"; };
+		79CEE43917CFEEAD00C9D12B /* BAC16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC16.txt; sourceTree = "<group>"; };
+		79CEE43A17CFEEAD00C9D12B /* BAC17.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC17.txt; sourceTree = "<group>"; };
+		79CEE43B17CFEEAD00C9D12B /* BAC2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC2.txt; sourceTree = "<group>"; };
+		79CEE43C17CFEEAD00C9D12B /* BAC3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC3.txt; sourceTree = "<group>"; };
+		79CEE43D17CFEEAD00C9D12B /* BAC4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC4.txt; sourceTree = "<group>"; };
+		79CEE43E17CFEEAD00C9D12B /* BAC5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC5.txt; sourceTree = "<group>"; };
+		79CEE43F17CFEEAD00C9D12B /* BAC6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC6.txt; sourceTree = "<group>"; };
+		79CEE44017CFEEAD00C9D12B /* BAC7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC7.txt; sourceTree = "<group>"; };
+		79CEE44117CFEEAD00C9D12B /* BAC8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC8.txt; sourceTree = "<group>"; };
+		79CEE44217CFEEAD00C9D12B /* BAC9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BAC9.txt; sourceTree = "<group>"; };
+		79CEE47017CFF01B00C9D12B /* CST0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CST0.txt; sourceTree = "<group>"; };
+		79CEE47117CFF01B00C9D12B /* CST1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CST1.txt; sourceTree = "<group>"; };
+		79CEE47217CFF01B00C9D12B /* CST2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CST2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -673,6 +757,7 @@
 		2DCCA0A517C1C04400B81172 /* Text Copy */ = {
 			isa = PBXGroup;
 			children = (
+				79CEE42917CFEEAD00C9D12B /* Courses */,
 				2D142B0217C4895F0013F036 /* GreatNorthernWay.txt */,
 				2D142B0317C4895F0013F036 /* IndustryEngagement.txt */,
 				2D142B0417C4895F0013F036 /* PublicEngagement.txt */,
@@ -695,9 +780,12 @@
 			isa = PBXGroup;
 			children = (
 				2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */,
+				79CEE42017CFDE1400C9D12B /* GraduateCourses.plist */,
 				2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */,
 				2D1D721117CB21A300C3DBE3 /* CreateFuturesScreenNames.plist */,
 				2D142B0B17C48AE80013F036 /* BuildNetworksScreenNames.plist */,
+				79CEE42317CFE28A00C9D12B /* ContinuingStudies.plist */,
+				79CEE42617CFE4A500C9D12B /* Foundation.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -749,6 +837,71 @@
 				2DF36C0317C34402006B0994 /* studios_slideshow_05.png */,
 			);
 			path = "Studio Slideshow";
+			sourceTree = "<group>";
+		};
+		79CEE42917CFEEAD00C9D12B /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				79CEE46F17CFF01B00C9D12B /* ContinuingStudies */,
+				79CEE42A17CFEEAD00C9D12B /* Foundation */,
+				79CEE42C17CFEEAD00C9D12B /* Graduate */,
+				79CEE43017CFEEAD00C9D12B /* Undergraduate */,
+			);
+			name = Courses;
+			path = "Assets/Text Copy/Courses";
+			sourceTree = "<group>";
+		};
+		79CEE42A17CFEEAD00C9D12B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				79CEE42B17CFEEAD00C9D12B /* FDT-01.txt */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		79CEE42C17CFEEAD00C9D12B /* Graduate */ = {
+			isa = PBXGroup;
+			children = (
+				79CEE42D17CFEEAD00C9D12B /* GRA0.txt */,
+				79CEE42E17CFEEAD00C9D12B /* GRA1.txt */,
+				79CEE42F17CFEEAD00C9D12B /* GRA2.txt */,
+			);
+			path = Graduate;
+			sourceTree = "<group>";
+		};
+		79CEE43017CFEEAD00C9D12B /* Undergraduate */ = {
+			isa = PBXGroup;
+			children = (
+				79CEE43117CFEEAD00C9D12B /* BAC0.txt */,
+				79CEE43217CFEEAD00C9D12B /* BAC1.txt */,
+				79CEE43317CFEEAD00C9D12B /* BAC10.txt */,
+				79CEE43417CFEEAD00C9D12B /* BAC11.txt */,
+				79CEE43517CFEEAD00C9D12B /* BAC12.txt */,
+				79CEE43617CFEEAD00C9D12B /* BAC13.txt */,
+				79CEE43717CFEEAD00C9D12B /* BAC14.txt */,
+				79CEE43817CFEEAD00C9D12B /* BAC15.txt */,
+				79CEE43917CFEEAD00C9D12B /* BAC16.txt */,
+				79CEE43A17CFEEAD00C9D12B /* BAC17.txt */,
+				79CEE43B17CFEEAD00C9D12B /* BAC2.txt */,
+				79CEE43C17CFEEAD00C9D12B /* BAC3.txt */,
+				79CEE43D17CFEEAD00C9D12B /* BAC4.txt */,
+				79CEE43E17CFEEAD00C9D12B /* BAC5.txt */,
+				79CEE43F17CFEEAD00C9D12B /* BAC6.txt */,
+				79CEE44017CFEEAD00C9D12B /* BAC7.txt */,
+				79CEE44117CFEEAD00C9D12B /* BAC8.txt */,
+				79CEE44217CFEEAD00C9D12B /* BAC9.txt */,
+			);
+			path = Undergraduate;
+			sourceTree = "<group>";
+		};
+		79CEE46F17CFF01B00C9D12B /* ContinuingStudies */ = {
+			isa = PBXGroup;
+			children = (
+				79CEE47017CFF01B00C9D12B /* CST0.txt */,
+				79CEE47117CFF01B00C9D12B /* CST1.txt */,
+				79CEE47217CFF01B00C9D12B /* CST2.txt */,
+			);
+			path = ContinuingStudies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -899,6 +1052,34 @@
 				2DB3FBE917CFBDB00045D85C /* instagram.png in Resources */,
 				2DB3FBED17CFC40D0045D85C /* GothamRnd-Bold.otf in Resources */,
 				2DB3FBEF17CFC40D0045D85C /* GothamRnd-Medium.otf in Resources */,
+				79CEE42117CFDE1400C9D12B /* GraduateCourses.plist in Resources */,
+				79CEE42417CFE28A00C9D12B /* ContinuingStudies.plist in Resources */,
+				79CEE42717CFE4A500C9D12B /* Foundation.plist in Resources */,
+				79CEE44317CFEEAD00C9D12B /* FDT-01.txt in Resources */,
+				79CEE44517CFEEAD00C9D12B /* GRA0.txt in Resources */,
+				79CEE44717CFEEAD00C9D12B /* GRA1.txt in Resources */,
+				79CEE44917CFEEAD00C9D12B /* GRA2.txt in Resources */,
+				79CEE44B17CFEEAD00C9D12B /* BAC0.txt in Resources */,
+				79CEE44D17CFEEAD00C9D12B /* BAC1.txt in Resources */,
+				79CEE44F17CFEEAD00C9D12B /* BAC10.txt in Resources */,
+				79CEE45117CFEEAD00C9D12B /* BAC11.txt in Resources */,
+				79CEE45317CFEEAD00C9D12B /* BAC12.txt in Resources */,
+				79CEE45517CFEEAD00C9D12B /* BAC13.txt in Resources */,
+				79CEE45717CFEEAD00C9D12B /* BAC14.txt in Resources */,
+				79CEE45917CFEEAD00C9D12B /* BAC15.txt in Resources */,
+				79CEE45B17CFEEAD00C9D12B /* BAC16.txt in Resources */,
+				79CEE45D17CFEEAD00C9D12B /* BAC17.txt in Resources */,
+				79CEE45F17CFEEAD00C9D12B /* BAC2.txt in Resources */,
+				79CEE46117CFEEAD00C9D12B /* BAC3.txt in Resources */,
+				79CEE46317CFEEAD00C9D12B /* BAC4.txt in Resources */,
+				79CEE46517CFEEAD00C9D12B /* BAC5.txt in Resources */,
+				79CEE46717CFEEAD00C9D12B /* BAC6.txt in Resources */,
+				79CEE46917CFEEAD00C9D12B /* BAC7.txt in Resources */,
+				79CEE46B17CFEEAD00C9D12B /* BAC8.txt in Resources */,
+				79CEE46D17CFEEAD00C9D12B /* BAC9.txt in Resources */,
+				79CEE47317CFF01B00C9D12B /* CST0.txt in Resources */,
+				79CEE47517CFF01B00C9D12B /* CST1.txt in Resources */,
+				79CEE47717CFF01B00C9D12B /* CST2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,6 +1159,34 @@
 				2DB3FBEE17CFC40D0045D85C /* GothamRnd-Bold.otf in Resources */,
 				2DB3FBF017CFC40D0045D85C /* GothamRnd-Medium.otf in Resources */,
 				2DB3FBF217CFC41F0045D85C /* ViewBook-Info.plist in Resources */,
+				79CEE42217CFDE1400C9D12B /* GraduateCourses.plist in Resources */,
+				79CEE42517CFE28A00C9D12B /* ContinuingStudies.plist in Resources */,
+				79CEE42817CFE4A500C9D12B /* Foundation.plist in Resources */,
+				79CEE44417CFEEAD00C9D12B /* FDT-01.txt in Resources */,
+				79CEE44617CFEEAD00C9D12B /* GRA0.txt in Resources */,
+				79CEE44817CFEEAD00C9D12B /* GRA1.txt in Resources */,
+				79CEE44A17CFEEAD00C9D12B /* GRA2.txt in Resources */,
+				79CEE44C17CFEEAD00C9D12B /* BAC0.txt in Resources */,
+				79CEE44E17CFEEAD00C9D12B /* BAC1.txt in Resources */,
+				79CEE45017CFEEAD00C9D12B /* BAC10.txt in Resources */,
+				79CEE45217CFEEAD00C9D12B /* BAC11.txt in Resources */,
+				79CEE45417CFEEAD00C9D12B /* BAC12.txt in Resources */,
+				79CEE45617CFEEAD00C9D12B /* BAC13.txt in Resources */,
+				79CEE45817CFEEAD00C9D12B /* BAC14.txt in Resources */,
+				79CEE45A17CFEEAD00C9D12B /* BAC15.txt in Resources */,
+				79CEE45C17CFEEAD00C9D12B /* BAC16.txt in Resources */,
+				79CEE45E17CFEEAD00C9D12B /* BAC17.txt in Resources */,
+				79CEE46017CFEEAD00C9D12B /* BAC2.txt in Resources */,
+				79CEE46217CFEEAD00C9D12B /* BAC3.txt in Resources */,
+				79CEE46417CFEEAD00C9D12B /* BAC4.txt in Resources */,
+				79CEE46617CFEEAD00C9D12B /* BAC5.txt in Resources */,
+				79CEE46817CFEEAD00C9D12B /* BAC6.txt in Resources */,
+				79CEE46A17CFEEAD00C9D12B /* BAC7.txt in Resources */,
+				79CEE46C17CFEEAD00C9D12B /* BAC8.txt in Resources */,
+				79CEE46E17CFEEAD00C9D12B /* BAC9.txt in Resources */,
+				79CEE47417CFF01B00C9D12B /* CST0.txt in Resources */,
+				79CEE47617CFF01B00C9D12B /* CST1.txt in Resources */,
+				79CEE47817CFF01B00C9D12B /* CST2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,7 +1321,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1137,7 +1346,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1151,7 +1360,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewBook/ViewBook-Prefix.pch";
 				INFOPLIST_FILE = "ViewBook/ViewBook-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1164,7 +1373,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewBook/ViewBook-Prefix.pch";
 				INFOPLIST_FILE = "ViewBook/ViewBook-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

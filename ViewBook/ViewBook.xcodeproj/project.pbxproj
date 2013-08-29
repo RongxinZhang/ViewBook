@@ -91,8 +91,6 @@
 		2D8957CF17C477920044F167 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CB17C477920044F167 /* facebook.png */; };
 		2D8957D217C477920044F167 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CD17C477920044F167 /* twitter.png */; };
 		2D8957D317C477920044F167 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957CD17C477920044F167 /* twitter.png */; };
-		2D8957D817C480CD0044F167 /* gplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957D717C480CD0044F167 /* gplus.png */; };
-		2D8957D917C480CD0044F167 /* gplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8957D717C480CD0044F167 /* gplus.png */; };
 		2D90878817C1F645009DDDEB /* alumni_survey_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878317C1F645009DDDEB /* alumni_survey_01.png */; };
 		2D90878917C1F645009DDDEB /* alumni_survey_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878317C1F645009DDDEB /* alumni_survey_01.png */; };
 		2D90878A17C1F645009DDDEB /* alumni_survey_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D90878417C1F645009DDDEB /* alumni_survey_02.png */; };
@@ -121,6 +119,8 @@
 		2D9087BA17C1FC70009DDDEB /* CampusSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */; };
 		2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
 		2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
+		2DB3FBE617CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */; };
+		2DB3FBE717CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */; };
 		2DCCA08E17C1BBCD00B81172 /* PortfolioRequirementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */; };
 		2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */; };
 		2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */; };
@@ -280,7 +280,6 @@
 		2D8957C717C474D90044F167 /* RecruitmentCalenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecruitmentCalenderCell.m; path = "Build Networks/RecruitmentCalenderCell.m"; sourceTree = "<group>"; };
 		2D8957CB17C477920044F167 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		2D8957CD17C477920044F167 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
-		2D8957D717C480CD0044F167 /* gplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gplus.png; sourceTree = "<group>"; };
 		2D90878317C1F645009DDDEB /* alumni_survey_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_01.png; sourceTree = "<group>"; };
 		2D90878417C1F645009DDDEB /* alumni_survey_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_02.png; sourceTree = "<group>"; };
 		2D90878517C1F645009DDDEB /* alumni_survey_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alumni_survey_03.png; sourceTree = "<group>"; };
@@ -298,6 +297,7 @@
 		2D9087B817C1FC70009DDDEB /* CampusSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusSlideshowViewController.m; path = "Start Points/CampusSlideshowViewController.m"; sourceTree = "<group>"; };
 		2DAE88CB17C733190034B8C8 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = "Build Networks/XMLParser.h"; sourceTree = "<group>"; };
 		2DAE88CC17C733190034B8C8 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Build Networks/XMLParser.m"; sourceTree = "<group>"; };
+		2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UndergraduateCourses.plist; path = "Assets/Property Lists/UndergraduateCourses.plist"; sourceTree = "<group>"; };
 		2DCCA08C17C1BBCD00B81172 /* PortfolioRequirementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortfolioRequirementsViewController.h; path = "Apply Now/PortfolioRequirementsViewController.h"; sourceTree = "<group>"; };
 		2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortfolioRequirementsViewController.m; path = "Apply Now/PortfolioRequirementsViewController.m"; sourceTree = "<group>"; };
 		2DCCA08F17C1BBED00B81172 /* ApplicationDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDirectionsViewController.h; path = "Apply Now/ApplicationDirectionsViewController.h"; sourceTree = "<group>"; };
@@ -614,7 +614,6 @@
 			children = (
 				2D44016C17CAE06A00F1079B /* flickr.png */,
 				2D44016D17CAE06A00F1079B /* pinterest.png */,
-				2D8957D717C480CD0044F167 /* gplus.png */,
 				2D8957CB17C477920044F167 /* facebook.png */,
 				2D8957CD17C477920044F167 /* twitter.png */,
 			);
@@ -684,6 +683,7 @@
 		2DCCA0AD17C1C46700B81172 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
+				2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */,
 				2DCCA0A917C1C44F00B81172 /* ApplyNowScreenNames.plist */,
 				2D1D721117CB21A300C3DBE3 /* CreateFuturesScreenNames.plist */,
 				2D142B0B17C48AE80013F036 /* BuildNetworksScreenNames.plist */,
@@ -860,7 +860,6 @@
 				2DF36C2C17C34402006B0994 /* studios_slideshow_05.png in Resources */,
 				2D8957CE17C477920044F167 /* facebook.png in Resources */,
 				2D8957D217C477920044F167 /* twitter.png in Resources */,
-				2D8957D817C480CD0044F167 /* gplus.png in Resources */,
 				2D142B0517C4895F0013F036 /* GreatNorthernWay.txt in Resources */,
 				2D142B0717C4895F0013F036 /* IndustryEngagement.txt in Resources */,
 				2D142B0917C4895F0013F036 /* PublicEngagement.txt in Resources */,
@@ -885,6 +884,7 @@
 				2DD13B0E17CDCAED002D52BB /* arrow5.png in Resources */,
 				2DD13B1017CDCAED002D52BB /* arrow6.png in Resources */,
 				2DD13B1F17CDD8A7002D52BB /* start.png in Resources */,
+				2DB3FBE617CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,7 +937,6 @@
 				2DF36C2D17C34402006B0994 /* studios_slideshow_05.png in Resources */,
 				2D8957CF17C477920044F167 /* facebook.png in Resources */,
 				2D8957D317C477920044F167 /* twitter.png in Resources */,
-				2D8957D917C480CD0044F167 /* gplus.png in Resources */,
 				2D142B0617C4895F0013F036 /* GreatNorthernWay.txt in Resources */,
 				2D142B0817C4895F0013F036 /* IndustryEngagement.txt in Resources */,
 				2D142B0A17C4895F0013F036 /* PublicEngagement.txt in Resources */,
@@ -962,6 +961,7 @@
 				2DD13B0F17CDCAED002D52BB /* arrow5.png in Resources */,
 				2DD13B1117CDCAED002D52BB /* arrow6.png in Resources */,
 				2DD13B1D17CDD698002D52BB /* start.png in Resources */,
+				2DB3FBE717CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

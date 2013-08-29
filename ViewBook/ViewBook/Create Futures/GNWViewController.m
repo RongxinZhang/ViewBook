@@ -60,7 +60,7 @@
 
 -(void)embedVimeo {
     
-    NSString *embedHTML = @"<iframe width=\"300\" height=\"250\" src=\"http://player.vimeo.com/video/58030254\" frameborder=\"0\" allowfullscreen></iframe>";
+    NSString *embedHTML = @"<iframe width=\"300\" height=\"220\" src=\"http://player.vimeo.com/video/58030254\" frameborder=\"0\" allowfullscreen></iframe>";
     
     [webView loadHTMLString:embedHTML baseURL:nil];
     //[self.view addSubview:webView];

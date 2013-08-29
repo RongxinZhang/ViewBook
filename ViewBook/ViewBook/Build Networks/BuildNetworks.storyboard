@@ -146,7 +146,7 @@
                             <constraint firstItem="WaL-Sq-sGT" firstAttribute="top" secondItem="iN2-kA-0z7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lF6-5C-g3R"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="jNh-P8-mlZ"/>
+                    <tabBarItem key="tabBarItem" title="Community" id="jNh-P8-mlZ"/>
                     <navigationItem key="navigationItem" id="Cby-0V-YDy"/>
                     <connections>
                         <outlet property="mainParagraph" destination="WaL-Sq-sGT" id="SY3-gI-yf7"/>
@@ -181,7 +181,7 @@
                             <outlet property="delegate" destination="jFv-Bm-nOU" id="6tE-eb-uz2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="lY5-yV-Lim"/>
+                    <tabBarItem key="tabBarItem" title="Recruitment" id="lY5-yV-Lim"/>
                     <navigationItem key="navigationItem" id="IaF-lV-96Z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TfA-QW-ySU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,7 +224,7 @@
                             <constraint firstAttribute="trailing" secondItem="2N5-JA-Gqz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="khT-yS-DBP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="TL4-kd-qzt"/>
+                    <tabBarItem key="tabBarItem" title="Industry" id="TL4-kd-qzt"/>
                     <navigationItem key="navigationItem" id="Zh1-Az-4I3"/>
                     <connections>
                         <outlet property="mainParagraph" destination="g1k-Si-90U" id="AqZ-L8-Yfj"/>
@@ -343,7 +343,7 @@
                             <constraint firstItem="bBV-fM-xyj" firstAttribute="top" secondItem="dF1-JP-Xbp" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="yWo-gg-v3r"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Hqd-yF-VzU"/>
+                    <tabBarItem key="tabBarItem" title="Social" id="Hqd-yF-VzU"/>
                     <navigationItem key="navigationItem" id="Ed2-vZ-QpH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNF-t7-gfL" userLabel="First Responder" sceneMemberID="firstResponder"/>

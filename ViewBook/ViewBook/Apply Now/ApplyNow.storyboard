@@ -116,9 +116,6 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpi-vQ-f47">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="cn1-ut-7YV"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -127,13 +124,14 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Kpi-vQ-f47" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6mi-Df-wTA"/>
                             <constraint firstItem="Kpi-vQ-f47" firstAttribute="leading" secondItem="Ud3-v6-H6t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ezd-c7-1Kn"/>
-                            <constraint firstItem="Kpi-vQ-f47" firstAttribute="top" secondItem="Ud3-v6-H6t" secondAttribute="top" constant="179" id="Kv2-g5-yhR"/>
+                            <constraint firstAttribute="bottom" secondItem="Kpi-vQ-f47" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Ksw-Ic-w0b"/>
                             <constraint firstItem="tei-e7-4LQ" firstAttribute="top" secondItem="Ud3-v6-H6t" secondAttribute="top" constant="20" symbolic="YES" type="default" id="RaT-rT-iUw"/>
+                            <constraint firstItem="Kpi-vQ-f47" firstAttribute="top" secondItem="tei-e7-4LQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Wei-jI-NeI"/>
                             <constraint firstAttribute="trailing" secondItem="tei-e7-4LQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gjH-Al-ePp"/>
                             <constraint firstItem="tei-e7-4LQ" firstAttribute="leading" secondItem="Ud3-v6-H6t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xUo-CY-NoJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hFX-5c-2Gg"/>
+                    <tabBarItem key="tabBarItem" title="Applications" id="hFX-5c-2Gg"/>
                     <navigationItem key="navigationItem" id="F7o-m7-Qsv"/>
                     <connections>
                         <outlet property="mainParagraph" destination="Kpi-vQ-f47" id="63B-5D-swH"/>
@@ -210,11 +208,11 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QgU-vl-OvG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3Aa-IK-6xt"/>
                             <constraint firstItem="b43-kN-shf" firstAttribute="leading" secondItem="mxh-4z-dCB" secondAttribute="leading" type="default" id="7Sc-gB-tHo"/>
-                            <constraint firstAttribute="bottom" secondItem="PLT-9N-X3F" secondAttribute="bottom" constant="44" id="CFx-dZ-yZC"/>
                             <constraint firstItem="mxh-4z-dCB" firstAttribute="trailing" secondItem="DJZ-uY-bkl" secondAttribute="trailing" type="default" id="Ckh-em-Dzp"/>
                             <constraint firstItem="mxh-4z-dCB" firstAttribute="top" secondItem="iiE-58-tP1" secondAttribute="top" constant="214" id="EUB-Gb-YKR"/>
                             <constraint firstItem="QgU-vl-OvG" firstAttribute="leading" secondItem="iiE-58-tP1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="MbU-sa-1mF"/>
                             <constraint firstItem="QgU-vl-OvG" firstAttribute="top" secondItem="iiE-58-tP1" secondAttribute="top" constant="20" symbolic="YES" type="default" id="QRg-o3-L7n"/>
+                            <constraint firstAttribute="bottom" secondItem="PLT-9N-X3F" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="SUv-9m-Fdv"/>
                             <constraint firstItem="uIe-N3-Zdf" firstAttribute="centerX" secondItem="QgU-vl-OvG" secondAttribute="centerX" type="default" id="T9Z-Hb-p4c"/>
                             <constraint firstAttribute="trailing" secondItem="PLT-9N-X3F" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VDq-rv-b46"/>
                             <constraint firstItem="DJZ-uY-bkl" firstAttribute="leading" secondItem="uIe-N3-Zdf" secondAttribute="leading" type="default" id="W5R-Qu-gK3"/>
@@ -226,7 +224,7 @@
                             <constraint firstItem="b43-kN-shf" firstAttribute="trailing" secondItem="mxh-4z-dCB" secondAttribute="trailing" type="default" id="znQ-eA-Gb1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="RFZ-ek-PPD"/>
+                    <tabBarItem key="tabBarItem" title="Contact" id="RFZ-ek-PPD"/>
                     <navigationItem key="navigationItem" id="xi6-C8-HiH"/>
                     <connections>
                         <outlet property="firstNameField" destination="uIe-N3-Zdf" id="irn-XA-yJM"/>
@@ -257,9 +255,6 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0r-L9-YIY">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="Qfe-3S-z3y"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -268,13 +263,14 @@
                         <constraints>
                             <constraint firstItem="o0r-L9-YIY" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="38v-9N-iPC"/>
                             <constraint firstItem="7W5-Zl-m96" firstAttribute="leading" secondItem="87j-2J-WYs" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3gt-qM-xyt"/>
-                            <constraint firstItem="o0r-L9-YIY" firstAttribute="top" secondItem="87j-2J-WYs" secondAttribute="top" constant="163" id="4YF-rH-tTR"/>
                             <constraint firstAttribute="trailing" secondItem="o0r-L9-YIY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="G9A-Qn-vFX"/>
                             <constraint firstAttribute="trailing" secondItem="7W5-Zl-m96" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Zql-qP-PQ0"/>
                             <constraint firstItem="7W5-Zl-m96" firstAttribute="top" secondItem="87j-2J-WYs" secondAttribute="top" constant="20" symbolic="YES" type="default" id="i3M-v5-ykm"/>
+                            <constraint firstItem="o0r-L9-YIY" firstAttribute="top" secondItem="7W5-Zl-m96" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lDm-oi-C3M"/>
+                            <constraint firstAttribute="bottom" secondItem="o0r-L9-YIY" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="mAX-a2-dRA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Fus-Au-xCb"/>
+                    <tabBarItem key="tabBarItem" title="Portfolio" id="Fus-Au-xCb"/>
                     <navigationItem key="navigationItem" id="xgy-Ix-GEo"/>
                     <connections>
                         <outlet property="mainParagraph" destination="o0r-L9-YIY" id="oLR-rG-MCK"/>

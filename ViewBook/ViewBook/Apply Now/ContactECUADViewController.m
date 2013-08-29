@@ -49,9 +49,9 @@
     pageTitle.font = titleFont;
     
     // Increase Size Of Message Field
-    self.messageField.borderStyle = UITextBorderStyleLine;
-    self.messageField.frame = CGRectMake(160, 278, 213, 300);
-    self.messageField.borderStyle = UITextBorderStyleRoundedRect;
+    //self.messageField.borderStyle = UITextBorderStyleLine;
+    //self.messageField.frame = CGRectMake(160, 278, 213, 300);
+    //self.messageField.borderStyle = UITextBorderStyleRoundedRect;
     
 }
 

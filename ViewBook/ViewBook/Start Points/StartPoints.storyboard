@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r8c-BE-3fC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pwp-gV-SQ2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -34,9 +34,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Pwp-gV-SQ2" kind="push" id="4db-sQ-IVq"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkK-w4-dIt">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -47,9 +44,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="OnM-45-lGv" kind="push" id="6V4-In-wqR"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25882352941176467" green="0.3411764705882353" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,14 +61,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMH-cK-pzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="72"/>
+            <point key="canvasLocation" x="-142" y="-576"/>
         </scene>
         <!--Studios And Labs-->
         <scene sceneID="vaU-W1-vgL">
             <objects>
                 <viewController id="Ue7-Xb-H76" userLabel="Studios And Labs" customClass="StudiosSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nu1-pi-DoC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="r42-X0-Ah8"/>
@@ -120,14 +114,14 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1152" y="72"/>
+            <point key="canvasLocation" x="425" y="432"/>
         </scene>
         <!--Students-->
         <scene sceneID="3YV-E5-k4C">
             <objects>
                 <viewController id="4Gr-ym-wzi" userLabel="Students" customClass="StudentSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bvf-wz-A0z">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-C7-fRu"/>
@@ -173,14 +167,14 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1549" y="-254"/>
+            <point key="canvasLocation" x="425" y="-246"/>
         </scene>
         <!--Campus-->
         <scene sceneID="5tM-go-juB">
             <objects>
                 <viewController id="G9d-7P-xPl" userLabel="Campus" customClass="CampusSlideshowViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CWw-Fz-bvL">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLR-T1-biL"/>
@@ -226,7 +220,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1152" y="-581"/>
+            <point key="canvasLocation" x="425" y="-917"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="62d-eV-QPC">
@@ -243,18 +237,19 @@
                         <segue destination="G9d-7P-xPl" kind="relationship" relationship="viewControllers" id="CDm-qx-64y"/>
                         <segue destination="Ue7-Xb-H76" kind="relationship" relationship="viewControllers" id="Uqd-S8-MIz"/>
                         <segue destination="4Gr-ym-wzi" kind="relationship" relationship="viewControllers" id="e27-fy-VuV"/>
+                        <segue destination="OnM-45-lGv" kind="relationship" relationship="viewControllers" id="bAr-pl-1NQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvX-iY-7aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="618" y="-254"/>
+            <point key="canvasLocation" x="-582" y="176"/>
         </scene>
         <!--Thumbnails-->
         <scene sceneID="QlO-SB-P9A">
             <objects>
                 <viewController id="OnM-45-lGv" userLabel="Thumbnails" customClass="VideoThumbnailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZV-V9-l6P">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTX-dL-J3Y">
@@ -391,6 +386,7 @@
                             <constraint firstItem="B2u-Nq-AGK" firstAttribute="leading" secondItem="SM4-Ch-Agf" secondAttribute="leading" type="default" id="y3z-PI-4Lf"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Videos" id="jWj-pC-sWg"/>
                     <navigationItem key="navigationItem" id="Mvx-lC-tNd"/>
                     <connections>
                         <segue destination="J7J-0d-zEP" kind="modal" identifier="playCreativeFuture" id="Fcd-OX-cOC"/>
@@ -398,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fp9-zs-Yeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="618" y="478"/>
+            <point key="canvasLocation" x="425" y="1150"/>
         </scene>
         <!--Video Galleries-->
         <scene sceneID="KSi-7v-b4w">
@@ -445,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyW-DB-0JA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="680"/>
+            <point key="canvasLocation" x="908" y="1150"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="imZ-bB-lGZ">
@@ -463,7 +459,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSC-c3-Jm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-656" y="72"/>
+            <point key="canvasLocation" x="-668" y="-576"/>
         </scene>
     </scenes>
     <resources>
@@ -472,7 +468,7 @@
         <image name="design_doc.png" width="300" height="300"/>
         <image name="erin_boniferro.png" width="300" height="300"/>
         <image name="giant_ant.png" width="300" height="300"/>
-        <image name="lisa_fraser.png" width="199" height="199"/>
+        <image name="lisa_fraser.png" width="300" height="300"/>
         <image name="luke_parnell.png" width="300" height="299"/>
     </resources>
     <classes>
@@ -544,6 +540,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6V4-In-wqR"/>
+        <segue reference="bAr-pl-1NQ"/>
     </inferredMetricsTieBreakers>
 </document>

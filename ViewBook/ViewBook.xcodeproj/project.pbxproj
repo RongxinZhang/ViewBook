@@ -121,6 +121,8 @@
 		2DAE88CE17C733190034B8C8 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE88CC17C733190034B8C8 /* XMLParser.m */; };
 		2DB3FBE617CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */; };
 		2DB3FBE717CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */; };
+		2DB3FBE917CFBDB00045D85C /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE817CFBDB00045D85C /* instagram.png */; };
+		2DB3FBEA17CFBDB00045D85C /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE817CFBDB00045D85C /* instagram.png */; };
 		2DCCA08E17C1BBCD00B81172 /* PortfolioRequirementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */; };
 		2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */; };
 		2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */; };
@@ -298,6 +300,7 @@
 		2DAE88CB17C733190034B8C8 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = "Build Networks/XMLParser.h"; sourceTree = "<group>"; };
 		2DAE88CC17C733190034B8C8 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Build Networks/XMLParser.m"; sourceTree = "<group>"; };
 		2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UndergraduateCourses.plist; path = "Assets/Property Lists/UndergraduateCourses.plist"; sourceTree = "<group>"; };
+		2DB3FBE817CFBDB00045D85C /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		2DCCA08C17C1BBCD00B81172 /* PortfolioRequirementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortfolioRequirementsViewController.h; path = "Apply Now/PortfolioRequirementsViewController.h"; sourceTree = "<group>"; };
 		2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortfolioRequirementsViewController.m; path = "Apply Now/PortfolioRequirementsViewController.m"; sourceTree = "<group>"; };
 		2DCCA08F17C1BBED00B81172 /* ApplicationDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDirectionsViewController.h; path = "Apply Now/ApplicationDirectionsViewController.h"; sourceTree = "<group>"; };
@@ -612,6 +615,7 @@
 		2D8957CA17C477920044F167 /* Build Networks */ = {
 			isa = PBXGroup;
 			children = (
+				2DB3FBE817CFBDB00045D85C /* instagram.png */,
 				2D44016C17CAE06A00F1079B /* flickr.png */,
 				2D44016D17CAE06A00F1079B /* pinterest.png */,
 				2D8957CB17C477920044F167 /* facebook.png */,
@@ -885,6 +889,7 @@
 				2DD13B1017CDCAED002D52BB /* arrow6.png in Resources */,
 				2DD13B1F17CDD8A7002D52BB /* start.png in Resources */,
 				2DB3FBE617CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */,
+				2DB3FBE917CFBDB00045D85C /* instagram.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,6 +967,7 @@
 				2DD13B1117CDCAED002D52BB /* arrow6.png in Resources */,
 				2DD13B1D17CDD698002D52BB /* start.png in Resources */,
 				2DB3FBE717CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */,
+				2DB3FBEA17CFBDB00045D85C /* instagram.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

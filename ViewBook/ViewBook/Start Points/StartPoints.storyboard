@@ -4,65 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Start Points-->
-        <scene sceneID="akX-GD-f9o">
-            <objects>
-                <viewController id="FHv-tt-ogo" userLabel="Start Points" customClass="StartPointsViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2O0-HD-Tfk">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-oH-hrc">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="back">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loadMainMenuStoryboard:" destination="FHv-tt-ogo" eventType="touchUpInside" id="2G1-yF-BC8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlH-VH-Suz">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Photo Galleries">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkK-w4-dIt">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Video Galleries">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.25882352941176467" green="0.3411764705882353" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="rkK-w4-dIt" firstAttribute="top" secondItem="2O0-HD-Tfk" secondAttribute="top" constant="249" id="4je-fP-7YF"/>
-                            <constraint firstItem="AlH-VH-Suz" firstAttribute="top" secondItem="2O0-HD-Tfk" secondAttribute="top" constant="94" id="I75-Gi-13B"/>
-                            <constraint firstItem="rkK-w4-dIt" firstAttribute="trailing" secondItem="AlH-VH-Suz" secondAttribute="trailing" type="default" id="Nmi-Uh-qrJ"/>
-                            <constraint firstItem="Cbg-oH-hrc" firstAttribute="top" secondItem="2O0-HD-Tfk" secondAttribute="top" constant="-1" id="OPc-cx-zeH"/>
-                            <constraint firstItem="rkK-w4-dIt" firstAttribute="leading" secondItem="AlH-VH-Suz" secondAttribute="leading" type="default" id="cqU-MI-W2z"/>
-                            <constraint firstItem="rkK-w4-dIt" firstAttribute="centerX" secondItem="2O0-HD-Tfk" secondAttribute="centerX" type="default" id="ge2-sl-ITQ"/>
-                            <constraint firstItem="Cbg-oH-hrc" firstAttribute="leading" secondItem="2O0-HD-Tfk" secondAttribute="leading" type="default" id="r2L-2k-ZTG"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="UZz-AL-FXE"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oMH-cK-pzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-142" y="-576"/>
-        </scene>
         <!--Studios And Labs-->
         <scene sceneID="vaU-W1-vgL">
             <objects>
@@ -443,24 +384,6 @@
             </objects>
             <point key="canvasLocation" x="908" y="1150"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="imZ-bB-lGZ">
-            <objects>
-                <navigationController id="r8c-BE-3fC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nrm-SO-Wun">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="FHv-tt-ogo" kind="relationship" relationship="rootViewController" id="0p9-Z8-bA4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rSC-c3-Jm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-668" y="-576"/>
-        </scene>
     </scenes>
     <resources>
         <image name="creative_future.png" width="300" height="300"/>
@@ -485,12 +408,6 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="StartPointsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartPointsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="loadMainMenuStoryboard:"/>
-            </relationships>
         </class>
         <class className="StudentSlideshowViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StudentSlideshowViewController.h"/>

@@ -412,7 +412,6 @@
         <class className="StudentSlideshowViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StudentSlideshowViewController.h"/>
             <relationships>
-                <relationship kind="action" name="nextImage:" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="action" name="previousImage:" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="outlet" name="caption" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="leftSwipe" candidateClass="UISwipeGestureRecognizer"/>

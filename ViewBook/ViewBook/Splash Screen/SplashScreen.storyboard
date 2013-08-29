@@ -14,8 +14,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ecuad logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="yCe-DQ-BPL">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="9QB-hX-CiB"/>
-                                    <constraint firstAttribute="height" constant="260" id="O0L-WY-A91"/>
+                                    <constraint firstAttribute="height" constant="170" id="XW3-9F-YSG"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="start.png" translatesAutoresizingMaskIntoConstraints="NO" id="FSt-Qg-JD5">
@@ -26,11 +25,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yCe-DQ-BPL" firstAttribute="leading" secondItem="eLB-S6-wiz" secondAttribute="leading" constant="8" id="GGg-uZ-5AH"/>
                             <constraint firstItem="FSt-Qg-JD5" firstAttribute="trailing" secondItem="eLB-S6-wiz" secondAttribute="trailing" type="default" id="Pgg-d5-Urn"/>
+                            <constraint firstItem="yCe-DQ-BPL" firstAttribute="top" secondItem="eLB-S6-wiz" secondAttribute="top" type="default" id="Z8c-wf-TcZ"/>
                             <constraint firstItem="FSt-Qg-JD5" firstAttribute="leading" secondItem="eLB-S6-wiz" secondAttribute="leading" type="default" id="ZeF-G2-0U9"/>
-                            <constraint firstItem="FSt-Qg-JD5" firstAttribute="top" secondItem="yCe-DQ-BPL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cQD-rL-wsz"/>
-                            <constraint firstItem="yCe-DQ-BPL" firstAttribute="top" secondItem="eLB-S6-wiz" secondAttribute="top" constant="20" symbolic="YES" type="default" id="iED-NK-CbA"/>
+                            <constraint firstItem="yCe-DQ-BPL" firstAttribute="trailing" secondItem="eLB-S6-wiz" secondAttribute="trailing" type="default" id="fEl-wP-mFN"/>
+                            <constraint firstItem="yCe-DQ-BPL" firstAttribute="leading" secondItem="eLB-S6-wiz" secondAttribute="leading" type="default" id="hWy-vG-Ft4"/>
+                            <constraint firstAttribute="bottom" secondItem="FSt-Qg-JD5" secondAttribute="bottom" constant="84" id="u3o-hH-0PJ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -41,8 +41,16 @@
     </scenes>
     <resources>
         <image name="ecuad logo.png" width="640" height="197"/>
-        <image name="start.png" width="640" height="251"/>
+        <image name="start.png" width="616" height="270"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SplashViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

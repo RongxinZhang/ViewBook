@@ -200,6 +200,7 @@
 		2DF36C2D17C34402006B0994 /* studios_slideshow_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF36C0317C34402006B0994 /* studios_slideshow_05.png */; };
 		2DF36C3017C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
 		2DF36C3117C346B7006B0994 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF36C2F17C346B7006B0994 /* WebViewViewController.m */; };
+		79896D2E17CEB91E000B747D /* UnderGradraduateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79896D2D17CEB91E000B747D /* UnderGradraduateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,6 +348,8 @@
 		2DF36C0317C34402006B0994 /* studios_slideshow_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = studios_slideshow_05.png; sourceTree = "<group>"; };
 		2DF36C2E17C346B7006B0994 /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewViewController.h; path = "Start Points/WebViewViewController.h"; sourceTree = "<group>"; };
 		2DF36C2F17C346B7006B0994 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewViewController.m; path = "Start Points/WebViewViewController.m"; sourceTree = "<group>"; };
+		79896D2C17CEB91E000B747D /* UnderGradraduateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnderGradraduateViewController.h; path = "Make Paths/UnderGradraduateViewController.h"; sourceTree = "<group>"; };
+		79896D2D17CEB91E000B747D /* UnderGradraduateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnderGradraduateViewController.m; path = "Make Paths/UnderGradraduateViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +427,8 @@
 		2D29E76417C01B5A004BB03C /* Make Paths */ = {
 			isa = PBXGroup;
 			children = (
+				79896D2C17CEB91E000B747D /* UnderGradraduateViewController.h */,
+				79896D2D17CEB91E000B747D /* UnderGradraduateViewController.m */,
 				2D29E76F17C0269D004BB03C /* MakePaths.storyboard */,
 				2D29E77217C026B7004BB03C /* MakePathsViewController.h */,
 				2D29E77317C026B7004BB03C /* MakePathsViewController.m */,
@@ -1007,6 +1012,7 @@
 				2DAE88CD17C733190034B8C8 /* XMLParser.m in Sources */,
 				2D44017B17CB1A2900F1079B /* GNWViewController.m in Sources */,
 				2D1D722C17CB27DF00C3DBE3 /* VideoThumbnailViewController.m in Sources */,
+				79896D2E17CEB91E000B747D /* UnderGradraduateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

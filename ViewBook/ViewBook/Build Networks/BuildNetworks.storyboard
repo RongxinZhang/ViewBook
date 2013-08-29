@@ -4,96 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Build Networks-->
-        <scene sceneID="xJG-9X-Ur1">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gct-8D-tHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="BLR-TK-FWf" userLabel="Build Networks" customClass="BuildNetworksViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KGJ-Fi-LzF">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkk-En-Hqq">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="back">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loadMainMenuStoryboard:" destination="BLR-TK-FWf" eventType="touchUpInside" id="Xco-ty-0Ts"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su7-6o-fR0">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Social Media">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkE-sW-1c4">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Recruitment Calendar">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozE-bB-aDp">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Public Engagement">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlo-sO-VsL">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Research + Industry">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bkE-sW-1c4" firstAttribute="trailing" secondItem="ozE-bB-aDp" secondAttribute="trailing" type="default" id="1hz-8h-jqz"/>
-                            <constraint firstItem="jlo-sO-VsL" firstAttribute="leading" secondItem="ozE-bB-aDp" secondAttribute="leading" type="default" id="6Up-UU-xQZ"/>
-                            <constraint firstItem="bkE-sW-1c4" firstAttribute="top" secondItem="KGJ-Fi-LzF" secondAttribute="top" constant="197" id="73O-Y5-QEl"/>
-                            <constraint firstItem="rkk-En-Hqq" firstAttribute="leading" secondItem="KGJ-Fi-LzF" secondAttribute="leading" type="default" id="HKf-3b-PTS"/>
-                            <constraint firstItem="jlo-sO-VsL" firstAttribute="trailing" secondItem="ozE-bB-aDp" secondAttribute="trailing" type="default" id="L7v-TL-XJw"/>
-                            <constraint firstItem="ozE-bB-aDp" firstAttribute="leading" secondItem="bkE-sW-1c4" secondAttribute="leading" type="default" id="LVr-mh-FuA"/>
-                            <constraint firstItem="Su7-6o-fR0" firstAttribute="leading" secondItem="bkE-sW-1c4" secondAttribute="leading" type="default" id="g5M-T9-Qau"/>
-                            <constraint firstItem="rkk-En-Hqq" firstAttribute="top" secondItem="KGJ-Fi-LzF" secondAttribute="top" constant="-1" id="nvz-S5-Gtc"/>
-                            <constraint firstItem="bkE-sW-1c4" firstAttribute="centerX" secondItem="KGJ-Fi-LzF" secondAttribute="centerX" type="default" id="se2-li-43h"/>
-                            <constraint firstItem="bkE-sW-1c4" firstAttribute="trailing" secondItem="Su7-6o-fR0" secondAttribute="trailing" type="default" id="suw-c4-Z9h"/>
-                            <constraint firstAttribute="bottom" secondItem="ozE-bB-aDp" secondAttribute="bottom" constant="187" id="tFx-OS-Fi3"/>
-                            <constraint firstAttribute="bottom" secondItem="jlo-sO-VsL" secondAttribute="bottom" constant="112" id="wyn-FA-cn6"/>
-                            <constraint firstItem="Su7-6o-fR0" firstAttribute="top" secondItem="KGJ-Fi-LzF" secondAttribute="top" constant="120" id="zJN-nW-862"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="MOH-2I-e75"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="-859" y="-695"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZFO-FO-CaO">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="UZf-Q8-gFU" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="95C-xL-eXe">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -350,24 +265,6 @@
             </objects>
             <point key="canvasLocation" x="491" y="-1026"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WPc-oJ-wQr">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="soB-F5-H4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="EZP-5y-uqE" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uz9-7W-Otm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BLR-TK-FWf" kind="relationship" relationship="rootViewController" id="GDT-nY-xhA"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-1385" y="-695"/>
-        </scene>
     </scenes>
     <resources>
         <image name="facebook.png" width="100" height="100"/>
@@ -377,12 +274,6 @@
         <image name="twitter.png" width="100" height="100"/>
     </resources>
     <classes>
-        <class className="BuildNetworksViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BuildNetworksViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="loadMainMenuStoryboard:"/>
-            </relationships>
-        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>

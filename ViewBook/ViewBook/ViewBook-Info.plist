@@ -28,6 +28,8 @@
 	<array>
 		<string>LeituraHeadline-Serif It.otf</string>
 		<string>LeituraSans-Grot 1.otf</string>
+		<string>GothamRnd-Bold.otf</string>
+		<string>GothamRnd-Medium.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>SplashScreen</string>

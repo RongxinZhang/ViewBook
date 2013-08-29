@@ -112,6 +112,13 @@
                             <constraint firstItem="iWk-GZ-Nx3" firstAttribute="top" secondItem="hBg-CV-JkD" secondAttribute="top" constant="166" id="zvk-DA-bnf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="applyNowButton" destination="drq-Kc-cTj" id="YKK-HW-ohI"/>
+                        <outlet property="buildNetworksButton" destination="h6a-Qt-A7N" id="RFS-LQ-mye"/>
+                        <outlet property="createFuturesButton" destination="FC4-tb-4Kp" id="ocQ-nB-MXZ"/>
+                        <outlet property="makePathsButton" destination="iWk-GZ-Nx3" id="NLq-cn-3ZK"/>
+                        <outlet property="startPointsButton" destination="8IW-bh-8qn" id="eeu-Wp-Ikw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdE-vG-fBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,6 +141,11 @@
                 <relationship kind="action" name="loadCreateFuturesStoryboard:"/>
                 <relationship kind="action" name="loadMakePathsStoryboard:"/>
                 <relationship kind="action" name="loadStartPointsStoryboard:"/>
+                <relationship kind="outlet" name="applyNowButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buildNetworksButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="createFuturesButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="makePathsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="startPointsButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

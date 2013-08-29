@@ -30,6 +30,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    // Load Font
+    captionFont = [UIFont fontWithName:@"Leitura Sans" size:18];
+    
     // Load Images
     NSArray *infographics = [NSArray arrayWithObjects:
                                 [UIImage imageNamed:@"alumni_survey_01"],

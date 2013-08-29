@@ -123,6 +123,11 @@
 		2DB3FBE717CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */; };
 		2DB3FBE917CFBDB00045D85C /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE817CFBDB00045D85C /* instagram.png */; };
 		2DB3FBEA17CFBDB00045D85C /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBE817CFBDB00045D85C /* instagram.png */; };
+		2DB3FBED17CFC40D0045D85C /* GothamRnd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBEB17CFC40D0045D85C /* GothamRnd-Bold.otf */; };
+		2DB3FBEE17CFC40D0045D85C /* GothamRnd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBEB17CFC40D0045D85C /* GothamRnd-Bold.otf */; };
+		2DB3FBEF17CFC40D0045D85C /* GothamRnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBEC17CFC40D0045D85C /* GothamRnd-Medium.otf */; };
+		2DB3FBF017CFC40D0045D85C /* GothamRnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DB3FBEC17CFC40D0045D85C /* GothamRnd-Medium.otf */; };
+		2DB3FBF217CFC41F0045D85C /* ViewBook-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D47AD2617921513003D5D8B /* ViewBook-Info.plist */; };
 		2DCCA08E17C1BBCD00B81172 /* PortfolioRequirementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */; };
 		2DCCA09117C1BBED00B81172 /* ApplicationDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09017C1BBED00B81172 /* ApplicationDirectionsViewController.m */; };
 		2DCCA09417C1BC0100B81172 /* ContactECUADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCA09317C1BC0100B81172 /* ContactECUADViewController.m */; };
@@ -301,6 +306,8 @@
 		2DAE88CC17C733190034B8C8 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Build Networks/XMLParser.m"; sourceTree = "<group>"; };
 		2DB3FBE517CFBB0E0045D85C /* UndergraduateCourses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UndergraduateCourses.plist; path = "Assets/Property Lists/UndergraduateCourses.plist"; sourceTree = "<group>"; };
 		2DB3FBE817CFBDB00045D85C /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		2DB3FBEB17CFC40D0045D85C /* GothamRnd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Bold.otf"; sourceTree = "<group>"; };
+		2DB3FBEC17CFC40D0045D85C /* GothamRnd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Medium.otf"; sourceTree = "<group>"; };
 		2DCCA08C17C1BBCD00B81172 /* PortfolioRequirementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortfolioRequirementsViewController.h; path = "Apply Now/PortfolioRequirementsViewController.h"; sourceTree = "<group>"; };
 		2DCCA08D17C1BBCD00B81172 /* PortfolioRequirementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortfolioRequirementsViewController.m; path = "Apply Now/PortfolioRequirementsViewController.m"; sourceTree = "<group>"; };
 		2DCCA08F17C1BBED00B81172 /* ApplicationDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationDirectionsViewController.h; path = "Apply Now/ApplicationDirectionsViewController.h"; sourceTree = "<group>"; };
@@ -430,11 +437,11 @@
 		2D29E76417C01B5A004BB03C /* Make Paths */ = {
 			isa = PBXGroup;
 			children = (
-				79896D2C17CEB91E000B747D /* UnderGradraduateViewController.h */,
-				79896D2D17CEB91E000B747D /* UnderGradraduateViewController.m */,
 				2D29E76F17C0269D004BB03C /* MakePaths.storyboard */,
 				2D29E77217C026B7004BB03C /* MakePathsViewController.h */,
 				2D29E77317C026B7004BB03C /* MakePathsViewController.m */,
+				79896D2C17CEB91E000B747D /* UnderGradraduateViewController.h */,
+				79896D2D17CEB91E000B747D /* UnderGradraduateViewController.m */,
 			);
 			name = "Make Paths";
 			sourceTree = "<group>";
@@ -502,6 +509,8 @@
 		2D44017217CAEC4600F1079B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2DB3FBEB17CFC40D0045D85C /* GothamRnd-Bold.otf */,
+				2DB3FBEC17CFC40D0045D85C /* GothamRnd-Medium.otf */,
 				2D44017317CAEC4600F1079B /* LeituraHeadline-Serif It.otf */,
 				2D44017417CAEC4600F1079B /* LeituraSans-Grot 1.otf */,
 			);
@@ -890,6 +899,8 @@
 				2DD13B1F17CDD8A7002D52BB /* start.png in Resources */,
 				2DB3FBE617CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */,
 				2DB3FBE917CFBDB00045D85C /* instagram.png in Resources */,
+				2DB3FBED17CFC40D0045D85C /* GothamRnd-Bold.otf in Resources */,
+				2DB3FBEF17CFC40D0045D85C /* GothamRnd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,6 +979,9 @@
 				2DD13B1D17CDD698002D52BB /* start.png in Resources */,
 				2DB3FBE717CFBB0E0045D85C /* UndergraduateCourses.plist in Resources */,
 				2DB3FBEA17CFBDB00045D85C /* instagram.png in Resources */,
+				2DB3FBEE17CFC40D0045D85C /* GothamRnd-Bold.otf in Resources */,
+				2DB3FBF017CFC40D0045D85C /* GothamRnd-Medium.otf in Resources */,
+				2DB3FBF217CFC41F0045D85C /* ViewBook-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

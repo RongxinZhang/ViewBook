@@ -401,7 +401,6 @@
             <relationships>
                 <relationship kind="action" name="openFacebook:"/>
                 <relationship kind="action" name="openFlickr:"/>
-                <relationship kind="action" name="openGooglePlus:"/>
                 <relationship kind="action" name="openInstagram:"/>
                 <relationship kind="action" name="openPinterest:"/>
                 <relationship kind="action" name="openTwitter:"/>

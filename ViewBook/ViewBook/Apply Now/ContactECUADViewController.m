@@ -38,12 +38,15 @@
     // Set Screen Index
     screenIndex = 2;
     
+    titleFont = [UIFont fontWithName:@"Leitura Headline" size:24];
+    
     // Load PList For Page Title
     NSString *pathToPlistFile = [[NSBundle mainBundle] pathForResource:@"ApplyNowScreenNames" ofType:@"plist"];
     NSArray *screenNames = [[NSArray alloc] initWithContentsOfFile:pathToPlistFile];
     
     // Set PList To Page Title
     pageTitle.text = [screenNames objectAtIndex:screenIndex];
+    pageTitle.font = titleFont;
     
     // Increase Size Of Message Field
     self.messageField.borderStyle = UITextBorderStyleLine;

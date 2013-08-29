@@ -11,18 +11,26 @@
 
 @interface MainMenuViewController : UIViewController {
     NSTimer *timer;
+    
+    // Font
+    UIFont *buttonFont;
 }
 
 // Buttons
 
 - (IBAction)loadStartPointsStoryboard:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *startPointsButton;
 
 - (IBAction)loadMakePathsStoryboard:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *makePathsButton;
 
 - (IBAction)loadBuildNetworksStoryboard:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *buildNetworksButton;
 
 - (IBAction)loadCreateFuturesStoryboard:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *createFuturesButton;
 
 - (IBAction)loadApplyNowStoryboard:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *applyNowButton;
 
 @end
